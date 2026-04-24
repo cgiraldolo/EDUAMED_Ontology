@@ -1,8 +1,8 @@
 {
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
-    "languages" : [ "en", "es" ],
-    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.example.org/highrisk-meddev-&-invitrodev-diag", "http://www.w3.org/2000/01/rdf-schema", "http://purl.org/dc/terms", "http://www.w3.org/2001/XMLSchema", "http://dbpedia.org/ontology", "http://xmlns.com/foaf/0.1", "https://w3id.org/seas" ],
+    "languages" : [ "en", "es", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag", "http://www.w3.org/2000/01/rdf-schema", "http://purl.org/dc/terms", "http://www.w3.org/2001/XMLSchema", "http://dbpedia.org/ontology", "http://xmlns.com/foaf/0.1", "https://w3id.org/seas" ],
     "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
     "labels" : {
       "en" : "Ontology of the european catalogue of high-risk medical devices and in-vitro diagnostics devices.",
@@ -11,62 +11,73 @@
     "comments" : {
       "en" : "This ontology semantically models the catalogue of high-risk medical devices and in-vitro diagnostic devices of the EUDAMED european database. It includes devices, manufacturers, identified risks, incidents and corrective safety actions.",
       "es" : "Esta ontología modela de forma semántica el catálogo de dispositivos médicos de alto riesgo y dispositivos de diagnóstico in vitro de la base de datos europea EUDAMED. Incluye dispositivos, fabricantes, riesgos identificados, incidentes y acciones correctivas de seguridad."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/publicdomain/zero/1.0/",
+        "type" : "label"
+      } ]
     }
   },
   "namespace" : [ ],
   "class" : [ {
-    "id" : "6",
+    "id" : "4",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "9",
+    "id" : "5",
     "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:Datatype"
   }, {
     "id" : "17",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "18",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "19",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "20",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "21",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "24",
     "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:Datatype"
   }, {
     "id" : "26",
-    "type" : "rdfs:Literal"
+    "type" : "rdfs:Datatype"
   }, {
     "id" : "27",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "28",
-    "type" : "owl:Class"
-  }, {
-    "id" : "33",
     "type" : "rdfs:Datatype"
-  }, {
-    "id" : "34",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "14",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "35",
-    "type" : "owl:Class"
   }, {
     "id" : "30",
     "type" : "owl:Class"
   }, {
-    "id" : "25",
+    "id" : "34",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "35",
     "type" : "owl:Class"
   }, {
-    "id" : "41",
+    "id" : "38",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
     "type" : "owl:Class"
   }, {
     "id" : "44",
@@ -84,13 +95,10 @@
     "id" : "50",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "10",
-    "type" : "owl:Class"
-  }, {
     "id" : "51",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "16",
+    "id" : "11",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "52",
@@ -99,112 +107,112 @@
     "id" : "53",
     "type" : "owl:Class"
   }, {
-    "id" : "56",
+    "id" : "58",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "57",
+    "id" : "33",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "64",
+    "id" : "14",
     "type" : "owl:Class"
   }, {
-    "id" : "31",
+    "id" : "8",
     "type" : "owl:Class"
   }, {
-    "id" : "71",
+    "id" : "18",
     "type" : "owl:Class"
   }, {
-    "id" : "87",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "5",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "2",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "40",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "4",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "76",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "96",
+    "id" : "19",
     "type" : "owl:Class"
   }, {
-    "id" : "74",
+    "id" : "81",
     "type" : "owl:Class"
   }, {
-    "id" : "60",
-    "type" : "owl:Class"
-  }, {
-    "id" : "69",
-    "type" : "owl:Class"
-  }, {
-    "id" : "104",
-    "type" : "owl:Class"
-  }, {
-    "id" : "43",
-    "type" : "owl:Class"
-  }, {
-    "id" : "63",
-    "type" : "owl:Class"
-  }, {
-    "id" : "80",
+    "id" : "13",
     "type" : "owl:Class"
   }, {
     "id" : "93",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "114",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "99",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "109",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "119",
+    "id" : "3",
     "type" : "rdfs:Literal"
   }, {
     "id" : "37",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "32",
-    "type" : "owl:Class"
-  }, {
-    "id" : "55",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "23",
+    "id" : "41",
     "type" : "rdfs:Datatype"
-  }, {
-    "id" : "8",
-    "type" : "owl:Class"
-  }, {
-    "id" : "102",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "116",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "29",
-    "type" : "owl:Class"
   }, {
     "id" : "1",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "54",
     "type" : "owl:Class"
   }, {
-    "id" : "13",
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "78",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "65",
+    "type" : "owl:Class"
+  }, {
+    "id" : "80",
+    "type" : "owl:Class"
+  }, {
+    "id" : "109",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "115",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "106",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "6",
+    "id" : "4",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -216,13 +224,33 @@
     "label" : {
       "IRI-based" : "Device"
     },
-    "subClasses" : [ "10" ],
+    "subClasses" : [ "6" ],
     "attributes" : [ "external" ],
-    "id" : "9"
+    "id" : "5"
+  }, {
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Device",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Device",
+      "en" : "Device"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#DEV-001",
+      "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+      "labels" : {
+        "IRI-based" : "DEV-001"
+      }
+    } ],
+    "comment" : {
+      "en" : "High Risk Medical Device or In-Vitro Diagnostics Device"
+    },
+    "id" : "6",
+    "superClasses" : [ "5" ]
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "17",
+    "id" : "15",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -230,28 +258,41 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "18",
+    "id" : "16",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#CorrectiveAction",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CorrectiveAction",
+      "en" : "Corrective Action"
+    },
+    "subClasses" : [ "18", "19", "20", "21" ],
+    "comment" : {
+      "en" : "Action taken to correct incident"
+    },
+    "id" : "17"
+  }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "19",
+    "id" : "23",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "20",
+    "id" : "26",
     "label" : {
       "IRI-based" : "dateTime"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "21",
+    "id" : "27",
     "label" : {
       "IRI-based" : "string"
     }
@@ -262,46 +303,9 @@
     "label" : {
       "IRI-based" : "Organization"
     },
-    "subClasses" : [ "25" ],
+    "subClasses" : [ "31" ],
     "attributes" : [ "external" ],
-    "id" : "24"
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "26",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "27",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#CorrectiveAction",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "CorrectiveAction",
-      "en" : "Corrective Action"
-    },
-    "subClasses" : [ "29", "30", "31", "32" ],
-    "comment" : {
-      "en" : "Action taken to correct incident"
-    },
-    "attributes" : [ "external" ],
-    "id" : "28"
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "33",
-    "label" : {
-      "IRI-based" : "dateTime"
-    }
+    "id" : "30"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
@@ -311,15 +315,8 @@
       "undefined" : "Literal"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "14",
-    "label" : {
-      "IRI-based" : "integer"
-    }
-  }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#DiagnosticRisk",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#DiagnosticRisk",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
     "instances" : 0,
     "label" : {
       "IRI-based" : "DiagnosticRisk",
@@ -328,12 +325,61 @@
     "comment" : {
       "en" : "Type of Risk affecting diagnostic results"
     },
-    "attributes" : [ "external" ],
     "id" : "35",
-    "superClasses" : [ "1" ]
+    "superClasses" : [ "13" ]
   }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Recall",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "38",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "39",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "42",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "9",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Manufacturer",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Manufacturer",
+      "en" : "Manufacturer"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#MAN-001",
+      "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+      "labels" : {
+        "IRI-based" : "MAN-001"
+      }
+    } ],
+    "comment" : {
+      "en" : "Manufacturing Organization of Medical Device"
+    },
+    "id" : "31",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Recall",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Recall",
@@ -342,33 +388,11 @@
     "comment" : {
       "en" : "Type of Corrective Action: product recall"
     },
-    "attributes" : [ "external" ],
-    "id" : "30",
-    "superClasses" : [ "28" ]
+    "id" : "20",
+    "superClasses" : [ "17" ]
   }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Manufacturer",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Manufacturer",
-      "en" : "Manufacturer"
-    },
-    "individuals" : [ {
-      "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#MAN-001",
-      "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-      "labels" : {
-        "IRI-based" : "MAN-001"
-      }
-    } ],
-    "comment" : {
-      "en" : "Manufacturing Organization of Medical Device"
-    },
-    "attributes" : [ "external" ],
-    "id" : "25",
-    "superClasses" : [ "24" ]
-  }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#CybersecurityRisk",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#CybersecurityRisk",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
     "instances" : 0,
     "label" : {
       "IRI-based" : "CybersecurityRisk",
@@ -377,9 +401,8 @@
     "comment" : {
       "en" : "Type of Risk affecting device safety"
     },
-    "attributes" : [ "external" ],
-    "id" : "41",
-    "superClasses" : [ "1" ]
+    "id" : "43",
+    "superClasses" : [ "13" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -416,27 +439,6 @@
       "IRI-based" : "string"
     }
   }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Device",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Device",
-      "en" : "Device"
-    },
-    "individuals" : [ {
-      "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#DEV-001",
-      "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-      "labels" : {
-        "IRI-based" : "DEV-001"
-      }
-    } ],
-    "comment" : {
-      "en" : "High Risk Medical Device or In-Vitro Diagnostics Device"
-    },
-    "attributes" : [ "external" ],
-    "id" : "10",
-    "superClasses" : [ "9" ]
-  }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "51",
@@ -446,7 +448,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "16",
+    "id" : "11",
     "label" : {
       "IRI-based" : "string"
     }
@@ -464,238 +466,99 @@
     "label" : {
       "IRI-based" : "Country"
     },
-    "subClasses" : [ "43" ],
+    "subClasses" : [ "54" ],
     "attributes" : [ "external" ],
     "id" : "53"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "56",
+    "id" : "58",
     "label" : {
       "IRI-based" : "boolean"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "57",
+    "id" : "33",
     "label" : {
       "IRI-based" : "boolean"
     }
   }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#InterferenceRisk",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#DeviceType",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "InterferenceRisk",
-      "en" : "Interference Risk"
-    },
-    "comment" : {
-      "en" : "Type of Risk affecting device performance"
-    },
-    "attributes" : [ "external" ],
-    "id" : "64",
-    "superClasses" : [ "1" ]
-  }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#UserNotice",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "UserNotice",
-      "en" : "User Notice"
-    },
-    "comment" : {
-      "en" : "Type of Corrective Action: notice sent to user(s)"
-    },
-    "attributes" : [ "external" ],
-    "id" : "31",
-    "superClasses" : [ "28" ]
-  }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#InfectionRisk",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "InfectionRisk",
-      "en" : "Infection Risk"
-    },
-    "comment" : {
-      "en" : "Type of Risk affecting patient's health"
-    },
-    "attributes" : [ "external" ],
-    "id" : "71",
-    "superClasses" : [ "1" ]
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "87",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "5",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "2",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "40",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "4",
-    "label" : {
-      "undefined" : "Thing"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "76",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#SeriousIncident",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "SeriousIncident",
-      "en" : "Serious Incident"
+      "IRI-based" : "DeviceType",
+      "en" : "Device Type"
     },
     "individuals" : [ {
-      "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#INC-001",
-      "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
+      "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#ImplantableActiveDevice",
+      "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
       "labels" : {
-        "IRI-based" : "INC-001"
+        "IRI-based" : "ImplantableActiveDevice"
       }
     } ],
     "comment" : {
-      "en" : "Type of Incident by severity"
+      "en" : "Type of device (ClassI, ClassIIa, ClassIIb and ClassIII for High Risk Medical Devices & ClassA, ClassB, ClassC and ClassD for In-Vitro Diagnostics Devices)"
     },
-    "attributes" : [ "external" ],
-    "id" : "96",
-    "superClasses" : [ "13" ]
+    "id" : "14"
   }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#SoftwareRisk",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Incident",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "SoftwareRisk",
-      "en" : "Software Risk"
+      "IRI-based" : "Incident",
+      "en" : "Incident"
+    },
+    "subClasses" : [ "70", "71" ],
+    "comment" : {
+      "en" : "Incident related to Medical Device"
+    },
+    "id" : "8"
+  }, {
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#InSituCorrection",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InSituCorrection",
+      "en" : "In Situ Correction"
     },
     "comment" : {
-      "en" : "Type of Risk affecting device performance"
+      "en" : "Type of Corrective Action: performed on location"
     },
-    "attributes" : [ "external" ],
-    "id" : "74",
-    "superClasses" : [ "1" ]
+    "id" : "18",
+    "superClasses" : [ "17" ]
   }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#MaterialRisk",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#SafetyAlert",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "MaterialRisk",
-      "en" : "Material Risk"
-    },
-    "comment" : {
-      "en" : "Type of Risk affecting patient's health"
-    },
-    "attributes" : [ "external" ],
-    "id" : "60",
-    "superClasses" : [ "1" ]
-  }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#MalfunctionRisk",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "MalfunctionRisk",
-      "en" : "Malfunction Risk"
-    },
-    "comment" : {
-      "en" : "Type of Risk affecting device performance"
-    },
-    "attributes" : [ "external" ],
-    "id" : "69",
-    "superClasses" : [ "1" ]
-  }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#NearMissIncident",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "NearMissIncident",
-      "en" : "Near Miss Incident"
-    },
-    "comment" : {
-      "en" : "Type of Incident by severity"
-    },
-    "attributes" : [ "external" ],
-    "id" : "104",
-    "superClasses" : [ "13" ]
-  }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Country",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Country",
-      "en" : "Country"
+      "IRI-based" : "SafetyAlert",
+      "en" : "Safety Alert"
     },
     "individuals" : [ {
-      "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Ireland",
-      "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
+      "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#FSCA-001",
+      "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
       "labels" : {
-        "IRI-based" : "Ireland"
-      }
-    }, {
-      "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Germany",
-      "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-      "labels" : {
-        "IRI-based" : "Germany"
+        "IRI-based" : "FSCA-001"
       }
     } ],
     "comment" : {
-      "en" : "Country identified by its english name"
+      "en" : "Type of Corrective Action: safety alert sent"
     },
-    "attributes" : [ "external" ],
-    "id" : "43",
-    "superClasses" : [ "53" ]
+    "id" : "19",
+    "superClasses" : [ "17" ]
   }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#ContaminationRisk",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ContaminationRisk",
-      "en" : "Contamination Risk"
-    },
-    "comment" : {
-      "en" : "Type of Risk affecting product quality"
-    },
-    "attributes" : [ "external" ],
-    "id" : "63",
-    "superClasses" : [ "1" ]
-  }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#InjuryRisk",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#InjuryRisk",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
     "instances" : 0,
     "label" : {
       "IRI-based" : "InjuryRisk",
       "en" : "Injury Risk"
     },
     "individuals" : [ {
-      "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#RSK-003",
-      "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
+      "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#RSK-003",
+      "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
       "labels" : {
         "IRI-based" : "RSK-003"
       }
@@ -703,42 +566,31 @@
     "comment" : {
       "en" : "Type of Risk affecting patient's health"
     },
-    "attributes" : [ "external" ],
-    "id" : "80",
-    "superClasses" : [ "1" ]
+    "id" : "81",
+    "superClasses" : [ "13" ]
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "93",
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Risk",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "instances" : 0,
     "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "114",
-    "label" : {
-      "IRI-based" : "integer"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "99",
-    "label" : {
-      "IRI-based" : "string"
-    }
+      "IRI-based" : "Risk",
+      "en" : "Risk"
+    },
+    "subClasses" : [ "76", "43", "80", "78", "60", "65", "63", "35", "81" ],
+    "comment" : {
+      "en" : "Medical Risks associated to Medical Devices"
+    },
+    "id" : "13"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "109",
+    "id" : "93",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "119",
+    "id" : "3",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -752,30 +604,200 @@
       "undefined" : "Literal"
     }
   }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#SafetyAlert",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "instances" : 0,
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "41",
     "label" : {
-      "IRI-based" : "SafetyAlert",
-      "en" : "Safety Alert"
-    },
-    "individuals" : [ {
-      "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#FSCA-001",
-      "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-      "labels" : {
-        "IRI-based" : "FSCA-001"
-      }
-    } ],
-    "comment" : {
-      "en" : "Type of Corrective Action: safety alert sent"
-    },
-    "attributes" : [ "external" ],
-    "id" : "32",
-    "superClasses" : [ "28" ]
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "1",
+    "label" : {
+      "undefined" : "Thing"
+    }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "55",
+    "id" : "98",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Country",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Country",
+      "en" : "Country"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Ireland",
+      "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+      "labels" : {
+        "IRI-based" : "Ireland"
+      }
+    }, {
+      "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Germany",
+      "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+      "labels" : {
+        "IRI-based" : "Germany"
+      }
+    } ],
+    "comment" : {
+      "en" : "Country identified by its english name"
+    },
+    "id" : "54",
+    "superClasses" : [ "53" ]
+  }, {
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#SoftwareRisk",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SoftwareRisk",
+      "en" : "Software Risk"
+    },
+    "comment" : {
+      "en" : "Type of Risk affecting device performance"
+    },
+    "id" : "60",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#MalfunctionRisk",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MalfunctionRisk",
+      "en" : "Malfunction Risk"
+    },
+    "comment" : {
+      "en" : "Type of Risk affecting device performance"
+    },
+    "id" : "78",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#MaterialRisk",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MaterialRisk",
+      "en" : "Material Risk"
+    },
+    "comment" : {
+      "en" : "Type of Risk affecting patient's health"
+    },
+    "id" : "63",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#SeriousIncident",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SeriousIncident",
+      "en" : "Serious Incident"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#INC-001",
+      "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+      "labels" : {
+        "IRI-based" : "INC-001"
+      }
+    } ],
+    "comment" : {
+      "en" : "Type of Incident by severity"
+    },
+    "id" : "70",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#ContaminationRisk",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ContaminationRisk",
+      "en" : "Contamination Risk"
+    },
+    "comment" : {
+      "en" : "Type of Risk affecting product quality"
+    },
+    "id" : "65",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#InterferenceRisk",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InterferenceRisk",
+      "en" : "Interference Risk"
+    },
+    "comment" : {
+      "en" : "Type of Risk affecting device performance"
+    },
+    "id" : "80",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "109",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "69",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "104",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "115",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "102",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#NearMissIncident",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NearMissIncident",
+      "en" : "Near Miss Incident"
+    },
+    "comment" : {
+      "en" : "Type of Incident by severity"
+    },
+    "id" : "71",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "29",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "47",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -783,144 +805,108 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "23",
+    "id" : "25",
     "label" : {
       "IRI-based" : "boolean"
     }
   }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#DeviceType",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "DeviceType",
-      "en" : "Device Type"
-    },
-    "individuals" : [ {
-      "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#ImplantableActiveDevice",
-      "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-      "labels" : {
-        "IRI-based" : "ImplantableActiveDevice"
-      }
-    } ],
-    "comment" : {
-      "en" : "Type of device (ClassI, ClassIIa, ClassIIb and ClassIII for High Risk Medical Devices & ClassA, ClassB, ClassC and ClassD for In-Vitro Diagnostics Devices)"
-    },
-    "attributes" : [ "external" ],
-    "id" : "8"
-  }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "102",
+    "id" : "106",
     "label" : {
       "IRI-based" : "dateTime"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "116",
+    "id" : "84",
     "label" : {
       "IRI-based" : "dateTime"
     }
   }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#InSituCorrection",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#InfectionRisk",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "InSituCorrection",
-      "en" : "In Situ Correction"
+      "IRI-based" : "InfectionRisk",
+      "en" : "Infection Risk"
     },
     "comment" : {
-      "en" : "Type of Corrective Action: performed on location"
+      "en" : "Type of Risk affecting patient's health"
     },
-    "attributes" : [ "external" ],
-    "id" : "29",
-    "superClasses" : [ "28" ]
+    "id" : "76",
+    "superClasses" : [ "13" ]
   }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Risk",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#UserNotice",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Risk",
-      "en" : "Risk"
+      "IRI-based" : "UserNotice",
+      "en" : "User Notice"
     },
-    "subClasses" : [ "35", "80", "71", "69", "74", "64", "60", "63", "41" ],
     "comment" : {
-      "en" : "Medical Risks associated to Medical Devices"
+      "en" : "Type of Corrective Action: notice sent to user(s)"
     },
-    "attributes" : [ "external" ],
-    "id" : "1"
-  }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Incident",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Incident",
-      "en" : "Incident"
-    },
-    "subClasses" : [ "104", "96" ],
-    "comment" : {
-      "en" : "Incident related to Medical Device"
-    },
-    "attributes" : [ "external" ],
-    "id" : "13"
+    "id" : "21",
+    "superClasses" : [ "17" ]
   } ],
   "property" : [ {
     "id" : "0",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "3",
+    "id" : "2",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "7",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
-    "id" : "11",
-    "type" : "owl:objectProperty"
+    "id" : "10",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "12",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "15",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "32",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "36",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "38",
+    "id" : "40",
     "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "39",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "42",
-    "type" : "owl:objectProperty"
   }, {
     "id" : "46",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "47",
+    "id" : "55",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "54",
+    "id" : "56",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "58",
-    "type" : "owl:objectProperty"
+    "id" : "57",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "59",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "61",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "62",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "65",
-    "type" : "owl:objectProperty"
+    "id" : "64",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "66",
     "type" : "owl:datatypeProperty"
@@ -929,45 +915,39 @@
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "68",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "70",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "72",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "73",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "74",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "75",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "77",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "78",
+    "id" : "77",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "79",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "81",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "82",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "83",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "84",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "85",
     "type" : "owl:datatypeProperty"
   }, {
+    "id" : "85",
+    "type" : "rdfs:SubClassOf"
+  }, {
     "id" : "86",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "87",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "88",
@@ -983,33 +963,33 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "92",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "94",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "95",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "96",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "97",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "98",
+    "id" : "99",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "100",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "101",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "103",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "105",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "106",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "107",
@@ -1019,28 +999,34 @@
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "110",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "111",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "112",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "113",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "115",
+    "id" : "114",
     "type" : "owl:datatypeProperty"
   }, {
+    "id" : "116",
+    "type" : "owl:objectProperty"
+  }, {
     "id" : "117",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "118",
     "type" : "owl:datatypeProperty"
   }, {
+    "id" : "119",
+    "type" : "rdfs:SubClassOf"
+  }, {
     "id" : "120",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "121",
     "type" : "owl:datatypeProperty"
@@ -1049,736 +1035,736 @@
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "123",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "124",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "125",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   } ],
   "propertyAttribute" : [ {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#riskProbability",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "range" : "2",
-    "label" : {
-      "IRI-based" : "riskProbability",
-      "en" : "Risk Probability"
-    },
-    "domain" : "1",
-    "comment" : {
-      "en" : "Probability of the Risk (Low/Medium/High)"
-    },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "0"
-  }, {
-    "iri" : "http://purl.org/dc/terms/Identifier",
-    "baseIri" : "http://purl.org/dc/terms",
-    "range" : "5",
-    "label" : {
-      "IRI-based" : "Identifier"
-    },
-    "domain" : "4",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "3"
-  }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#affectsDeviceType",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "range" : "8",
-    "label" : {
-      "IRI-based" : "affectsDeviceType",
-      "en" : "affects device type"
-    },
-    "domain" : "1",
-    "comment" : {
-      "en" : "Device Types affected by Risk"
-    },
-    "attributes" : [ "functional", "object", "external" ],
-    "id" : "7"
-  }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#isSubclassifiedUnder",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "range" : "4",
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#isSubclassifiedUnder",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "range" : "1",
     "label" : {
       "IRI-based" : "isSubclassifiedUnder",
       "en" : "is subclassified under"
     },
-    "domain" : "4",
-    "attributes" : [ "object", "external" ],
-    "id" : "11"
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "0"
   }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentPatientAge",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "range" : "14",
+    "iri" : "http://purl.org/dc/terms/Identifier",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "Identifier"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#incidentPatientAge",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "range" : "9",
     "label" : {
       "IRI-based" : "incidentPatientAge",
       "en" : "Incident Patient Age"
     },
-    "domain" : "13",
+    "domain" : "8",
     "comment" : {
       "en" : "Age of the patient involved in the incident"
     },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "12"
+    "attributes" : [ "datatype" ],
+    "id" : "7"
   }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceUdiDi",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "range" : "16",
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#deviceUdiDi",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "range" : "11",
     "label" : {
       "IRI-based" : "deviceUdiDi",
       "en" : "Device UDI DI"
     },
-    "domain" : "10",
+    "domain" : "6",
     "comment" : {
       "en" : "UDI DI of the Device"
     },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "15"
+    "attributes" : [ "datatype" ],
+    "id" : "10"
   }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceIsActive",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "range" : "23",
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#affectsDeviceType",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "affectsDeviceType",
+      "en" : "affects device type"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "Device Types affected by Risk"
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#respondsToIncident",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "respondsToIncident",
+      "en" : "responds to incident"
+    },
+    "domain" : "17",
+    "comment" : {
+      "en" : "Incident that a Corrective Action is taken in response to"
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#deviceIsActive",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "range" : "25",
     "label" : {
       "IRI-based" : "deviceIsActive",
       "en" : "Device Is Active"
     },
-    "domain" : "10",
+    "domain" : "6",
     "comment" : {
       "en" : "Is the Device currently active? (true/false)"
     },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "22"
+    "attributes" : [ "datatype" ],
+    "id" : "24"
   }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#description",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "range" : "37",
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#description",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "range" : "29",
     "label" : {
       "IRI-based" : "description",
       "en" : "Description"
     },
-    "domain" : "4",
+    "domain" : "1",
     "comment" : {
       "en" : "Description of the term"
     },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "36"
+    "attributes" : [ "datatype" ],
+    "id" : "28"
   }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#manufacturerCompetentAuth",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "range" : "26",
-    "label" : {
-      "IRI-based" : "manufacturerCompetentAuth",
-      "en" : "Manufacturer Competent Authority"
-    },
-    "domain" : "25",
-    "comment" : {
-      "en" : "Organisation responsible of enforcing regulations on the Manufacturer"
-    },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "38"
-  }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#riskImdrfCode",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "range" : "40",
-    "label" : {
-      "IRI-based" : "riskImdrfCode",
-      "en" : "Risk IMDRF code"
-    },
-    "domain" : "1",
-    "comment" : {
-      "en" : "IMDRF code of the Risk"
-    },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "39"
-  }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#reportedInCountry",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "range" : "43",
-    "label" : {
-      "IRI-based" : "reportedInCountry",
-      "en" : "reported in country"
-    },
-    "domain" : "13",
-    "comment" : {
-      "en" : "Country that the Incident was reported In"
-    },
-    "attributes" : [ "functional", "object", "external" ],
-    "id" : "42"
-  }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#manufacturerContactEmail",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "range" : "21",
-    "label" : {
-      "IRI-based" : "manufacturerContactEmail",
-      "en" : "Manufacturer Contact Email"
-    },
-    "domain" : "25",
-    "comment" : {
-      "en" : "Contact email address of the Manufacturer"
-    },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "46"
-  }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#riskCategory",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "range" : "6",
-    "label" : {
-      "IRI-based" : "riskCategory",
-      "en" : "Risk Category"
-    },
-    "domain" : "1",
-    "comment" : {
-      "en" : "Category of the Risk based on affected entity"
-    },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "47"
-  }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceIntendedPurpose",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "range" : "55",
-    "label" : {
-      "IRI-based" : "deviceIntendedPurpose",
-      "en" : "Device Intended Purpose"
-    },
-    "domain" : "10",
-    "comment" : {
-      "en" : "Intended purpose of the Device"
-    },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "54"
-  }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#relatesToDevice",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "range" : "10",
-    "label" : {
-      "IRI-based" : "relatesToDevice",
-      "en" : "relates to device"
-    },
-    "domain" : "13",
-    "comment" : {
-      "en" : "Device that an Incident is related to"
-    },
-    "attributes" : [ "functional", "object", "external" ],
-    "id" : "58"
-  }, {
-    "range" : "1",
-    "domain" : "60",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "59"
-  }, {
-    "range" : "1",
-    "domain" : "41",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "61"
-  }, {
-    "range" : "1",
-    "domain" : "63",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "62"
-  }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#reportedBy",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "range" : "25",
-    "label" : {
-      "IRI-based" : "reportedBy",
-      "en" : "reported by"
-    },
-    "domain" : "13",
-    "comment" : {
-      "en" : "Manufacturer that reported the Incident"
-    },
-    "attributes" : [ "functional", "object", "external" ],
-    "id" : "65"
-  }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceIsReusable",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "range" : "56",
-    "label" : {
-      "IRI-based" : "deviceIsReusable",
-      "en" : "Device Is Reusable"
-    },
-    "domain" : "10",
-    "comment" : {
-      "en" : "Is the Device reusable? (true/false)"
-    },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "66"
-  }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentCorrectiveActionTaken",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "range" : "45",
-    "label" : {
-      "IRI-based" : "incidentCorrectiveActionTaken",
-      "en" : "Incident Corrective Action Taken"
-    },
-    "domain" : "13",
-    "comment" : {
-      "en" : "Was a Corrective Action taken in regards to this Incident? (true/false)"
-    },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "67"
-  }, {
-    "range" : "1",
-    "domain" : "69",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "68"
-  }, {
-    "range" : "1",
-    "domain" : "71",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "70"
-  }, {
-    "range" : "1",
-    "domain" : "64",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "72"
-  }, {
-    "range" : "1",
-    "domain" : "74",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "73"
-  }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#riskSeverity",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "range" : "76",
-    "label" : {
-      "IRI-based" : "riskSeverity",
-      "en" : "Risk Severity"
-    },
-    "domain" : "1",
-    "comment" : {
-      "en" : "Severity of the Risk (Moderate/Serious/Critical)"
-    },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "75"
-  }, {
-    "range" : "53",
-    "domain" : "43",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "77"
-  }, {
-    "range" : "28",
-    "domain" : "32",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "78"
-  }, {
-    "range" : "1",
-    "domain" : "80",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "79"
-  }, {
-    "range" : "1",
-    "domain" : "35",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "81"
-  }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentEudamedRef",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "range" : "48",
-    "label" : {
-      "IRI-based" : "incidentEudamedRef",
-      "en" : "Incident Eudamed Reference"
-    },
-    "domain" : "13",
-    "comment" : {
-      "en" : "Incident reference in the EUDAMED database"
-    },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "82"
-  }, {
-    "range" : "28",
-    "domain" : "31",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "83"
-  }, {
-    "range" : "28",
-    "domain" : "30",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "84"
-  }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceIsIvd",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "range" : "57",
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#deviceIsIvd",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "range" : "33",
     "label" : {
       "IRI-based" : "deviceIsIvd",
       "en" : "Device Is IVD"
     },
-    "domain" : "10",
+    "domain" : "6",
     "comment" : {
       "en" : "Is the Device an In-Vitro Diagnostics Device? (true/false)"
     },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "85"
+    "attributes" : [ "datatype" ],
+    "id" : "32"
   }, {
-    "range" : "28",
-    "domain" : "29",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "86"
-  }, {
-    "range" : "24",
-    "domain" : "25",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "88"
-  }, {
-    "range" : "9",
-    "domain" : "10",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "89"
-  }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#identifier",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "range" : "51",
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#riskProbability",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "range" : "37",
     "label" : {
-      "IRI-based" : "identifier",
-      "en" : "Identifier"
+      "IRI-based" : "riskProbability",
+      "en" : "Risk Probability"
     },
-    "domain" : "4",
+    "domain" : "13",
     "comment" : {
-      "en" : "Identifier string of the term"
+      "en" : "Probability of the Risk (Low/Medium/High)"
     },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "90"
+    "attributes" : [ "datatype" ],
+    "id" : "36"
   }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#isOfType",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "range" : "8",
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#riskImdrfCode",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "range" : "41",
     "label" : {
-      "IRI-based" : "isOfType",
-      "en" : "is of type"
+      "IRI-based" : "riskImdrfCode",
+      "en" : "Risk IMDRF code"
     },
-    "domain" : "10",
+    "domain" : "13",
     "comment" : {
-      "en" : "Type of Medical Device"
+      "en" : "IMDRF code of the Risk"
     },
-    "attributes" : [ "functional", "object", "external" ],
-    "id" : "91"
+    "attributes" : [ "datatype" ],
+    "id" : "40"
   }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionCountriesAffected",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "range" : "93",
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#deviceIntendedPurpose",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "range" : "47",
     "label" : {
-      "IRI-based" : "correctiveActionCountriesAffected",
-      "en" : "Corrective Action Countries Affected"
+      "IRI-based" : "deviceIntendedPurpose",
+      "en" : "Device Intended Purpose"
     },
-    "domain" : "28",
+    "domain" : "6",
     "comment" : {
-      "en" : "Countries affected by the Corrective Action"
+      "en" : "Intended purpose of the Device"
     },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "92"
+    "attributes" : [ "datatype" ],
+    "id" : "46"
   }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentPatientSex",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#manufacturerContactEmail",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "manufacturerContactEmail",
+      "en" : "Manufacturer Contact Email"
+    },
+    "domain" : "31",
+    "comment" : {
+      "en" : "Contact email address of the Manufacturer"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#riskCategory",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "riskCategory",
+      "en" : "Risk Category"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "Category of the Risk based on affected entity"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#manufacturerCompetentAuth",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
     "range" : "34",
     "label" : {
-      "IRI-based" : "incidentPatientSex",
-      "en" : "Incident Patient Sex"
+      "IRI-based" : "manufacturerCompetentAuth",
+      "en" : "Manufacturer Competent Authority"
     },
-    "domain" : "13",
+    "domain" : "31",
     "comment" : {
-      "en" : "Sex of the patient involved in the Incident"
+      "en" : "Organisation responsible of enforcing regulations on the Manufacturer"
     },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "94"
-  }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceRegulatoryFramework",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "range" : "50",
-    "label" : {
-      "IRI-based" : "deviceRegulatoryFramework",
-      "en" : "Device Regulatory Framework"
-    },
-    "domain" : "10",
-    "comment" : {
-      "en" : "Regulatory Framework of the Device"
-    },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "95"
-  }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentReportDate",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "range" : "20",
-    "label" : {
-      "IRI-based" : "incidentReportDate",
-      "en" : "Incident Report Date"
-    },
-    "domain" : "13",
-    "comment" : {
-      "en" : "Date in which the Incident was reported"
-    },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "97"
-  }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionEudamedFscaRef",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "range" : "99",
-    "label" : {
-      "IRI-based" : "correctiveActionEudamedFscaRef",
-      "en" : "Corrective Action Eudamed FSCA Reference"
-    },
-    "domain" : "28",
-    "comment" : {
-      "en" : "Reference of the Corrective Action in the EUDAMED european database"
-    },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "98"
-  }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#relatesToRisk",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "range" : "1",
-    "label" : {
-      "IRI-based" : "relatesToRisk",
-      "en" : "relates to risk"
-    },
-    "domain" : "13",
-    "comment" : {
-      "en" : "Risk that an Incident is related to"
-    },
-    "attributes" : [ "functional", "object", "external" ],
-    "id" : "100"
-  }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionActDate",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "range" : "102",
-    "label" : {
-      "IRI-based" : "correctiveActionActDate",
-      "en" : "Corrective Action Action Date"
-    },
-    "domain" : "28",
-    "comment" : {
-      "en" : "Date in which the action was taken"
-    },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "101"
-  }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#appliesToIncident",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "range" : "13",
-    "label" : {
-      "IRI-based" : "appliesToIncident",
-      "en" : "applies to incident"
-    },
-    "domain" : "28",
-    "comment" : {
-      "en" : "Incident that a Corrective Action is responding to"
-    },
-    "attributes" : [ "functional", "object", "external" ],
-    "id" : "103"
-  }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#registeredInCountry",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "range" : "43",
-    "label" : {
-      "IRI-based" : "registeredInCountry",
-      "en" : "registered in country"
-    },
-    "domain" : "25",
-    "comment" : {
-      "en" : "Country Manufacturer is registered in"
-    },
-    "attributes" : [ "functional", "object", "external" ],
-    "id" : "105"
-  }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#name",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "range" : "17",
-    "label" : {
-      "IRI-based" : "name",
-      "en" : "Name"
-    },
-    "domain" : "4",
-    "comment" : {
-      "en" : "Common name of the resource"
-    },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "106"
-  }, {
-    "iri" : "http://purl.org/dc/terms/description",
-    "baseIri" : "http://purl.org/dc/terms",
-    "range" : "87",
-    "label" : {
-      "IRI-based" : "description"
-    },
-    "domain" : "4",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "107"
-  }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionScope",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "range" : "109",
-    "label" : {
-      "IRI-based" : "correctiveActionScope",
-      "en" : "Corrective Action Scope"
-    },
-    "domain" : "28",
-    "comment" : {
-      "en" : "Scope of the Corrective Action in terms of What devices were affected"
-    },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "108"
-  }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceRiskClass",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "range" : "49",
-    "label" : {
-      "IRI-based" : "deviceRiskClass",
-      "en" : "Device Risk Class"
-    },
-    "domain" : "10",
-    "comment" : {
-      "en" : "Risk Class of the Device (I, IIa, IIb, III)"
-    },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "110"
+    "attributes" : [ "datatype" ],
+    "id" : "57"
   }, {
     "range" : "13",
-    "domain" : "96",
+    "domain" : "60",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "111"
+    "id" : "59"
+  }, {
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#reportedInCountry",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "range" : "54",
+    "label" : {
+      "IRI-based" : "reportedInCountry",
+      "en" : "reported in country"
+    },
+    "domain" : "8",
+    "comment" : {
+      "en" : "Country that the Incident was reported In"
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "61"
   }, {
     "range" : "13",
-    "domain" : "104",
+    "domain" : "63",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "112"
+    "id" : "62"
   }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionDevicesAffected",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "range" : "114",
-    "label" : {
-      "IRI-based" : "correctiveActionDevicesAffected",
-      "en" : "Corrective Action Devices Affected"
-    },
-    "domain" : "28",
-    "comment" : {
-      "en" : "Amount of Devices affected by the Corrective Action"
-    },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "113"
+    "range" : "13",
+    "domain" : "65",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "64"
   }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionClosureDate",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "range" : "116",
-    "label" : {
-      "IRI-based" : "correctiveActionClosureDate",
-      "en" : "Corrective Action Closure Date"
-    },
-    "domain" : "28",
-    "comment" : {
-      "en" : "Date in which the action was closed"
-    },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "115"
-  }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#manufacturerEudamedSm",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "range" : "18",
-    "label" : {
-      "IRI-based" : "manufacturerEudamedSm",
-      "en" : "Manufacturer Eudamed SM"
-    },
-    "domain" : "25",
-    "comment" : {
-      "en" : "Manufacturer's SM in the EUDAMED database"
-    },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "117"
-  }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#manufacturerAuthNum",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "range" : "19",
-    "label" : {
-      "IRI-based" : "manufacturerAuthNum",
-      "en" : "Manufacturer Authorization Number"
-    },
-    "domain" : "25",
-    "comment" : {
-      "en" : "Authorization number of the Manufacturer"
-    },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "118"
-  }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentDetectionDate",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#incidentDetectionDate",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
     "range" : "44",
     "label" : {
       "IRI-based" : "incidentDetectionDate",
       "en" : "Incident Detection Date"
     },
-    "domain" : "13",
+    "domain" : "8",
     "comment" : {
       "en" : "Date in which the Incident was detected"
     },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "120"
+    "attributes" : [ "datatype" ],
+    "id" : "66"
   }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentOutcome",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "range" : "27",
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#manufacturerAuthNum",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "range" : "23",
     "label" : {
-      "IRI-based" : "incidentOutcome",
-      "en" : "Incident Outcome"
+      "IRI-based" : "manufacturerAuthNum",
+      "en" : "Manufacturer Authorization Number"
     },
-    "domain" : "13",
+    "domain" : "31",
     "comment" : {
-      "en" : "Outcome of the incident"
+      "en" : "Authorization number of the Manufacturer"
     },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "121"
+    "attributes" : [ "datatype" ],
+    "id" : "67"
   }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentEventDate",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "range" : "33",
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#correctiveActionDevicesAffected",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "range" : "69",
+    "label" : {
+      "IRI-based" : "correctiveActionDevicesAffected",
+      "en" : "Corrective Action Devices Affected"
+    },
+    "domain" : "17",
+    "comment" : {
+      "en" : "Amount of Devices affected by the Corrective Action"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#incidentEventDate",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "range" : "39",
     "label" : {
       "IRI-based" : "incidentEventDate",
       "en" : "Incident Event Date"
     },
-    "domain" : "13",
+    "domain" : "8",
     "comment" : {
       "en" : "Date in which the event reported in the Incident took place"
     },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "122"
+    "attributes" : [ "datatype" ],
+    "id" : "72"
   }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceIsImplantable",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#manufacturerEudamedSm",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "manufacturerEudamedSm",
+      "en" : "Manufacturer Eudamed SM"
+    },
+    "domain" : "31",
+    "comment" : {
+      "en" : "Manufacturer's SM in the EUDAMED database"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "73"
+  }, {
+    "range" : "13",
+    "domain" : "43",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "74"
+  }, {
+    "range" : "13",
+    "domain" : "76",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "75"
+  }, {
+    "range" : "13",
+    "domain" : "78",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "77"
+  }, {
+    "range" : "13",
+    "domain" : "80",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "79"
+  }, {
+    "range" : "53",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#correctiveActionClosureDate",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "range" : "84",
+    "label" : {
+      "IRI-based" : "correctiveActionClosureDate",
+      "en" : "Corrective Action Closure Date"
+    },
+    "domain" : "17",
+    "comment" : {
+      "en" : "Date in which the action was closed"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "83"
+  }, {
+    "range" : "30",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "85"
+  }, {
+    "range" : "8",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "86"
+  }, {
+    "range" : "8",
+    "domain" : "70",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "87"
+  }, {
+    "range" : "17",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "88"
+  }, {
+    "range" : "17",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "89"
+  }, {
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#incidentOutcome",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "incidentOutcome",
+      "en" : "Incident Outcome"
+    },
+    "domain" : "8",
+    "comment" : {
+      "en" : "Outcome of the incident"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "90"
+  }, {
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#hasManufacturer",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "hasManufacturer",
+      "en" : "has manufacturer"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Manufacturer of a Medical Device"
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "91"
+  }, {
+    "range" : "17",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "92"
+  }, {
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#deviceIsImplantable",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
     "range" : "52",
     "label" : {
       "IRI-based" : "deviceIsImplantable",
       "en" : "Device Is Implantable"
     },
-    "domain" : "10",
+    "domain" : "6",
     "comment" : {
       "en" : "Is the Device implantable? (true/false)"
     },
-    "attributes" : [ "datatype", "external" ],
-    "id" : "123"
+    "attributes" : [ "datatype" ],
+    "id" : "94"
   }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionStatus",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "range" : "119",
+    "range" : "17",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "95"
+  }, {
+    "range" : "5",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "96"
+  }, {
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#incidentPatientSex",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "incidentPatientSex",
+      "en" : "Incident Patient Sex"
+    },
+    "domain" : "8",
+    "comment" : {
+      "en" : "Sex of the patient involved in the Incident"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "97"
+  }, {
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#deviceRegulatoryFramework",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "deviceRegulatoryFramework",
+      "en" : "Device Regulatory Framework"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Regulatory Framework of the Device"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "99"
+  }, {
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#deviceRiskClass",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "deviceRiskClass",
+      "en" : "Device Risk Class"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Risk Class of the Device (I, IIa, IIb, III)"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "100"
+  }, {
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#correctiveActionStatus",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "range" : "102",
     "label" : {
       "IRI-based" : "correctiveActionStatus",
       "en" : "Corrective Action Status"
     },
-    "domain" : "28",
+    "domain" : "17",
     "comment" : {
       "en" : "Status of the Corrective Action (Open/Closed)"
     },
+    "attributes" : [ "datatype" ],
+    "id" : "101"
+  }, {
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#correctiveActionEudamedFscaRef",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "range" : "104",
+    "label" : {
+      "IRI-based" : "correctiveActionEudamedFscaRef",
+      "en" : "Corrective Action Eudamed FSCA Reference"
+    },
+    "domain" : "17",
+    "comment" : {
+      "en" : "Reference of the Corrective Action in the EUDAMED european database"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "103"
+  }, {
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#correctiveActionActDate",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "range" : "106",
+    "label" : {
+      "IRI-based" : "correctiveActionActDate",
+      "en" : "Corrective Action Action Date"
+    },
+    "domain" : "17",
+    "comment" : {
+      "en" : "Date in which the action was taken"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "105"
+  }, {
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#identifier",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "identifier",
+      "en" : "Identifier"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Identifier string of the term"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "107"
+  }, {
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#correctiveActionCountriesAffected",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "range" : "109",
+    "label" : {
+      "IRI-based" : "correctiveActionCountriesAffected",
+      "en" : "Corrective Action Countries Affected"
+    },
+    "domain" : "17",
+    "comment" : {
+      "en" : "Countries affected by the Corrective Action"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "108"
+  }, {
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#isManifestationOfRisk",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "isManifestationOfRisk",
+      "en" : "is manifestation of risk"
+    },
+    "domain" : "8",
+    "comment" : {
+      "en" : "Risk that is manifested in the incident"
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "110"
+  }, {
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#occurredToDevice",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "occurredToDevice",
+      "en" : "occurred to device"
+    },
+    "domain" : "8",
+    "comment" : {
+      "en" : "Device involved in the Incident"
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "111"
+  }, {
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#incidentReportDate",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "incidentReportDate",
+      "en" : "Incident Report Date"
+    },
+    "domain" : "8",
+    "comment" : {
+      "en" : "Date in which the Incident was reported"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "112"
+  }, {
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#name",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "name",
+      "en" : "Name"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Common name of the resource"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "113"
+  }, {
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#correctiveActionScope",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "range" : "115",
+    "label" : {
+      "IRI-based" : "correctiveActionScope",
+      "en" : "Corrective Action Scope"
+    },
+    "domain" : "17",
+    "comment" : {
+      "en" : "Scope of the Corrective Action in terms of What devices were affected"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "114"
+  }, {
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#isOfType",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "isOfType",
+      "en" : "is of type"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Type of Medical Device"
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "116"
+  }, {
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#registeredInCountry",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "range" : "54",
+    "label" : {
+      "IRI-based" : "registeredInCountry",
+      "en" : "registered in country"
+    },
+    "domain" : "31",
+    "comment" : {
+      "en" : "Country Manufacturer is registered in"
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "117"
+  }, {
+    "iri" : "http://purl.org/dc/terms/description",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "93",
+    "label" : {
+      "IRI-based" : "description"
+    },
+    "domain" : "1",
     "attributes" : [ "datatype", "external" ],
+    "id" : "118"
+  }, {
+    "range" : "13",
+    "domain" : "81",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "119"
+  }, {
+    "range" : "13",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "120"
+  }, {
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#deviceIsReusable",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "range" : "58",
+    "label" : {
+      "IRI-based" : "deviceIsReusable",
+      "en" : "Device Is Reusable"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Is the Device reusable? (true/false)"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "121"
+  }, {
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#riskSeverity",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "range" : "98",
+    "label" : {
+      "IRI-based" : "riskSeverity",
+      "en" : "Risk Severity"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "Severity of the Risk (Moderate/Serious/Critical)"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "122"
+  }, {
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#reportedBy",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "reportedBy",
+      "en" : "reported by"
+    },
+    "domain" : "8",
+    "comment" : {
+      "en" : "Manufacturer that reported the Incident"
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "123"
+  }, {
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#incidentCorrectiveActionTaken",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "incidentCorrectiveActionTaken",
+      "en" : "Incident Corrective Action Taken"
+    },
+    "domain" : "8",
+    "comment" : {
+      "en" : "Was a Corrective Action taken in regards to this Incident? (true/false)"
+    },
+    "attributes" : [ "datatype" ],
     "id" : "124"
   }, {
-    "iri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#hasManufacturer",
-    "baseIri" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag",
-    "range" : "25",
+    "iri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#incidentEudamedRef",
+    "baseIri" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
+    "range" : "48",
     "label" : {
-      "IRI-based" : "hasManufacturer",
-      "en" : "has manufacturer"
+      "IRI-based" : "incidentEudamedRef",
+      "en" : "Incident Eudamed Reference"
     },
-    "domain" : "10",
+    "domain" : "8",
     "comment" : {
-      "en" : "Manufacturer of a Medical Device"
+      "en" : "Incident reference in the EUDAMED database"
     },
-    "attributes" : [ "functional", "object", "external" ],
+    "attributes" : [ "datatype" ],
     "id" : "125"
   } ]
 }

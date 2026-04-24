@@ -9,8 +9,10 @@
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
-     xmlns:invitrodev-diag="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#">
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:invitrodev-diag="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#">
     <owl:Ontology rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag">
+        <terms:license>https://creativecommons.org/publicdomain/zero/1.0/</terms:license>
         <rdfs:comment xml:lang="es">Esta ontología modela de forma semántica el catálogo de dispositivos médicos de alto riesgo y dispositivos de diagnóstico in vitro de la base de datos europea EUDAMED. Incluye dispositivos, fabricantes, riesgos identificados, incidentes y acciones correctivas de seguridad.</rdfs:comment>
         <rdfs:comment xml:lang="en">This ontology semantically models the catalogue of high-risk medical devices and in-vitro diagnostic devices of the EUDAMED european database. It includes devices, manufacturers, identified risks, incidents and corrective safety actions.</rdfs:comment>
         <rdfs:label xml:lang="en">Ontology of the european catalogue of high-risk medical devices and in-vitro diagnostics devices.</rdfs:label>
@@ -28,6 +30,13 @@
      -->
 
 
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
     
 
 
@@ -50,108 +59,108 @@
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#affectsDeviceType -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#affectsDeviceType -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#affectsDeviceType">
+    <owl:ObjectProperty rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#affectsDeviceType">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Risk"/>
-        <rdfs:range rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#DeviceType"/>
+        <rdfs:domain rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Risk"/>
+        <rdfs:range rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#DeviceType"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#appliesToIncident -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#hasManufacturer -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#appliesToIncident">
+    <owl:ObjectProperty rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#hasManufacturer">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#CorrectiveAction"/>
-        <rdfs:range rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Incident"/>
+        <rdfs:domain rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Device"/>
+        <rdfs:range rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Manufacturer"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#hasManufacturer -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#isManifestationOfRisk -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#hasManufacturer">
+    <owl:ObjectProperty rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#isManifestationOfRisk">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Device"/>
-        <rdfs:range rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Manufacturer"/>
+        <rdfs:domain rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Incident"/>
+        <rdfs:range rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Risk"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#isOfType -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#isOfType -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#isOfType">
+    <owl:ObjectProperty rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#isOfType">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Device"/>
-        <rdfs:range rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#DeviceType"/>
+        <rdfs:domain rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Device"/>
+        <rdfs:range rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#DeviceType"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#isSubclassifiedUnder -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#isSubclassifiedUnder -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#isSubclassifiedUnder"/>
+    <owl:ObjectProperty rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#isSubclassifiedUnder"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#registeredInCountry -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#occurredToDevice -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#registeredInCountry">
+    <owl:ObjectProperty rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#occurredToDevice">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Manufacturer"/>
-        <rdfs:range rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Country"/>
+        <rdfs:domain rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Incident"/>
+        <rdfs:range rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Device"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#relatesToDevice -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#registeredInCountry -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#relatesToDevice">
+    <owl:ObjectProperty rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#registeredInCountry">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Incident"/>
-        <rdfs:range rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Device"/>
+        <rdfs:domain rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Manufacturer"/>
+        <rdfs:range rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Country"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#relatesToRisk -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#reportedBy -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#relatesToRisk">
+    <owl:ObjectProperty rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#reportedBy">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Incident"/>
-        <rdfs:range rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Risk"/>
+        <rdfs:domain rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Incident"/>
+        <rdfs:range rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Manufacturer"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#reportedBy -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#reportedInCountry -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#reportedBy">
+    <owl:ObjectProperty rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#reportedInCountry">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Incident"/>
-        <rdfs:range rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Manufacturer"/>
+        <rdfs:domain rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Incident"/>
+        <rdfs:range rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Country"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#reportedInCountry -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#respondsToIncident -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#reportedInCountry">
+    <owl:ObjectProperty rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#respondsToIncident">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Incident"/>
-        <rdfs:range rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Country"/>
+        <rdfs:domain rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#CorrectiveAction"/>
+        <rdfs:range rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Incident"/>
     </owl:ObjectProperty>
     
 
@@ -182,340 +191,340 @@
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionActDate -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionActDate -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionActDate">
-        <rdfs:domain rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#CorrectiveAction"/>
+    <owl:DatatypeProperty rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionActDate">
+        <rdfs:domain rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#CorrectiveAction"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionClosureDate -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionClosureDate -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionClosureDate">
-        <rdfs:domain rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#CorrectiveAction"/>
+    <owl:DatatypeProperty rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionClosureDate">
+        <rdfs:domain rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#CorrectiveAction"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionCountriesAffected -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionCountriesAffected -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionCountriesAffected">
-        <rdfs:domain rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#CorrectiveAction"/>
+    <owl:DatatypeProperty rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionCountriesAffected">
+        <rdfs:domain rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#CorrectiveAction"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionDevicesAffected -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionDevicesAffected -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionDevicesAffected">
-        <rdfs:domain rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#CorrectiveAction"/>
+    <owl:DatatypeProperty rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionDevicesAffected">
+        <rdfs:domain rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#CorrectiveAction"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionEudamedFscaRef -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionEudamedFscaRef -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionEudamedFscaRef">
-        <rdfs:domain rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#CorrectiveAction"/>
+    <owl:DatatypeProperty rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionEudamedFscaRef">
+        <rdfs:domain rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#CorrectiveAction"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionScope -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionScope -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionScope">
-        <rdfs:domain rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#CorrectiveAction"/>
+    <owl:DatatypeProperty rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionScope">
+        <rdfs:domain rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#CorrectiveAction"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionStatus -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionStatus -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionStatus">
-        <rdfs:domain rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#CorrectiveAction"/>
+    <owl:DatatypeProperty rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionStatus">
+        <rdfs:domain rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#CorrectiveAction"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#description -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#description -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#description">
+    <owl:DatatypeProperty rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#description">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/description"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#deviceIntendedPurpose -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#deviceIntendedPurpose -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#deviceIntendedPurpose">
-        <rdfs:domain rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Device"/>
+    <owl:DatatypeProperty rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#deviceIntendedPurpose">
+        <rdfs:domain rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Device"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#deviceIsActive -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#deviceIsActive -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#deviceIsActive">
-        <rdfs:domain rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Device"/>
+    <owl:DatatypeProperty rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#deviceIsActive">
+        <rdfs:domain rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Device"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#deviceIsImplantable -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#deviceIsImplantable -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#deviceIsImplantable">
-        <rdfs:domain rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Device"/>
+    <owl:DatatypeProperty rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#deviceIsImplantable">
+        <rdfs:domain rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Device"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#deviceIsIvd -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#deviceIsIvd -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#deviceIsIvd">
-        <rdfs:domain rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Device"/>
+    <owl:DatatypeProperty rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#deviceIsIvd">
+        <rdfs:domain rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Device"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#deviceIsReusable -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#deviceIsReusable -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#deviceIsReusable">
-        <rdfs:domain rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Device"/>
+    <owl:DatatypeProperty rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#deviceIsReusable">
+        <rdfs:domain rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Device"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#deviceRegulatoryFramework -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#deviceRegulatoryFramework -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#deviceRegulatoryFramework">
-        <rdfs:domain rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Device"/>
+    <owl:DatatypeProperty rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#deviceRegulatoryFramework">
+        <rdfs:domain rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Device"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#deviceRiskClass -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#deviceRiskClass -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#deviceRiskClass">
-        <rdfs:domain rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Device"/>
+    <owl:DatatypeProperty rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#deviceRiskClass">
+        <rdfs:domain rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Device"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#deviceUdiDi -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#deviceUdiDi -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#deviceUdiDi">
-        <rdfs:domain rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Device"/>
+    <owl:DatatypeProperty rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#deviceUdiDi">
+        <rdfs:domain rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Device"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#identifier -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#identifier -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#identifier">
+    <owl:DatatypeProperty rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#identifier">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/Identifier"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#incidentCorrectiveActionTaken -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#incidentCorrectiveActionTaken -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#incidentCorrectiveActionTaken">
-        <rdfs:domain rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Incident"/>
+    <owl:DatatypeProperty rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#incidentCorrectiveActionTaken">
+        <rdfs:domain rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Incident"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#incidentDetectionDate -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#incidentDetectionDate -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#incidentDetectionDate">
-        <rdfs:domain rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Incident"/>
+    <owl:DatatypeProperty rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#incidentDetectionDate">
+        <rdfs:domain rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Incident"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#incidentEudamedRef -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#incidentEudamedRef -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#incidentEudamedRef">
-        <rdfs:domain rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Incident"/>
+    <owl:DatatypeProperty rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#incidentEudamedRef">
+        <rdfs:domain rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Incident"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#incidentEventDate -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#incidentEventDate -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#incidentEventDate">
-        <rdfs:domain rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Incident"/>
+    <owl:DatatypeProperty rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#incidentEventDate">
+        <rdfs:domain rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Incident"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#incidentOutcome -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#incidentOutcome -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#incidentOutcome">
-        <rdfs:domain rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Incident"/>
+    <owl:DatatypeProperty rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#incidentOutcome">
+        <rdfs:domain rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Incident"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#incidentPatientAge -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#incidentPatientAge -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#incidentPatientAge">
-        <rdfs:domain rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Incident"/>
+    <owl:DatatypeProperty rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#incidentPatientAge">
+        <rdfs:domain rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Incident"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#incidentPatientSex -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#incidentPatientSex -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#incidentPatientSex">
-        <rdfs:domain rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Incident"/>
+    <owl:DatatypeProperty rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#incidentPatientSex">
+        <rdfs:domain rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Incident"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#incidentReportDate -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#incidentReportDate -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#incidentReportDate">
-        <rdfs:domain rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Incident"/>
+    <owl:DatatypeProperty rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#incidentReportDate">
+        <rdfs:domain rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Incident"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#manufacturerAuthNum -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#manufacturerAuthNum -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#manufacturerAuthNum">
-        <rdfs:domain rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Manufacturer"/>
+    <owl:DatatypeProperty rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#manufacturerAuthNum">
+        <rdfs:domain rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Manufacturer"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#manufacturerCompetentAuth -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#manufacturerCompetentAuth -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#manufacturerCompetentAuth">
-        <rdfs:domain rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Manufacturer"/>
+    <owl:DatatypeProperty rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#manufacturerCompetentAuth">
+        <rdfs:domain rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Manufacturer"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#manufacturerContactEmail -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#manufacturerContactEmail -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#manufacturerContactEmail">
-        <rdfs:domain rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Manufacturer"/>
+    <owl:DatatypeProperty rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#manufacturerContactEmail">
+        <rdfs:domain rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Manufacturer"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#manufacturerEudamedSm -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#manufacturerEudamedSm -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#manufacturerEudamedSm">
-        <rdfs:domain rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Manufacturer"/>
+    <owl:DatatypeProperty rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#manufacturerEudamedSm">
+        <rdfs:domain rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Manufacturer"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#name -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#name -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#name">
+    <owl:DatatypeProperty rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#name">
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#riskCategory -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#riskCategory -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#riskCategory">
-        <rdfs:domain rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Risk"/>
+    <owl:DatatypeProperty rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#riskCategory">
+        <rdfs:domain rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Risk"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#riskImdrfCode -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#riskImdrfCode -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#riskImdrfCode">
-        <rdfs:domain rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Risk"/>
+    <owl:DatatypeProperty rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#riskImdrfCode">
+        <rdfs:domain rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Risk"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#riskProbability -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#riskProbability -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#riskProbability">
-        <rdfs:domain rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Risk"/>
+    <owl:DatatypeProperty rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#riskProbability">
+        <rdfs:domain rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Risk"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#riskSeverity -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#riskSeverity -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#riskSeverity">
-        <rdfs:domain rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Risk"/>
+    <owl:DatatypeProperty rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#riskSeverity">
+        <rdfs:domain rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Risk"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
@@ -540,243 +549,243 @@
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#ContaminationRisk -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#ContaminationRisk -->
 
 
-    <owl:Class rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#ContaminationRisk">
-        <rdfs:subClassOf rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Risk"/>
+    <owl:Class rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#ContaminationRisk">
+        <rdfs:subClassOf rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Risk"/>
     </owl:Class>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#CorrectiveAction -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#CorrectiveAction -->
 
 
-    <owl:Class rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#CorrectiveAction">
+    <owl:Class rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#CorrectiveAction">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#appliesToIncident"/>
+                <owl:onProperty rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#respondsToIncident"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Incident"/>
+                <owl:onClass rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Incident"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Country -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Country -->
 
 
-    <owl:Class rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Country">
+    <owl:Class rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Country">
         <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Country"/>
     </owl:Class>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#CybersecurityRisk -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#CybersecurityRisk -->
 
 
-    <owl:Class rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#CybersecurityRisk">
-        <rdfs:subClassOf rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Risk"/>
+    <owl:Class rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#CybersecurityRisk">
+        <rdfs:subClassOf rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Risk"/>
     </owl:Class>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Device -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Device -->
 
 
-    <owl:Class rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Device">
+    <owl:Class rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Device">
         <rdfs:subClassOf rdf:resource="https://w3id.org/seas/Device"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#hasManufacturer"/>
+                <owl:onProperty rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#hasManufacturer"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Manufacturer"/>
+                <owl:onClass rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Manufacturer"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#isOfType"/>
+                <owl:onProperty rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#isOfType"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#DeviceType"/>
+                <owl:onClass rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#DeviceType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#DeviceType -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#DeviceType -->
 
 
-    <owl:Class rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#DeviceType"/>
+    <owl:Class rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#DeviceType"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#DiagnosticRisk -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#DiagnosticRisk -->
 
 
-    <owl:Class rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#DiagnosticRisk">
-        <rdfs:subClassOf rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Risk"/>
+    <owl:Class rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#DiagnosticRisk">
+        <rdfs:subClassOf rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Risk"/>
     </owl:Class>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#InSituCorrection -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#InSituCorrection -->
 
 
-    <owl:Class rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#InSituCorrection">
-        <rdfs:subClassOf rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#CorrectiveAction"/>
+    <owl:Class rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#InSituCorrection">
+        <rdfs:subClassOf rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#CorrectiveAction"/>
     </owl:Class>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Incident -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Incident -->
 
 
-    <owl:Class rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Incident">
+    <owl:Class rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Incident">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#relatesToDevice"/>
+                <owl:onProperty rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#occurredToDevice"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Device"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#reportedBy"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Manufacturer"/>
+                <owl:onClass rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Device"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#reportedInCountry"/>
+                <owl:onProperty rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#reportedBy"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Country"/>
+                <owl:onClass rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Manufacturer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#reportedInCountry"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Country"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#InfectionRisk -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#InfectionRisk -->
 
 
-    <owl:Class rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#InfectionRisk">
-        <rdfs:subClassOf rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Risk"/>
+    <owl:Class rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#InfectionRisk">
+        <rdfs:subClassOf rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Risk"/>
     </owl:Class>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#InjuryRisk -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#InjuryRisk -->
 
 
-    <owl:Class rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#InjuryRisk">
-        <rdfs:subClassOf rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Risk"/>
+    <owl:Class rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#InjuryRisk">
+        <rdfs:subClassOf rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Risk"/>
     </owl:Class>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#InterferenceRisk -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#InterferenceRisk -->
 
 
-    <owl:Class rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#InterferenceRisk">
-        <rdfs:subClassOf rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Risk"/>
+    <owl:Class rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#InterferenceRisk">
+        <rdfs:subClassOf rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Risk"/>
     </owl:Class>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#MalfunctionRisk -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#MalfunctionRisk -->
 
 
-    <owl:Class rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#MalfunctionRisk">
-        <rdfs:subClassOf rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Risk"/>
+    <owl:Class rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#MalfunctionRisk">
+        <rdfs:subClassOf rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Risk"/>
     </owl:Class>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Manufacturer -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Manufacturer -->
 
 
-    <owl:Class rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Manufacturer">
+    <owl:Class rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Manufacturer">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#registeredInCountry"/>
+                <owl:onProperty rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#registeredInCountry"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Country"/>
+                <owl:onClass rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Country"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#MaterialRisk -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#MaterialRisk -->
 
 
-    <owl:Class rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#MaterialRisk">
-        <rdfs:subClassOf rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Risk"/>
+    <owl:Class rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#MaterialRisk">
+        <rdfs:subClassOf rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Risk"/>
     </owl:Class>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#NearMissIncident -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#NearMissIncident -->
 
 
-    <owl:Class rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#NearMissIncident">
-        <rdfs:subClassOf rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Incident"/>
+    <owl:Class rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#NearMissIncident">
+        <rdfs:subClassOf rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Incident"/>
     </owl:Class>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Recall -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Recall -->
 
 
-    <owl:Class rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Recall">
-        <rdfs:subClassOf rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#CorrectiveAction"/>
+    <owl:Class rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Recall">
+        <rdfs:subClassOf rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#CorrectiveAction"/>
     </owl:Class>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Risk -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Risk -->
 
 
-    <owl:Class rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Risk"/>
+    <owl:Class rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Risk"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#SafetyAlert -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#SafetyAlert -->
 
 
-    <owl:Class rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#SafetyAlert">
-        <rdfs:subClassOf rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#CorrectiveAction"/>
+    <owl:Class rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#SafetyAlert">
+        <rdfs:subClassOf rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#CorrectiveAction"/>
     </owl:Class>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#SeriousIncident -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#SeriousIncident -->
 
 
-    <owl:Class rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#SeriousIncident">
-        <rdfs:subClassOf rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Incident"/>
+    <owl:Class rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#SeriousIncident">
+        <rdfs:subClassOf rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Incident"/>
     </owl:Class>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#SoftwareRisk -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#SoftwareRisk -->
 
 
-    <owl:Class rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#SoftwareRisk">
-        <rdfs:subClassOf rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Risk"/>
+    <owl:Class rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#SoftwareRisk">
+        <rdfs:subClassOf rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Risk"/>
     </owl:Class>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#UserNotice -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#UserNotice -->
 
 
-    <owl:Class rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#UserNotice">
-        <rdfs:subClassOf rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#CorrectiveAction"/>
+    <owl:Class rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#UserNotice">
+        <rdfs:subClassOf rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#CorrectiveAction"/>
     </owl:Class>
     
 
@@ -807,591 +816,591 @@
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#ContaminationRisk -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#ContaminationRisk -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#ContaminationRisk"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#ContaminationRisk"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#CorrectiveAction -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#CorrectiveAction -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#CorrectiveAction"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#CorrectiveAction"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Country -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Country -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Country"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Country"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#CybersecurityRisk -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#CybersecurityRisk -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#CybersecurityRisk"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#CybersecurityRisk"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#DEV-001 -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#DEV-001 -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#DEV-001">
-        <rdf:type rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Device"/>
-        <invitrodev-diag:hasManufacturer rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#MAN-001"/>
-        <invitrodev-diag:isOfType rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#ImplantableActiveDevice"/>
-        <invitrodev-diag:deviceIntendedPurpose xml:lang="en">Ventricular assist device for end-stage heart failure</invitrodev-diag:deviceIntendedPurpose>
-        <invitrodev-diag:deviceIsActive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</invitrodev-diag:deviceIsActive>
-        <invitrodev-diag:deviceIsImplantable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</invitrodev-diag:deviceIsImplantable>
-        <invitrodev-diag:deviceIsIvd rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</invitrodev-diag:deviceIsIvd>
-        <invitrodev-diag:deviceIsReusable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</invitrodev-diag:deviceIsReusable>
-        <invitrodev-diag:deviceRegulatoryFramework>MDR</invitrodev-diag:deviceRegulatoryFramework>
-        <invitrodev-diag:deviceRiskClass>ClassIII</invitrodev-diag:deviceRiskClass>
-        <invitrodev-diag:deviceUdiDi>(01)00380740009095</invitrodev-diag:deviceUdiDi>
-        <invitrodev-diag:identifier>DEV-001</invitrodev-diag:identifier>
-        <invitrodev-diag:name xml:lang="en">HeartMate 3 LVAD</invitrodev-diag:name>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#DEV-001">
+        <rdf:type rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Device"/>
+        <hasManufacturer rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#MAN-001"/>
+        <isOfType rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#ImplantableActiveDevice"/>
+        <deviceIntendedPurpose xml:lang="en">Ventricular assist device for end-stage heart failure</deviceIntendedPurpose>
+        <deviceIsActive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</deviceIsActive>
+        <deviceIsImplantable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</deviceIsImplantable>
+        <deviceIsIvd rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</deviceIsIvd>
+        <deviceIsReusable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</deviceIsReusable>
+        <deviceRegulatoryFramework>MDR</deviceRegulatoryFramework>
+        <deviceRiskClass>ClassIII</deviceRiskClass>
+        <deviceUdiDi>(01)00380740009095</deviceUdiDi>
+        <identifier>DEV-001</identifier>
+        <name xml:lang="en">HeartMate 3 LVAD</name>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Device -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Device -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Device"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Device"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#DeviceType -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#DeviceType -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#DeviceType"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#DeviceType"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#DiagnosticRisk -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#DiagnosticRisk -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#DiagnosticRisk"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#DiagnosticRisk"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#FSCA-001 -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#FSCA-001 -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#FSCA-001">
-        <rdf:type rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#SafetyAlert"/>
-        <invitrodev-diag:appliesToIncident rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#INC-001"/>
-        <invitrodev-diag:correctiveActionActDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-02-01T00:00:00</invitrodev-diag:correctiveActionActDate>
-        <invitrodev-diag:correctiveActionCountriesAffected>EU-wide</invitrodev-diag:correctiveActionCountriesAffected>
-        <invitrodev-diag:correctiveActionDevicesAffected rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">850</invitrodev-diag:correctiveActionDevicesAffected>
-        <invitrodev-diag:correctiveActionEudamedFscaRef>EU-FSCA-2024-000001</invitrodev-diag:correctiveActionEudamedFscaRef>
-        <invitrodev-diag:correctiveActionScope xml:lang="en">All HeartMate 3 LVAD units implanted since 2020</invitrodev-diag:correctiveActionScope>
-        <invitrodev-diag:correctiveActionStatus xml:lang="en">Open</invitrodev-diag:correctiveActionStatus>
-        <invitrodev-diag:description xml:lang="en">Safety alert issued to all implanting centres regarding anticoagulation protocol update for HeartMate 3 to reduce device thrombosis risk. INR target range revised to 2.0–3.0.</invitrodev-diag:description>
-        <invitrodev-diag:identifier>FSCA-001</invitrodev-diag:identifier>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#FSCA-001">
+        <rdf:type rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#SafetyAlert"/>
+        <respondsToIncident rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#INC-001"/>
+        <correctiveActionActDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-02-01T00:00:00</correctiveActionActDate>
+        <correctiveActionCountriesAffected>EU-wide</correctiveActionCountriesAffected>
+        <correctiveActionDevicesAffected rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">850</correctiveActionDevicesAffected>
+        <correctiveActionEudamedFscaRef>EU-FSCA-2024-000001</correctiveActionEudamedFscaRef>
+        <correctiveActionScope xml:lang="en">All HeartMate 3 LVAD units implanted since 2020</correctiveActionScope>
+        <correctiveActionStatus xml:lang="en">Open</correctiveActionStatus>
+        <description xml:lang="en">Safety alert issued to all implanting centres regarding anticoagulation protocol update for HeartMate 3 to reduce device thrombosis risk. INR target range revised to 2.0–3.0.</description>
+        <identifier>FSCA-001</identifier>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Germany -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Germany -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Germany">
-        <rdf:type rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Country"/>
-        <invitrodev-diag:identifier>Germany</invitrodev-diag:identifier>
-        <invitrodev-diag:name xml:lang="en">Germany</invitrodev-diag:name>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Germany">
+        <rdf:type rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Country"/>
+        <identifier>Germany</identifier>
+        <name xml:lang="en">Germany</name>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#INC-001 -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#INC-001 -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#INC-001">
-        <rdf:type rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#SeriousIncident"/>
-        <invitrodev-diag:relatesToDevice rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#DEV-001"/>
-        <invitrodev-diag:relatesToRisk rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#RSK-003"/>
-        <invitrodev-diag:reportedBy rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#MAN-001"/>
-        <invitrodev-diag:reportedInCountry rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Germany"/>
-        <invitrodev-diag:description xml:lang="en">Patient implanted with HeartMate 3 LVAD developed ischemic stroke 6 months post-implant. Device thrombus confirmed by echocardiography.</invitrodev-diag:description>
-        <invitrodev-diag:identifier>INC-001</invitrodev-diag:identifier>
-        <invitrodev-diag:incidentCorrectiveActionTaken rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</invitrodev-diag:incidentCorrectiveActionTaken>
-        <invitrodev-diag:incidentDetectionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-01-10T00:00:00</invitrodev-diag:incidentDetectionDate>
-        <invitrodev-diag:incidentEudamedRef>EU-INC-2024-000001</invitrodev-diag:incidentEudamedRef>
-        <invitrodev-diag:incidentEventDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-01-08T00:00:00</invitrodev-diag:incidentEventDate>
-        <invitrodev-diag:incidentOutcome xml:lang="en">Serious patient injury - embolic stroke</invitrodev-diag:incidentOutcome>
-        <invitrodev-diag:incidentPatientAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">58</invitrodev-diag:incidentPatientAge>
-        <invitrodev-diag:incidentPatientSex xml:lang="en">Male</invitrodev-diag:incidentPatientSex>
-        <invitrodev-diag:incidentReportDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-01-15T00:00:00</invitrodev-diag:incidentReportDate>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#INC-001">
+        <rdf:type rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#SeriousIncident"/>
+        <isManifestationOfRisk rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#RSK-003"/>
+        <occurredToDevice rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#DEV-001"/>
+        <reportedBy rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#MAN-001"/>
+        <reportedInCountry rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Germany"/>
+        <description xml:lang="en">Patient implanted with HeartMate 3 LVAD developed ischemic stroke 6 months post-implant. Device thrombus confirmed by echocardiography.</description>
+        <identifier>INC-001</identifier>
+        <incidentCorrectiveActionTaken rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</incidentCorrectiveActionTaken>
+        <incidentDetectionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-01-10T00:00:00</incidentDetectionDate>
+        <incidentEudamedRef>EU-INC-2024-000001</incidentEudamedRef>
+        <incidentEventDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-01-08T00:00:00</incidentEventDate>
+        <incidentOutcome xml:lang="en">Serious patient injury - embolic stroke</incidentOutcome>
+        <incidentPatientAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">58</incidentPatientAge>
+        <incidentPatientSex xml:lang="en">Male</incidentPatientSex>
+        <incidentReportDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-01-15T00:00:00</incidentReportDate>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#ImplantableActiveDevice -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#ImplantableActiveDevice -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#ImplantableActiveDevice">
-        <rdf:type rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#DeviceType"/>
-        <invitrodev-diag:identifier>ImplantableActiveDevice</invitrodev-diag:identifier>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#ImplantableActiveDevice">
+        <rdf:type rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#DeviceType"/>
+        <identifier>ImplantableActiveDevice</identifier>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#InSituCorrection -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#InSituCorrection -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#InSituCorrection"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#InSituCorrection"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Incident -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Incident -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Incident"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Incident"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#InfectionRisk -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#InfectionRisk -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#InfectionRisk"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#InfectionRisk"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#InjuryRisk -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#InjuryRisk -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#InjuryRisk"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#InjuryRisk"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#InterferenceRisk -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#InterferenceRisk -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#InterferenceRisk"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#InterferenceRisk"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Ireland -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Ireland -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Ireland">
-        <rdf:type rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Country"/>
-        <invitrodev-diag:identifier>Ireland</invitrodev-diag:identifier>
-        <invitrodev-diag:name xml:lang="en">Ireland</invitrodev-diag:name>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Ireland">
+        <rdf:type rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Country"/>
+        <identifier>Ireland</identifier>
+        <name xml:lang="en">Ireland</name>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#MAN-001 -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#MAN-001 -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#MAN-001">
-        <rdf:type rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Manufacturer"/>
-        <invitrodev-diag:registeredInCountry rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Ireland"/>
-        <invitrodev-diag:identifier>MAN-001</invitrodev-diag:identifier>
-        <invitrodev-diag:manufacturerAuthNum>IE/2017/001234</invitrodev-diag:manufacturerAuthNum>
-        <invitrodev-diag:manufacturerCompetentAuth xml:lang="en">Health Products Regulatory Authority (HPRA)</invitrodev-diag:manufacturerCompetentAuth>
-        <invitrodev-diag:manufacturerContactEmail>regulatory@medtronic.com</invitrodev-diag:manufacturerContactEmail>
-        <invitrodev-diag:manufacturerEudamedSm>SRN-IE-MED-0001</invitrodev-diag:manufacturerEudamedSm>
-        <invitrodev-diag:name xml:lang="en">Medtronic plc</invitrodev-diag:name>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#MAN-001">
+        <rdf:type rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Manufacturer"/>
+        <registeredInCountry rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Ireland"/>
+        <identifier>MAN-001</identifier>
+        <manufacturerAuthNum>IE/2017/001234</manufacturerAuthNum>
+        <manufacturerCompetentAuth xml:lang="en">Health Products Regulatory Authority (HPRA)</manufacturerCompetentAuth>
+        <manufacturerContactEmail>regulatory@medtronic.com</manufacturerContactEmail>
+        <manufacturerEudamedSm>SRN-IE-MED-0001</manufacturerEudamedSm>
+        <name xml:lang="en">Medtronic plc</name>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#MalfunctionRisk -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#MalfunctionRisk -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#MalfunctionRisk"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#MalfunctionRisk"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Manufacturer -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Manufacturer -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Manufacturer"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Manufacturer"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#MaterialRisk -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#MaterialRisk -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#MaterialRisk"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#MaterialRisk"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#NearMissIncident -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#NearMissIncident -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#NearMissIncident"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#NearMissIncident"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#RSK-003 -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#RSK-003 -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#RSK-003">
-        <rdf:type rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#InjuryRisk"/>
-        <invitrodev-diag:affectsDeviceType rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#ImplantableActiveDevice"/>
-        <invitrodev-diag:description xml:lang="en">Thrombus formation on device surface causing embolic events</invitrodev-diag:description>
-        <invitrodev-diag:identifier>RSK-003</invitrodev-diag:identifier>
-        <invitrodev-diag:riskCategory xml:lang="en">Patient Harm</invitrodev-diag:riskCategory>
-        <invitrodev-diag:riskImdrfCode>A0201</invitrodev-diag:riskImdrfCode>
-        <invitrodev-diag:riskProbability xml:lang="en">Low</invitrodev-diag:riskProbability>
-        <invitrodev-diag:riskSeverity xml:lang="en">Critical</invitrodev-diag:riskSeverity>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#RSK-003">
+        <rdf:type rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#InjuryRisk"/>
+        <affectsDeviceType rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#ImplantableActiveDevice"/>
+        <description xml:lang="en">Thrombus formation on device surface causing embolic events</description>
+        <identifier>RSK-003</identifier>
+        <riskCategory xml:lang="en">Patient Harm</riskCategory>
+        <riskImdrfCode>A0201</riskImdrfCode>
+        <riskProbability xml:lang="en">Low</riskProbability>
+        <riskSeverity xml:lang="en">Critical</riskSeverity>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Recall -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Recall -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Recall"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Recall"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Risk -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Risk -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Risk"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Risk"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#SafetyAlert -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#SafetyAlert -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#SafetyAlert"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#SafetyAlert"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#SeriousIncident -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#SeriousIncident -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#SeriousIncident"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#SeriousIncident"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#SoftwareRisk -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#SoftwareRisk -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#SoftwareRisk"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#SoftwareRisk"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#UserNotice -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#UserNotice -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#UserNotice"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#UserNotice"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#affectsDeviceType -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#affectsDeviceType -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#affectsDeviceType"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#affectsDeviceType"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#appliesToIncident -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionActDate -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#appliesToIncident"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionActDate"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionActDate -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionClosureDate -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionActDate"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionClosureDate"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionClosureDate -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionCountriesAffected -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionClosureDate"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionCountriesAffected"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionCountriesAffected -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionDevicesAffected -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionCountriesAffected"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionDevicesAffected"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionDevicesAffected -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionEudamedFscaRef -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionDevicesAffected"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionEudamedFscaRef"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionEudamedFscaRef -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionScope -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionEudamedFscaRef"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionScope"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionScope -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionStatus -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionScope"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionStatus"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionStatus -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#description -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionStatus"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#description"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#description -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#deviceIntendedPurpose -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#description"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#deviceIntendedPurpose"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#deviceIntendedPurpose -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#deviceIsActive -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#deviceIntendedPurpose"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#deviceIsActive"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#deviceIsActive -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#deviceIsImplantable -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#deviceIsActive"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#deviceIsImplantable"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#deviceIsImplantable -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#deviceIsIvd -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#deviceIsImplantable"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#deviceIsIvd"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#deviceIsIvd -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#deviceIsReusable -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#deviceIsIvd"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#deviceIsReusable"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#deviceIsReusable -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#deviceRegulatoryFramework -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#deviceIsReusable"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#deviceRegulatoryFramework"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#deviceRegulatoryFramework -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#deviceRiskClass -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#deviceRegulatoryFramework"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#deviceRiskClass"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#deviceRiskClass -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#deviceUdiDi -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#deviceRiskClass"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#deviceUdiDi"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#deviceUdiDi -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#hasManufacturer -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#deviceUdiDi"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#hasManufacturer"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#hasManufacturer -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#identifier -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#hasManufacturer"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#identifier"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#identifier -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#incidentCorrectiveActionTaken -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#identifier"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#incidentCorrectiveActionTaken"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#incidentCorrectiveActionTaken -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#incidentDetectionDate -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#incidentCorrectiveActionTaken"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#incidentDetectionDate"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#incidentDetectionDate -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#incidentEudamedRef -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#incidentDetectionDate"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#incidentEudamedRef"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#incidentEudamedRef -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#incidentEventDate -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#incidentEudamedRef"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#incidentEventDate"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#incidentEventDate -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#incidentOutcome -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#incidentEventDate"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#incidentOutcome"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#incidentOutcome -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#incidentPatientAge -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#incidentOutcome"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#incidentPatientAge"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#incidentPatientAge -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#incidentPatientSex -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#incidentPatientAge"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#incidentPatientSex"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#incidentPatientSex -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#incidentReportDate -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#incidentPatientSex"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#incidentReportDate"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#incidentReportDate -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#isManifestationOfRisk -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#incidentReportDate"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#isManifestationOfRisk"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#isOfType -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#isOfType -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#isOfType"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#isOfType"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#isSubclassifiedUnder -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#isSubclassifiedUnder -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#isSubclassifiedUnder"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#isSubclassifiedUnder"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#manufacturerAuthNum -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#manufacturerAuthNum -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#manufacturerAuthNum"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#manufacturerAuthNum"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#manufacturerCompetentAuth -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#manufacturerCompetentAuth -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#manufacturerCompetentAuth"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#manufacturerCompetentAuth"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#manufacturerContactEmail -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#manufacturerContactEmail -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#manufacturerContactEmail"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#manufacturerContactEmail"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#manufacturerEudamedSm -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#manufacturerEudamedSm -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#manufacturerEudamedSm"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#manufacturerEudamedSm"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#name -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#name -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#name"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#name"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#registeredInCountry -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#occurredToDevice -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#registeredInCountry"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#occurredToDevice"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#relatesToDevice -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#registeredInCountry -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#relatesToDevice"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#registeredInCountry"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#relatesToRisk -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#reportedBy -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#relatesToRisk"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#reportedBy"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#reportedBy -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#reportedInCountry -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#reportedBy"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#reportedInCountry"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#reportedInCountry -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#respondsToIncident -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#reportedInCountry"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#respondsToIncident"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#riskCategory -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#riskCategory -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#riskCategory"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#riskCategory"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#riskImdrfCode -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#riskImdrfCode -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#riskImdrfCode"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#riskImdrfCode"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#riskProbability -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#riskProbability -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#riskProbability"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#riskProbability"/>
     
 
 
-    <!-- http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#riskSeverity -->
+    <!-- http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#riskSeverity -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#riskSeverity"/>
+    <owl:NamedIndividual rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#riskSeverity"/>
     
 
 
@@ -1404,266 +1413,266 @@
      -->
 
 
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#ContaminationRisk">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#ContaminationRisk">
         <rdfs:comment xml:lang="en">Type of Risk affecting product quality</rdfs:comment>
         <rdfs:label xml:lang="en">Contamination Risk</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#CorrectiveAction">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#CorrectiveAction">
         <rdfs:comment xml:lang="en">Action taken to correct incident</rdfs:comment>
         <rdfs:label xml:lang="en">Corrective Action</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Country">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Country">
         <rdfs:comment xml:lang="en">Country identified by its english name</rdfs:comment>
         <rdfs:label xml:lang="en">Country</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#CybersecurityRisk">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#CybersecurityRisk">
         <rdfs:comment xml:lang="en">Type of Risk affecting device safety</rdfs:comment>
         <rdfs:label xml:lang="en">CyberSecurity Risk</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Device">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Device">
         <rdfs:comment xml:lang="en">High Risk Medical Device or In-Vitro Diagnostics Device</rdfs:comment>
         <rdfs:label xml:lang="en">Device</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#DeviceType">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#DeviceType">
         <rdfs:comment xml:lang="en">Type of device (ClassI, ClassIIa, ClassIIb and ClassIII for High Risk Medical Devices &amp; ClassA, ClassB, ClassC and ClassD for In-Vitro Diagnostics Devices)</rdfs:comment>
         <rdfs:label xml:lang="en">Device Type</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#DiagnosticRisk">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#DiagnosticRisk">
         <rdfs:comment xml:lang="en">Type of Risk affecting diagnostic results</rdfs:comment>
         <rdfs:label xml:lang="en">Diagnostic Risk</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#InSituCorrection">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#InSituCorrection">
         <rdfs:comment xml:lang="en">Type of Corrective Action: performed on location</rdfs:comment>
         <rdfs:label xml:lang="en">In Situ Correction</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Incident">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Incident">
         <rdfs:comment xml:lang="en">Incident related to Medical Device</rdfs:comment>
         <rdfs:label xml:lang="en">Incident</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#InfectionRisk">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#InfectionRisk">
         <rdfs:comment xml:lang="en">Type of Risk affecting patient&apos;s health</rdfs:comment>
         <rdfs:label xml:lang="en">Infection Risk</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#InjuryRisk">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#InjuryRisk">
         <rdfs:comment xml:lang="en">Type of Risk affecting patient&apos;s health</rdfs:comment>
         <rdfs:label xml:lang="en">Injury Risk</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#InterferenceRisk">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#InterferenceRisk">
         <rdfs:comment xml:lang="en">Type of Risk affecting device performance</rdfs:comment>
         <rdfs:label xml:lang="en">Interference Risk</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#MalfunctionRisk">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#MalfunctionRisk">
         <rdfs:comment xml:lang="en">Type of Risk affecting device performance</rdfs:comment>
         <rdfs:label xml:lang="en">Malfunction Risk</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Manufacturer">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Manufacturer">
         <rdfs:comment xml:lang="en">Manufacturing Organization of Medical Device</rdfs:comment>
         <rdfs:label xml:lang="en">Manufacturer</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#MaterialRisk">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#MaterialRisk">
         <rdfs:comment xml:lang="en">Type of Risk affecting patient&apos;s health</rdfs:comment>
         <rdfs:label xml:lang="en">Material Risk</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#NearMissIncident">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#NearMissIncident">
         <rdfs:comment xml:lang="en">Type of Incident by severity</rdfs:comment>
         <rdfs:label xml:lang="en">Near Miss Incident</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Recall">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Recall">
         <rdfs:comment xml:lang="en">Type of Corrective Action: product recall</rdfs:comment>
         <rdfs:label xml:lang="en">Recall</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Risk">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Risk">
         <rdfs:comment xml:lang="en">Medical Risks associated to Medical Devices</rdfs:comment>
         <rdfs:label xml:lang="en">Risk</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#SafetyAlert">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#SafetyAlert">
         <rdfs:comment xml:lang="en">Type of Corrective Action: safety alert sent</rdfs:comment>
         <rdfs:label xml:lang="en">Safety Alert</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#SeriousIncident">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#SeriousIncident">
         <rdfs:comment xml:lang="en">Type of Incident by severity</rdfs:comment>
         <rdfs:label xml:lang="en">Serious Incident</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#SoftwareRisk">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#SoftwareRisk">
         <rdfs:comment xml:lang="en">Type of Risk affecting device performance</rdfs:comment>
         <rdfs:label xml:lang="en">Software Risk</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#UserNotice">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#UserNotice">
         <rdfs:comment xml:lang="en">Type of Corrective Action: notice sent to user(s)</rdfs:comment>
         <rdfs:label xml:lang="en">User Notice</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#affectsDeviceType">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#affectsDeviceType">
         <rdfs:comment xml:lang="en">Device Types affected by Risk</rdfs:comment>
         <rdfs:label xml:lang="en">affects device type</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#appliesToIncident">
-        <rdfs:comment xml:lang="en">Incident that a Corrective Action is responding to</rdfs:comment>
-        <rdfs:label xml:lang="en">applies to incident</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionActDate">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionActDate">
         <rdfs:comment xml:lang="en">Date in which the action was taken</rdfs:comment>
         <rdfs:label xml:lang="en">Corrective Action Action Date</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionClosureDate">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionClosureDate">
         <rdfs:comment xml:lang="en">Date in which the action was closed</rdfs:comment>
         <rdfs:label xml:lang="en">Corrective Action Closure Date</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionCountriesAffected">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionCountriesAffected">
         <rdfs:comment xml:lang="en">Countries affected by the Corrective Action</rdfs:comment>
         <rdfs:label xml:lang="en">Corrective Action Countries Affected</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionDevicesAffected">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionDevicesAffected">
         <rdfs:comment xml:lang="en">Amount of Devices affected by the Corrective Action</rdfs:comment>
         <rdfs:label xml:lang="en">Corrective Action Devices Affected</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionEudamedFscaRef">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionEudamedFscaRef">
         <rdfs:comment xml:lang="en">Reference of the Corrective Action in the EUDAMED european database</rdfs:comment>
         <rdfs:label xml:lang="en">Corrective Action Eudamed FSCA Reference</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionScope">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionScope">
         <rdfs:comment xml:lang="en">Scope of the Corrective Action in terms of What devices were affected</rdfs:comment>
         <rdfs:label xml:lang="en">Corrective Action Scope</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionStatus">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#correctiveActionStatus">
         <rdfs:comment xml:lang="en">Status of the Corrective Action (Open/Closed)</rdfs:comment>
         <rdfs:label xml:lang="en">Corrective Action Status</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#description">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#description">
         <rdfs:comment xml:lang="en">Description of the term</rdfs:comment>
         <rdfs:label xml:lang="en">Description</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#deviceIntendedPurpose">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#deviceIntendedPurpose">
         <rdfs:comment xml:lang="en">Intended purpose of the Device</rdfs:comment>
         <rdfs:label xml:lang="en">Device Intended Purpose</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#deviceIsActive">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#deviceIsActive">
         <rdfs:comment xml:lang="en">Is the Device currently active? (true/false)</rdfs:comment>
         <rdfs:label xml:lang="en">Device Is Active</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#deviceIsImplantable">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#deviceIsImplantable">
         <rdfs:comment xml:lang="en">Is the Device implantable? (true/false)</rdfs:comment>
         <rdfs:label xml:lang="en">Device Is Implantable</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#deviceIsIvd">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#deviceIsIvd">
         <rdfs:comment xml:lang="en">Is the Device an In-Vitro Diagnostics Device? (true/false)</rdfs:comment>
         <rdfs:label xml:lang="en">Device Is IVD</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#deviceIsReusable">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#deviceIsReusable">
         <rdfs:comment xml:lang="en">Is the Device reusable? (true/false)</rdfs:comment>
         <rdfs:label xml:lang="en">Device Is Reusable</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#deviceRegulatoryFramework">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#deviceRegulatoryFramework">
         <rdfs:comment xml:lang="en">Regulatory Framework of the Device</rdfs:comment>
         <rdfs:label xml:lang="en">Device Regulatory Framework</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#deviceRiskClass">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#deviceRiskClass">
         <rdfs:comment xml:lang="en">Risk Class of the Device (I, IIa, IIb, III)</rdfs:comment>
         <rdfs:label xml:lang="en">Device Risk Class</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#deviceUdiDi">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#deviceUdiDi">
         <rdfs:comment xml:lang="en">UDI DI of the Device</rdfs:comment>
         <rdfs:label xml:lang="en">Device UDI DI</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#hasManufacturer">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#hasManufacturer">
         <rdfs:comment xml:lang="en">Manufacturer of a Medical Device</rdfs:comment>
         <rdfs:label xml:lang="en">has manufacturer</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#identifier">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#identifier">
         <rdfs:comment xml:lang="en">Identifier string of the term</rdfs:comment>
         <rdfs:label xml:lang="en">Identifier</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#incidentCorrectiveActionTaken">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#incidentCorrectiveActionTaken">
         <rdfs:comment xml:lang="en">Was a Corrective Action taken in regards to this Incident? (true/false)</rdfs:comment>
         <rdfs:label xml:lang="en">Incident Corrective Action Taken</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#incidentDetectionDate">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#incidentDetectionDate">
         <rdfs:comment xml:lang="en">Date in which the Incident was detected</rdfs:comment>
         <rdfs:label xml:lang="en">Incident Detection Date</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#incidentEudamedRef">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#incidentEudamedRef">
         <rdfs:comment xml:lang="en">Incident reference in the EUDAMED database</rdfs:comment>
         <rdfs:label xml:lang="en">Incident Eudamed Reference</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#incidentEventDate">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#incidentEventDate">
         <rdfs:comment xml:lang="en">Date in which the event reported in the Incident took place</rdfs:comment>
         <rdfs:label xml:lang="en">Incident Event Date</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#incidentOutcome">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#incidentOutcome">
         <rdfs:comment xml:lang="en">Outcome of the incident</rdfs:comment>
         <rdfs:label xml:lang="en">Incident Outcome</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#incidentPatientAge">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#incidentPatientAge">
         <rdfs:comment xml:lang="en">Age of the patient involved in the incident</rdfs:comment>
         <rdfs:label xml:lang="en">Incident Patient Age</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#incidentPatientSex">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#incidentPatientSex">
         <rdfs:comment xml:lang="en">Sex of the patient involved in the Incident</rdfs:comment>
         <rdfs:label xml:lang="en">Incident Patient Sex</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#incidentReportDate">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#incidentReportDate">
         <rdfs:comment xml:lang="en">Date in which the Incident was reported</rdfs:comment>
         <rdfs:label xml:lang="en">Incident Report Date</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#isOfType">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#isManifestationOfRisk">
+        <rdfs:comment xml:lang="en">Risk that is manifested in the incident</rdfs:comment>
+        <rdfs:label xml:lang="en">is manifestation of risk</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#isOfType">
         <rdfs:comment xml:lang="en">Type of Medical Device</rdfs:comment>
         <rdfs:label xml:lang="en">is of type</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#isSubclassifiedUnder">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#isSubclassifiedUnder">
         <rdfs:label xml:lang="en">is subclassified under</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#manufacturerAuthNum">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#manufacturerAuthNum">
         <rdfs:comment xml:lang="en">Authorization number of the Manufacturer</rdfs:comment>
         <rdfs:label xml:lang="en">Manufacturer Authorization Number</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#manufacturerCompetentAuth">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#manufacturerCompetentAuth">
         <rdfs:comment xml:lang="en">Organisation responsible of enforcing regulations on the Manufacturer</rdfs:comment>
         <rdfs:label xml:lang="en">Manufacturer Competent Authority</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#manufacturerContactEmail">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#manufacturerContactEmail">
         <rdfs:comment xml:lang="en">Contact email address of the Manufacturer</rdfs:comment>
         <rdfs:label xml:lang="en">Manufacturer Contact Email</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#manufacturerEudamedSm">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#manufacturerEudamedSm">
         <rdfs:comment xml:lang="en">Manufacturer&apos;s SM in the EUDAMED database</rdfs:comment>
         <rdfs:label xml:lang="en">Manufacturer Eudamed SM</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#name">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#name">
         <rdfs:comment xml:lang="en">Common name of the resource</rdfs:comment>
         <rdfs:label xml:lang="en">Name</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#registeredInCountry">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#occurredToDevice">
+        <rdfs:comment xml:lang="en">Device involved in the Incident</rdfs:comment>
+        <rdfs:label xml:lang="en">occurred to device</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#registeredInCountry">
         <rdfs:comment xml:lang="en">Country Manufacturer is registered in</rdfs:comment>
         <rdfs:label xml:lang="en">registered in country</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#relatesToDevice">
-        <rdfs:comment xml:lang="en">Device that an Incident is related to</rdfs:comment>
-        <rdfs:label xml:lang="en">relates to device</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#relatesToRisk">
-        <rdfs:comment xml:lang="en">Risk that an Incident is related to</rdfs:comment>
-        <rdfs:label xml:lang="en">relates to risk</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#reportedBy">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#reportedBy">
         <rdfs:comment xml:lang="en">Manufacturer that reported the Incident</rdfs:comment>
         <rdfs:label xml:lang="en">reported by</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#reportedInCountry">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#reportedInCountry">
         <rdfs:comment xml:lang="en">Country that the Incident was reported In</rdfs:comment>
         <rdfs:label xml:lang="en">reported in country</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#riskCategory">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#respondsToIncident">
+        <rdfs:comment xml:lang="en">Incident that a Corrective Action is taken in response to</rdfs:comment>
+        <rdfs:label xml:lang="en">responds to incident</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#riskCategory">
         <rdfs:comment xml:lang="en">Category of the Risk based on affected entity</rdfs:comment>
         <rdfs:label xml:lang="en">Risk Category</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#riskImdrfCode">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#riskImdrfCode">
         <rdfs:comment xml:lang="en">IMDRF code of the Risk</rdfs:comment>
         <rdfs:label xml:lang="en">Risk IMDRF code</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#riskProbability">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#riskProbability">
         <rdfs:comment xml:lang="en">Probability of the Risk (Low/Medium/High)</rdfs:comment>
         <rdfs:label xml:lang="en">Risk Probability</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#riskSeverity">
+    <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#riskSeverity">
         <rdfs:comment xml:lang="en">Severity of the Risk (Moderate/Serious/Critical)</rdfs:comment>
         <rdfs:label xml:lang="en">Risk Severity</rdfs:label>
     </rdf:Description>
@@ -1691,79 +1700,20 @@
     <rdf:Description rdf:about="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#t">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/meddevice#i">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
     <rdf:Description rdf:about="http://www.example.org/meddevice#d">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/meddevice#m">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.example.org/meddevice#r">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.example.org/meddevice#t">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment></rdfs:comment>
-        <rdfs:label>S1</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#relatesToDevice"/>
-                        <swrl:argument1 rdf:resource="http://www.example.org/meddevice#i"/>
-                        <swrl:argument2 rdf:resource="http://www.example.org/meddevice#d"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Incident"/>
-                                <swrl:argument1 rdf:resource="http://www.example.org/meddevice#i"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#hasManufacturer"/>
-                                        <swrl:argument1 rdf:resource="http://www.example.org/meddevice#d"/>
-                                        <swrl:argument2 rdf:resource="http://www.example.org/meddevice#m"/>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#reportedBy"/>
-                        <swrl:argument1 rdf:resource="http://www.example.org/meddevice#i"/>
-                        <swrl:argument2 rdf:resource="http://www.example.org/meddevice#m"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
+    <rdf:Description rdf:about="http://www.example.org/meddevice#i">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.org/meddevice#r">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.org/meddevice#m">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
@@ -1776,9 +1726,9 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#relatesToDevice"/>
-                        <swrl:argument1 rdf:resource="http://www.example.org/meddevice#i"/>
-                        <swrl:argument2 rdf:resource="http://www.example.org/meddevice#d"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#isOfType"/>
+                        <swrl:argument1 rdf:resource="http://www.example.org/meddevice#d"/>
+                        <swrl:argument2 rdf:resource="http://www.example.org/meddevice#t"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -1786,9 +1736,10 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Incident"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#occurredToDevice"/>
                                 <swrl:argument1 rdf:resource="http://www.example.org/meddevice#i"/>
+                                <swrl:argument2 rdf:resource="http://www.example.org/meddevice#d"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -1797,7 +1748,7 @@
                                 <rdf:first>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#affectsDeviceType"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#affectsDeviceType"/>
                                         <swrl:argument1 rdf:resource="http://www.example.org/meddevice#r"/>
                                         <swrl:argument2 rdf:resource="http://www.example.org/meddevice#t"/>
                                     </rdf:Description>
@@ -1807,10 +1758,9 @@
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                         <rdf:first>
                                             <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#isOfType"/>
-                                                <swrl:argument1 rdf:resource="http://www.example.org/meddevice#d"/>
-                                                <swrl:argument2 rdf:resource="http://www.example.org/meddevice#t"/>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Incident"/>
+                                                <swrl:argument1 rdf:resource="http://www.example.org/meddevice#i"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -1828,9 +1778,68 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#relatesToRisk"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#isManifestationOfRisk"/>
                         <swrl:argument1 rdf:resource="http://www.example.org/meddevice#i"/>
                         <swrl:argument2 rdf:resource="http://www.example.org/meddevice#r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#occurredToDevice"/>
+                        <swrl:argument1 rdf:resource="http://www.example.org/meddevice#i"/>
+                        <swrl:argument2 rdf:resource="http://www.example.org/meddevice#d"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#hasManufacturer"/>
+                                <swrl:argument1 rdf:resource="http://www.example.org/meddevice#d"/>
+                                <swrl:argument2 rdf:resource="http://www.example.org/meddevice#m"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Incident"/>
+                                        <swrl:argument1 rdf:resource="http://www.example.org/meddevice#i"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#reportedBy"/>
+                        <swrl:argument1 rdf:resource="http://www.example.org/meddevice#i"/>
+                        <swrl:argument2 rdf:resource="http://www.example.org/meddevice#m"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -1848,7 +1857,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#relatesToRisk"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#isManifestationOfRisk"/>
                         <swrl:argument1 rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#i"/>
                         <swrl:argument2 rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#r"/>
                     </rdf:Description>
@@ -1858,10 +1867,9 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#relatesToDevice"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#Incident"/>
                                 <swrl:argument1 rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#i"/>
-                                <swrl:argument2 rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#d"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -1869,9 +1877,10 @@
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#Incident"/>
-                                        <swrl:argument1 rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#i"/>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#isOfType"/>
+                                        <swrl:argument1 rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#d"/>
+                                        <swrl:argument2 rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#t"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -1880,9 +1889,9 @@
                                         <rdf:first>
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#isOfType"/>
-                                                <swrl:argument1 rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#d"/>
-                                                <swrl:argument2 rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#t"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#occurredToDevice"/>
+                                                <swrl:argument1 rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#i"/>
+                                                <swrl:argument2 rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#d"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -1900,7 +1909,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#affectsDeviceType"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#affectsDeviceType"/>
                         <swrl:argument1 rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#r"/>
                         <swrl:argument2 rdf:resource="http://www.example.org/highrisk-meddev-&amp;-invitrodev-diag#t"/>
                     </rdf:Description>

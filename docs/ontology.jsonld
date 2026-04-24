@@ -2,10 +2,10 @@
   "@id" : "_:genid1",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Incident"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Incident"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#appliesToIncident"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#respondsToIncident"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -15,34 +15,34 @@
   "@id" : "_:genid10",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#i"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#d"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#occurredToDevice"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#d"
   } ],
   "http://www.w3.org/2003/11/swrl#argument2" : [ {
     "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#t"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#isOfType"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#isOfType"
   } ]
 }, {
-  "@id" : "_:genid12",
+  "@id" : "_:genid14",
   "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#i"
   } ],
   "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Incident"
-  } ]
-}, {
-  "@id" : "_:genid14",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#i"
-  } ],
-  "http://www.w3.org/2003/11/swrl#argument2" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#d"
-  } ],
-  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#relatesToDevice"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Incident"
   } ]
 }, {
   "@id" : "_:genid16",
@@ -54,7 +54,7 @@
     "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#r"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#relatesToRisk"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#isManifestationOfRisk"
   } ]
 }, {
   "@id" : "_:genid18",
@@ -66,95 +66,10 @@
     "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#t"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#affectsDeviceType"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#affectsDeviceType"
   } ]
 }, {
   "@id" : "_:genid19",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
-  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "@value" : "true"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : ""
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "S1"
-  } ],
-  "http://www.w3.org/2003/11/swrl#body" : [ {
-    "@list" : [ {
-      "@id" : "_:genid25"
-    }, {
-      "@id" : "_:genid23"
-    }, {
-      "@id" : "_:genid21"
-    } ]
-  } ],
-  "http://www.w3.org/2003/11/swrl#head" : [ {
-    "@list" : [ {
-      "@id" : "_:genid27"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Manufacturer"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#hasManufacturer"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid21",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "http://www.example.org/meddevice#d"
-  } ],
-  "http://www.w3.org/2003/11/swrl#argument2" : [ {
-    "@id" : "http://www.example.org/meddevice#m"
-  } ],
-  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#hasManufacturer"
-  } ]
-}, {
-  "@id" : "_:genid23",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "http://www.example.org/meddevice#i"
-  } ],
-  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Incident"
-  } ]
-}, {
-  "@id" : "_:genid25",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "http://www.example.org/meddevice#i"
-  } ],
-  "http://www.w3.org/2003/11/swrl#argument2" : [ {
-    "@id" : "http://www.example.org/meddevice#d"
-  } ],
-  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#relatesToDevice"
-  } ]
-}, {
-  "@id" : "_:genid27",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "http://www.example.org/meddevice#i"
-  } ],
-  "http://www.w3.org/2003/11/swrl#argument2" : [ {
-    "@id" : "http://www.example.org/meddevice#m"
-  } ],
-  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#reportedBy"
-  } ]
-}, {
-  "@id" : "_:genid28",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
   "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
@@ -168,47 +83,44 @@
   } ],
   "http://www.w3.org/2003/11/swrl#body" : [ {
     "@list" : [ {
-      "@id" : "_:genid36"
+      "@id" : "_:genid27"
     }, {
-      "@id" : "_:genid34"
+      "@id" : "_:genid25"
     }, {
-      "@id" : "_:genid32"
+      "@id" : "_:genid23"
     }, {
-      "@id" : "_:genid30"
+      "@id" : "_:genid21"
     } ]
   } ],
   "http://www.w3.org/2003/11/swrl#head" : [ {
     "@list" : [ {
-      "@id" : "_:genid38"
+      "@id" : "_:genid29"
     } ]
   } ]
 }, {
-  "@id" : "_:genid3",
+  "@id" : "_:genid2",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#DeviceType"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Manufacturer"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#isOfType"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#hasManufacturer"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid30",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "http://www.example.org/meddevice#d"
+    "@id" : "http://www.example.org/meddevice#i"
   } ],
-  "http://www.w3.org/2003/11/swrl#argument2" : [ {
-    "@id" : "http://www.example.org/meddevice#t"
-  } ],
-  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#isOfType"
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Incident"
   } ]
 }, {
-  "@id" : "_:genid32",
+  "@id" : "_:genid23",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://www.example.org/meddevice#r"
@@ -217,16 +129,104 @@
     "@id" : "http://www.example.org/meddevice#t"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#affectsDeviceType"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#affectsDeviceType"
   } ]
 }, {
-  "@id" : "_:genid34",
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.example.org/meddevice#i"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.example.org/meddevice#d"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#occurredToDevice"
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.example.org/meddevice#d"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.example.org/meddevice#t"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#isOfType"
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.example.org/meddevice#i"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.example.org/meddevice#r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#isManifestationOfRisk"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#DeviceType"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#isOfType"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "S1"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid36"
+    }, {
+      "@id" : "_:genid34"
+    }, {
+      "@id" : "_:genid32"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid38"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid32",
   "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://www.example.org/meddevice#i"
   } ],
   "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Incident"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Incident"
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.example.org/meddevice#d"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.example.org/meddevice#m"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#hasManufacturer"
   } ]
 }, {
   "@id" : "_:genid36",
@@ -238,7 +238,7 @@
     "@id" : "http://www.example.org/meddevice#d"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#relatesToDevice"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#occurredToDevice"
   } ]
 }, {
   "@id" : "_:genid38",
@@ -247,19 +247,19 @@
     "@id" : "http://www.example.org/meddevice#i"
   } ],
   "http://www.w3.org/2003/11/swrl#argument2" : [ {
-    "@id" : "http://www.example.org/meddevice#r"
+    "@id" : "http://www.example.org/meddevice#m"
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#relatesToRisk"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#reportedBy"
   } ]
 }, {
   "@id" : "_:genid4",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Device"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Device"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#relatesToDevice"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#occurredToDevice"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -269,10 +269,10 @@
   "@id" : "_:genid5",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Manufacturer"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Manufacturer"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#reportedBy"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#reportedBy"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -282,10 +282,10 @@
   "@id" : "_:genid6",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Country"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Country"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#reportedInCountry"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#reportedInCountry"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -295,10 +295,10 @@
   "@id" : "_:genid7",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Country"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Country"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#registeredInCountry"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#registeredInCountry"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -343,11 +343,17 @@
   "@id" : "http://purl.org/dc/terms/description",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "https://creativecommons.org/publicdomain/zero/1.0/"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
     "@value" : "Esta ontología modela de forma semántica el catálogo de dispositivos médicos de alto riesgo y dispositivos de diagnóstico in vitro de la base de datos europea EUDAMED. Incluye dispositivos, fabricantes, riesgos identificados, incidentes y acciones correctivas de seguridad."
@@ -363,7 +369,7 @@
     "@value" : "Ontología del catálogo europeo de dispositivos médicos de alto riesgo y dispositivos de diagnóstico in vitro."
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#ContaminationRisk",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#ContaminationRisk",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -374,10 +380,10 @@
     "@value" : "Contamination Risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Risk"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Risk"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#CorrectiveAction",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#CorrectiveAction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -391,7 +397,7 @@
     "@id" : "_:genid1"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Country",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Country",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -405,7 +411,7 @@
     "@id" : "http://dbpedia.org/ontology/Country"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#CybersecurityRisk",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#CybersecurityRisk",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -416,58 +422,58 @@
     "@value" : "CyberSecurity Risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Risk"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Risk"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#DEV-001",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#DEV-001",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceIntendedPurpose" : [ {
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#deviceIntendedPurpose" : [ {
     "@language" : "en",
     "@value" : "Ventricular assist device for end-stage heart failure"
   } ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceIsActive" : [ {
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#deviceIsActive" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
     "@value" : "true"
   } ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceIsImplantable" : [ {
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#deviceIsImplantable" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
     "@value" : "true"
   } ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceIsIvd" : [ {
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#deviceIsIvd" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
     "@value" : "false"
   } ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceIsReusable" : [ {
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#deviceIsReusable" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
     "@value" : "false"
   } ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceRegulatoryFramework" : [ {
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#deviceRegulatoryFramework" : [ {
     "@value" : "MDR"
   } ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceRiskClass" : [ {
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#deviceRiskClass" : [ {
     "@value" : "ClassIII"
   } ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceUdiDi" : [ {
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#deviceUdiDi" : [ {
     "@value" : "(01)00380740009095"
   } ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#hasManufacturer" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#MAN-001"
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#hasManufacturer" : [ {
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#MAN-001"
   } ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#identifier" : [ {
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#identifier" : [ {
     "@value" : "DEV-001"
   } ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#isOfType" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#ImplantableActiveDevice"
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#isOfType" : [ {
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#ImplantableActiveDevice"
   } ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#name" : [ {
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#name" : [ {
     "@language" : "en",
     "@value" : "HeartMate 3 LVAD"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Device"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Device"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Device",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Device",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -485,7 +491,7 @@
     "@id" : "_:genid3"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#DeviceType",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#DeviceType",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -496,7 +502,7 @@
     "@value" : "Device Type"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#DiagnosticRisk",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#DiagnosticRisk",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -507,126 +513,126 @@
     "@value" : "Diagnostic Risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Risk"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Risk"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#FSCA-001",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#FSCA-001",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#appliesToIncident" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#INC-001"
-  } ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionActDate" : [ {
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#correctiveActionActDate" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "@value" : "2024-02-01T00:00:00"
   } ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionCountriesAffected" : [ {
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#correctiveActionCountriesAffected" : [ {
     "@value" : "EU-wide"
   } ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionDevicesAffected" : [ {
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#correctiveActionDevicesAffected" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
     "@value" : "850"
   } ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionEudamedFscaRef" : [ {
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#correctiveActionEudamedFscaRef" : [ {
     "@value" : "EU-FSCA-2024-000001"
   } ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionScope" : [ {
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#correctiveActionScope" : [ {
     "@language" : "en",
     "@value" : "All HeartMate 3 LVAD units implanted since 2020"
   } ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionStatus" : [ {
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#correctiveActionStatus" : [ {
     "@language" : "en",
     "@value" : "Open"
   } ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#description" : [ {
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#description" : [ {
     "@language" : "en",
     "@value" : "Safety alert issued to all implanting centres regarding anticoagulation protocol update for HeartMate 3 to reduce device thrombosis risk. INR target range revised to 2.0–3.0."
   } ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#identifier" : [ {
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#identifier" : [ {
     "@value" : "FSCA-001"
   } ],
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#respondsToIncident" : [ {
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#INC-001"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#SafetyAlert"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#SafetyAlert"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Germany",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Germany",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#identifier" : [ {
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#identifier" : [ {
     "@value" : "Germany"
   } ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#name" : [ {
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#name" : [ {
     "@language" : "en",
     "@value" : "Germany"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Country"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Country"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#INC-001",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#INC-001",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#description" : [ {
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#description" : [ {
     "@language" : "en",
     "@value" : "Patient implanted with HeartMate 3 LVAD developed ischemic stroke 6 months post-implant. Device thrombus confirmed by echocardiography."
   } ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#identifier" : [ {
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#identifier" : [ {
     "@value" : "INC-001"
   } ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentCorrectiveActionTaken" : [ {
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#incidentCorrectiveActionTaken" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
     "@value" : "true"
   } ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentDetectionDate" : [ {
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#incidentDetectionDate" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "@value" : "2024-01-10T00:00:00"
   } ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentEudamedRef" : [ {
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#incidentEudamedRef" : [ {
     "@value" : "EU-INC-2024-000001"
   } ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentEventDate" : [ {
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#incidentEventDate" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "@value" : "2024-01-08T00:00:00"
   } ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentOutcome" : [ {
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#incidentOutcome" : [ {
     "@language" : "en",
     "@value" : "Serious patient injury - embolic stroke"
   } ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentPatientAge" : [ {
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#incidentPatientAge" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
     "@value" : "58"
   } ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentPatientSex" : [ {
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#incidentPatientSex" : [ {
     "@language" : "en",
     "@value" : "Male"
   } ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentReportDate" : [ {
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#incidentReportDate" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "@value" : "2024-01-15T00:00:00"
   } ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#relatesToDevice" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#DEV-001"
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#isManifestationOfRisk" : [ {
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#RSK-003"
   } ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#relatesToRisk" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#RSK-003"
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#occurredToDevice" : [ {
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#DEV-001"
   } ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#reportedBy" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#MAN-001"
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#reportedBy" : [ {
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#MAN-001"
   } ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#reportedInCountry" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Germany"
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#reportedInCountry" : [ {
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Germany"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#SeriousIncident"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#SeriousIncident"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#ImplantableActiveDevice",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#ImplantableActiveDevice",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#identifier" : [ {
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#identifier" : [ {
     "@value" : "ImplantableActiveDevice"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#DeviceType"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#DeviceType"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#InSituCorrection",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#InSituCorrection",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -637,10 +643,10 @@
     "@value" : "In Situ Correction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#CorrectiveAction"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#CorrectiveAction"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Incident",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Incident",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -658,7 +664,7 @@
     "@id" : "_:genid6"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#InfectionRisk",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#InfectionRisk",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -669,10 +675,10 @@
     "@value" : "Infection Risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Risk"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Risk"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#InjuryRisk",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#InjuryRisk",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -683,10 +689,10 @@
     "@value" : "Injury Risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Risk"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Risk"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#InterferenceRisk",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#InterferenceRisk",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -697,52 +703,52 @@
     "@value" : "Interference Risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Risk"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Risk"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Ireland",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Ireland",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#identifier" : [ {
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#identifier" : [ {
     "@value" : "Ireland"
   } ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#name" : [ {
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#name" : [ {
     "@language" : "en",
     "@value" : "Ireland"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Country"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Country"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#MAN-001",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#MAN-001",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#identifier" : [ {
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#identifier" : [ {
     "@value" : "MAN-001"
   } ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#manufacturerAuthNum" : [ {
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#manufacturerAuthNum" : [ {
     "@value" : "IE/2017/001234"
   } ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#manufacturerCompetentAuth" : [ {
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#manufacturerCompetentAuth" : [ {
     "@language" : "en",
     "@value" : "Health Products Regulatory Authority (HPRA)"
   } ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#manufacturerContactEmail" : [ {
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#manufacturerContactEmail" : [ {
     "@value" : "regulatory@medtronic.com"
   } ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#manufacturerEudamedSm" : [ {
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#manufacturerEudamedSm" : [ {
     "@value" : "SRN-IE-MED-0001"
   } ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#name" : [ {
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#name" : [ {
     "@language" : "en",
     "@value" : "Medtronic plc"
   } ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#registeredInCountry" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Ireland"
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#registeredInCountry" : [ {
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Ireland"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Manufacturer"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Manufacturer"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#MalfunctionRisk",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#MalfunctionRisk",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -753,10 +759,10 @@
     "@value" : "Malfunction Risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Risk"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Risk"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Manufacturer",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Manufacturer",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -772,7 +778,7 @@
     "@id" : "_:genid7"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#MaterialRisk",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#MaterialRisk",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -783,10 +789,10 @@
     "@value" : "Material Risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Risk"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Risk"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#NearMissIncident",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#NearMissIncident",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -797,41 +803,41 @@
     "@value" : "Near Miss Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Incident"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Incident"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#RSK-003",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#RSK-003",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#affectsDeviceType" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#ImplantableActiveDevice"
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#affectsDeviceType" : [ {
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#ImplantableActiveDevice"
   } ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#description" : [ {
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#description" : [ {
     "@language" : "en",
     "@value" : "Thrombus formation on device surface causing embolic events"
   } ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#identifier" : [ {
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#identifier" : [ {
     "@value" : "RSK-003"
   } ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#riskCategory" : [ {
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#riskCategory" : [ {
     "@language" : "en",
     "@value" : "Patient Harm"
   } ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#riskImdrfCode" : [ {
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#riskImdrfCode" : [ {
     "@value" : "A0201"
   } ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#riskProbability" : [ {
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#riskProbability" : [ {
     "@language" : "en",
     "@value" : "Low"
   } ],
-  "http://www.example.org/highrisk-meddev-&-invitrodev-diag#riskSeverity" : [ {
+  "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#riskSeverity" : [ {
     "@language" : "en",
     "@value" : "Critical"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#InjuryRisk"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#InjuryRisk"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Recall",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Recall",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -842,10 +848,10 @@
     "@value" : "Recall"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#CorrectiveAction"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#CorrectiveAction"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Risk",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Risk",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -856,7 +862,7 @@
     "@value" : "Risk"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#SafetyAlert",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#SafetyAlert",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -867,10 +873,10 @@
     "@value" : "Safety Alert"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#CorrectiveAction"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#CorrectiveAction"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#SeriousIncident",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#SeriousIncident",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -881,10 +887,10 @@
     "@value" : "Serious Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Incident"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Incident"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#SoftwareRisk",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#SoftwareRisk",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -895,10 +901,10 @@
     "@value" : "Software Risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Risk"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Risk"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#UserNotice",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#UserNotice",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -909,51 +915,34 @@
     "@value" : "User Notice"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#CorrectiveAction"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#CorrectiveAction"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#affectsDeviceType",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#affectsDeviceType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Device Types affected by Risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Risk"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "affects device type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#DeviceType"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#DeviceType"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#appliesToIncident",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Incident that a Corrective Action is responding to"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#CorrectiveAction"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "applies to incident"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Incident"
-  } ]
-}, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionActDate",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#correctiveActionActDate",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Date in which the action was taken"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#CorrectiveAction"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#CorrectiveAction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -963,14 +952,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionClosureDate",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#correctiveActionClosureDate",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Date in which the action was closed"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#CorrectiveAction"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#CorrectiveAction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -980,14 +969,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionCountriesAffected",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#correctiveActionCountriesAffected",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Countries affected by the Corrective Action"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#CorrectiveAction"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#CorrectiveAction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -997,14 +986,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionDevicesAffected",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#correctiveActionDevicesAffected",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Amount of Devices affected by the Corrective Action"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#CorrectiveAction"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#CorrectiveAction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1014,14 +1003,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionEudamedFscaRef",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#correctiveActionEudamedFscaRef",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Reference of the Corrective Action in the EUDAMED european database"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#CorrectiveAction"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#CorrectiveAction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1031,14 +1020,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionScope",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#correctiveActionScope",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Scope of the Corrective Action in terms of What devices were affected"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#CorrectiveAction"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#CorrectiveAction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1048,14 +1037,14 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionStatus",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#correctiveActionStatus",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Status of the Corrective Action (Open/Closed)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#CorrectiveAction"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#CorrectiveAction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1065,10 +1054,7 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#d",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
-}, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#description",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#description",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1085,14 +1071,14 @@
     "@id" : "http://purl.org/dc/terms/description"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceIntendedPurpose",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#deviceIntendedPurpose",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Intended purpose of the Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Device"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1102,14 +1088,14 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceIsActive",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#deviceIsActive",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Is the Device currently active? (true/false)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Device"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1119,14 +1105,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceIsImplantable",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#deviceIsImplantable",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Is the Device implantable? (true/false)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Device"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1136,14 +1122,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceIsIvd",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#deviceIsIvd",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Is the Device an In-Vitro Diagnostics Device? (true/false)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Device"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1153,14 +1139,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceIsReusable",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#deviceIsReusable",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Is the Device reusable? (true/false)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Device"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1170,14 +1156,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceRegulatoryFramework",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#deviceRegulatoryFramework",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Regulatory Framework of the Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Device"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1187,14 +1173,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceRiskClass",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#deviceRiskClass",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Risk Class of the Device (I, IIa, IIb, III)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Device"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1204,14 +1190,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceUdiDi",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#deviceUdiDi",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "UDI DI of the Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Device"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1221,27 +1207,24 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#hasManufacturer",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#hasManufacturer",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Manufacturer of a Medical Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Device"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has manufacturer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Manufacturer"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Manufacturer"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#i",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
-}, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#identifier",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#identifier",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1258,14 +1241,14 @@
     "@id" : "http://purl.org/dc/terms/Identifier"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentCorrectiveActionTaken",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#incidentCorrectiveActionTaken",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Was a Corrective Action taken in regards to this Incident? (true/false)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Incident"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1275,14 +1258,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentDetectionDate",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#incidentDetectionDate",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Date in which the Incident was detected"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Incident"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1292,14 +1275,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentEudamedRef",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#incidentEudamedRef",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Incident reference in the EUDAMED database"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Incident"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1309,14 +1292,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentEventDate",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#incidentEventDate",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Date in which the event reported in the Incident took place"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Incident"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1326,14 +1309,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentOutcome",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#incidentOutcome",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Outcome of the incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Incident"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1343,14 +1326,14 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentPatientAge",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#incidentPatientAge",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Age of the patient involved in the incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Incident"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1360,14 +1343,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentPatientSex",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#incidentPatientSex",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Sex of the patient involved in the Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Incident"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1377,14 +1360,14 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentReportDate",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#incidentReportDate",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Date in which the Incident was reported"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Incident"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1394,38 +1377,55 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#isOfType",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#isManifestationOfRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Risk that is manifested in the incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is manifestation of risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Risk"
+  } ]
+}, {
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#isOfType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Type of Medical Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Device"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "is of type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#DeviceType"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#DeviceType"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#isSubclassifiedUnder",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#isSubclassifiedUnder",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "is subclassified under"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#manufacturerAuthNum",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#manufacturerAuthNum",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Authorization number of the Manufacturer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Manufacturer"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Manufacturer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1435,14 +1435,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#manufacturerCompetentAuth",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#manufacturerCompetentAuth",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Organisation responsible of enforcing regulations on the Manufacturer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Manufacturer"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Manufacturer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1452,14 +1452,14 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#manufacturerContactEmail",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#manufacturerContactEmail",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Contact email address of the Manufacturer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Manufacturer"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Manufacturer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1469,14 +1469,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#manufacturerEudamedSm",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#manufacturerEudamedSm",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Manufacturer's SM in the EUDAMED database"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Manufacturer"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Manufacturer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1486,7 +1486,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#name",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#name",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1500,102 +1500,99 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#r",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#occurredToDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Device involved in the Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "occurred to device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Device"
+  } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#registeredInCountry",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#registeredInCountry",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Country Manufacturer is registered in"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Manufacturer"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Manufacturer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "registered in country"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Country"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Country"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#relatesToDevice",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Device that an Incident is related to"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Incident"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "relates to device"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Device"
-  } ]
-}, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#relatesToRisk",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Risk that an Incident is related to"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Incident"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "relates to risk"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Risk"
-  } ]
-}, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#reportedBy",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#reportedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Manufacturer that reported the Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Incident"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "reported by"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Manufacturer"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Manufacturer"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#reportedInCountry",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#reportedInCountry",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Country that the Incident was reported In"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Incident"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "reported in country"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Country"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Country"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#riskCategory",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#respondsToIncident",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Incident that a Corrective Action is taken in response to"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#CorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "responds to incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Incident"
+  } ]
+}, {
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#riskCategory",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Category of the Risk based on affected entity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Risk"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1605,14 +1602,14 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#riskImdrfCode",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#riskImdrfCode",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "IMDRF code of the Risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Risk"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1622,14 +1619,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#riskProbability",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#riskProbability",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Probability of the Risk (Low/Medium/High)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Risk"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1639,14 +1636,14 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
-  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#riskSeverity",
+  "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#riskSeverity",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Severity of the Risk (Moderate/Serious/Critical)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#Risk"
+    "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#Risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1655,6 +1652,15 @@
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
+}, {
+  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#d",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#i",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#r",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
 }, {
   "@id" : "http://www.example.org/highrisk-meddev-&-invitrodev-diag#t",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
