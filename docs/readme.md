@@ -1,9 +1,3 @@
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
-
 # Information about the Ontology
 
 **Author:** Carlos Giraldo Lozano
