@@ -1,16 +1,16 @@
-@prefix : <http://www.example.org/highrisk-meddev-&-invitrodev-diag#> .
+@prefix : <http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.example.org/highrisk-meddev-&-invitrodev-diag#> .
+@base <http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#> .
 
-<http://www.example.org/highrisk-meddev-&-invitrodev-diag> rdf:type owl:Ontology ;
-                                                            rdfs:comment "Esta ontología modela de forma semántica el catálogo de dispositivos médicos de alto riesgo y dispositivos de diagnóstico in vitro de la base de datos europea EUDAMED. Incluye dispositivos, fabricantes, riesgos identificados, incidentes y acciones correctivas de seguridad."@es ,
-                                                                         "This ontology semantically models the catalogue of high-risk medical devices and in-vitro diagnostic devices of the EUDAMED european database. It includes devices, manufacturers, identified risks, incidents and corrective safety actions."@en ;
-                                                            rdfs:label "Ontology of the european catalogue of high-risk medical devices and in-vitro diagnostics devices."@en ,
-                                                                       "Ontología del catálogo europeo de dispositivos médicos de alto riesgo y dispositivos de diagnóstico in vitro."@es .
+<http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag> rdf:type owl:Ontology ;
+                                                               rdfs:comment "Esta ontología modela de forma semántica el catálogo de dispositivos médicos de alto riesgo y dispositivos de diagnóstico in vitro de la base de datos europea EUDAMED. Incluye dispositivos, fabricantes, riesgos identificados, incidentes y acciones correctivas de seguridad."@es ,
+                                                                            "This ontology semantically models the catalogue of high-risk medical devices and in-vitro diagnostic devices of the EUDAMED european database. It includes devices, manufacturers, identified risks, incidents and corrective safety actions."@en ;
+                                                               rdfs:label "Ontology of the european catalogue of high-risk medical devices and in-vitro diagnostics devices."@en ,
+                                                                          "Ontología del catálogo europeo de dispositivos médicos de alto riesgo y dispositivos de diagnóstico in vitro."@es .
 
 #################################################################
 #    Annotation properties
@@ -20,86 +20,75 @@
 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
 
 
-###  http://www.example.org/meddevice#name
-<http://www.example.org/meddevice#name> rdf:type owl:AnnotationProperty ;
-                                        rdfs:range xsd:string .
-
-
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://www.example.org/meddevice#affectsDeviceType
-<http://www.example.org/meddevice#affectsDeviceType> rdf:type owl:ObjectProperty ,
-                                                              owl:FunctionalProperty ;
-                                                     rdfs:domain <http://www.example.org/meddevice#Risk> ;
-                                                     rdfs:range <http://www.example.org/meddevice#DeviceType> .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#affectsDeviceType
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#affectsDeviceType> rdf:type owl:ObjectProperty ,
+                                                                                      owl:FunctionalProperty ;
+                                                                             rdfs:domain <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Risk> ;
+                                                                             rdfs:range <http://www.example.org/highrisk-meddev-&-invitrodev-diag#DeviceType> .
 
 
-###  http://www.example.org/meddevice#appliesToIncident
-<http://www.example.org/meddevice#appliesToIncident> rdf:type owl:ObjectProperty ,
-                                                              owl:FunctionalProperty ,
-                                                              owl:TransitiveProperty ;
-                                                     rdfs:domain <http://www.example.org/meddevice#CorrectiveAction> ;
-                                                     rdfs:range <http://www.example.org/meddevice#Incident> .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#appliesToIncident
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#appliesToIncident> rdf:type owl:ObjectProperty ,
+                                                                                      owl:FunctionalProperty ;
+                                                                             rdfs:domain <http://www.example.org/highrisk-meddev-&-invitrodev-diag#CorrectiveAction> ;
+                                                                             rdfs:range <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Incident> .
 
 
-###  http://www.example.org/meddevice#hasManufacturer
-<http://www.example.org/meddevice#hasManufacturer> rdf:type owl:ObjectProperty ,
-                                                            owl:FunctionalProperty ,
-                                                            owl:TransitiveProperty ;
-                                                   rdfs:domain <http://www.example.org/meddevice#Device> ;
-                                                   rdfs:range <http://www.example.org/meddevice#Manufacturer> .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#hasManufacturer
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#hasManufacturer> rdf:type owl:ObjectProperty ,
+                                                                                    owl:FunctionalProperty ;
+                                                                           rdfs:domain <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Device> ;
+                                                                           rdfs:range <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Manufacturer> .
 
 
-###  http://www.example.org/meddevice#isOfType
-<http://www.example.org/meddevice#isOfType> rdf:type owl:ObjectProperty ,
-                                                     owl:FunctionalProperty ;
-                                            rdfs:domain <http://www.example.org/meddevice#Device> ;
-                                            rdfs:range <http://www.example.org/meddevice#DeviceType> .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#isOfType
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#isOfType> rdf:type owl:ObjectProperty ,
+                                                                             owl:FunctionalProperty ;
+                                                                    rdfs:domain <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Device> ;
+                                                                    rdfs:range <http://www.example.org/highrisk-meddev-&-invitrodev-diag#DeviceType> .
 
 
-###  http://www.example.org/meddevice#isSubclassifiedUnder
-<http://www.example.org/meddevice#isSubclassifiedUnder> rdf:type owl:ObjectProperty ,
-                                                                 owl:TransitiveProperty .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#isSubclassifiedUnder
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#isSubclassifiedUnder> rdf:type owl:ObjectProperty .
 
 
-###  http://www.example.org/meddevice#registeredInCountry
-<http://www.example.org/meddevice#registeredInCountry> rdf:type owl:ObjectProperty ,
-                                                                owl:FunctionalProperty ;
-                                                       rdfs:domain <http://www.example.org/meddevice#Manufacturer> ;
-                                                       rdfs:range <http://www.example.org/meddevice#Country> .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#registeredInCountry
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#registeredInCountry> rdf:type owl:ObjectProperty ,
+                                                                                        owl:FunctionalProperty ;
+                                                                               rdfs:domain <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Manufacturer> ;
+                                                                               rdfs:range <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Country> .
 
 
-###  http://www.example.org/meddevice#relatesToDevice
-<http://www.example.org/meddevice#relatesToDevice> rdf:type owl:ObjectProperty ,
-                                                            owl:FunctionalProperty ,
-                                                            owl:TransitiveProperty ;
-                                                   rdfs:domain <http://www.example.org/meddevice#Incident> ;
-                                                   rdfs:range <http://www.example.org/meddevice#Device> .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#relatesToDevice
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#relatesToDevice> rdf:type owl:ObjectProperty ,
+                                                                                    owl:FunctionalProperty ;
+                                                                           rdfs:domain <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Incident> ;
+                                                                           rdfs:range <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Device> .
 
 
-###  http://www.example.org/meddevice#relatesToRisk
-<http://www.example.org/meddevice#relatesToRisk> rdf:type owl:ObjectProperty ,
-                                                          owl:FunctionalProperty ,
-                                                          owl:TransitiveProperty ;
-                                                 rdfs:domain <http://www.example.org/meddevice#Incident> ;
-                                                 rdfs:range <http://www.example.org/meddevice#Risk> .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#relatesToRisk
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#relatesToRisk> rdf:type owl:ObjectProperty ,
+                                                                                  owl:FunctionalProperty ;
+                                                                         rdfs:domain <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Incident> ;
+                                                                         rdfs:range <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Risk> .
 
 
-###  http://www.example.org/meddevice#reportedBy
-<http://www.example.org/meddevice#reportedBy> rdf:type owl:ObjectProperty ,
-                                                       owl:FunctionalProperty ,
-                                                       owl:TransitiveProperty ;
-                                              rdfs:domain <http://www.example.org/meddevice#Incident> ;
-                                              rdfs:range <http://www.example.org/meddevice#Manufacturer> .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#reportedBy
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#reportedBy> rdf:type owl:ObjectProperty ,
+                                                                               owl:FunctionalProperty ;
+                                                                      rdfs:domain <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Incident> ;
+                                                                      rdfs:range <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Manufacturer> .
 
 
-###  http://www.example.org/meddevice#reportedInCountry
-<http://www.example.org/meddevice#reportedInCountry> rdf:type owl:ObjectProperty ,
-                                                              owl:FunctionalProperty ;
-                                                     rdfs:domain <http://www.example.org/meddevice#Incident> ;
-                                                     rdfs:range <http://www.example.org/meddevice#Country> .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#reportedInCountry
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#reportedInCountry> rdf:type owl:ObjectProperty ,
+                                                                                      owl:FunctionalProperty ;
+                                                                             rdfs:domain <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Incident> ;
+                                                                             rdfs:range <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Country> .
 
 
 #################################################################
@@ -114,215 +103,207 @@
 <http://purl.org/dc/terms/description> rdf:type owl:DatatypeProperty .
 
 
-###  http://www.example.org/meddevice#correctiveActionActDate
-<http://www.example.org/meddevice#correctiveActionActDate> rdf:type owl:DatatypeProperty ;
-                                                           rdfs:domain <http://www.example.org/meddevice#CorrectiveAction> ;
-                                                           rdfs:range xsd:dateTime .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionActDate
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionActDate> rdf:type owl:DatatypeProperty ;
+                                                                                   rdfs:domain <http://www.example.org/highrisk-meddev-&-invitrodev-diag#CorrectiveAction> ;
+                                                                                   rdfs:range xsd:dateTime .
 
 
-###  http://www.example.org/meddevice#correctiveActionClosureDate
-<http://www.example.org/meddevice#correctiveActionClosureDate> rdf:type owl:DatatypeProperty ;
-                                                               rdfs:domain <http://www.example.org/meddevice#CorrectiveAction> ;
-                                                               rdfs:range xsd:dateTime .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionClosureDate
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionClosureDate> rdf:type owl:DatatypeProperty ;
+                                                                                       rdfs:domain <http://www.example.org/highrisk-meddev-&-invitrodev-diag#CorrectiveAction> ;
+                                                                                       rdfs:range xsd:dateTime .
 
 
-###  http://www.example.org/meddevice#correctiveActionCountriesAffected
-<http://www.example.org/meddevice#correctiveActionCountriesAffected> rdf:type owl:DatatypeProperty ;
-                                                                     rdfs:domain <http://www.example.org/meddevice#CorrectiveAction> ;
-                                                                     rdfs:range xsd:string .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionCountriesAffected
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionCountriesAffected> rdf:type owl:DatatypeProperty ;
+                                                                                             rdfs:domain <http://www.example.org/highrisk-meddev-&-invitrodev-diag#CorrectiveAction> ;
+                                                                                             rdfs:range xsd:string .
 
 
-###  http://www.example.org/meddevice#correctiveActionDevicesAffected
-<http://www.example.org/meddevice#correctiveActionDevicesAffected> rdf:type owl:DatatypeProperty ;
-                                                                   rdfs:domain <http://www.example.org/meddevice#CorrectiveAction> ;
-                                                                   rdfs:range xsd:integer .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionDevicesAffected
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionDevicesAffected> rdf:type owl:DatatypeProperty ;
+                                                                                           rdfs:domain <http://www.example.org/highrisk-meddev-&-invitrodev-diag#CorrectiveAction> ;
+                                                                                           rdfs:range xsd:integer .
 
 
-###  http://www.example.org/meddevice#correctiveActionEudamedFscaRef
-<http://www.example.org/meddevice#correctiveActionEudamedFscaRef> rdf:type owl:DatatypeProperty ;
-                                                                  rdfs:domain <http://www.example.org/meddevice#CorrectiveAction> ;
-                                                                  rdfs:range xsd:string .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionEudamedFscaRef
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionEudamedFscaRef> rdf:type owl:DatatypeProperty ;
+                                                                                          rdfs:domain <http://www.example.org/highrisk-meddev-&-invitrodev-diag#CorrectiveAction> ;
+                                                                                          rdfs:range xsd:string .
 
 
-###  http://www.example.org/meddevice#correctiveActionScope
-<http://www.example.org/meddevice#correctiveActionScope> rdf:type owl:DatatypeProperty ;
-                                                         rdfs:domain <http://www.example.org/meddevice#CorrectiveAction> ;
-                                                         rdfs:range xsd:string .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionScope
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionScope> rdf:type owl:DatatypeProperty ;
+                                                                                 rdfs:domain <http://www.example.org/highrisk-meddev-&-invitrodev-diag#CorrectiveAction> ;
+                                                                                 rdfs:range rdfs:Literal .
 
 
-###  http://www.example.org/meddevice#correctiveActionStatus
-<http://www.example.org/meddevice#correctiveActionStatus> rdf:type owl:DatatypeProperty ;
-                                                          rdfs:domain <http://www.example.org/meddevice#CorrectiveAction> ;
-                                                          rdfs:range xsd:string .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionStatus
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionStatus> rdf:type owl:DatatypeProperty ;
+                                                                                  rdfs:domain <http://www.example.org/highrisk-meddev-&-invitrodev-diag#CorrectiveAction> ;
+                                                                                  rdfs:range rdfs:Literal .
 
 
-###  http://www.example.org/meddevice#description
-<http://www.example.org/meddevice#description> rdf:type owl:DatatypeProperty ;
-                                               rdfs:subPropertyOf <http://purl.org/dc/terms/description> ;
-                                               rdfs:domain <http://www.example.org/meddevice#CorrectiveAction> ,
-                                                           <http://www.example.org/meddevice#Incident> ,
-                                                           <http://www.example.org/meddevice#Risk> ;
-                                               rdfs:range xsd:string .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#description
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#description> rdf:type owl:DatatypeProperty ;
+                                                                       rdfs:subPropertyOf <http://purl.org/dc/terms/description> ;
+                                                                       rdfs:range rdfs:Literal .
 
 
-###  http://www.example.org/meddevice#deviceIntendedPurpose
-<http://www.example.org/meddevice#deviceIntendedPurpose> rdf:type owl:DatatypeProperty ;
-                                                         rdfs:domain <http://www.example.org/meddevice#Device> ;
-                                                         rdfs:range xsd:string .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceIntendedPurpose
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceIntendedPurpose> rdf:type owl:DatatypeProperty ;
+                                                                                 rdfs:domain <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Device> ;
+                                                                                 rdfs:range rdfs:Literal .
 
 
-###  http://www.example.org/meddevice#deviceIsActive
-<http://www.example.org/meddevice#deviceIsActive> rdf:type owl:DatatypeProperty ;
-                                                  rdfs:domain <http://www.example.org/meddevice#Device> ;
-                                                  rdfs:range xsd:boolean .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceIsActive
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceIsActive> rdf:type owl:DatatypeProperty ;
+                                                                          rdfs:domain <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Device> ;
+                                                                          rdfs:range xsd:boolean .
 
 
-###  http://www.example.org/meddevice#deviceIsImplantable
-<http://www.example.org/meddevice#deviceIsImplantable> rdf:type owl:DatatypeProperty ;
-                                                       rdfs:domain <http://www.example.org/meddevice#Device> ;
-                                                       rdfs:range xsd:boolean .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceIsImplantable
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceIsImplantable> rdf:type owl:DatatypeProperty ;
+                                                                               rdfs:domain <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Device> ;
+                                                                               rdfs:range xsd:boolean .
 
 
-###  http://www.example.org/meddevice#deviceIsIvd
-<http://www.example.org/meddevice#deviceIsIvd> rdf:type owl:DatatypeProperty ;
-                                               rdfs:domain <http://www.example.org/meddevice#Device> ;
-                                               rdfs:range xsd:boolean .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceIsIvd
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceIsIvd> rdf:type owl:DatatypeProperty ;
+                                                                       rdfs:domain <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Device> ;
+                                                                       rdfs:range xsd:boolean .
 
 
-###  http://www.example.org/meddevice#deviceIsReusable
-<http://www.example.org/meddevice#deviceIsReusable> rdf:type owl:DatatypeProperty ;
-                                                    rdfs:domain <http://www.example.org/meddevice#Device> ;
-                                                    rdfs:range xsd:boolean .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceIsReusable
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceIsReusable> rdf:type owl:DatatypeProperty ;
+                                                                            rdfs:domain <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Device> ;
+                                                                            rdfs:range xsd:boolean .
 
 
-###  http://www.example.org/meddevice#deviceRegulatoryFramework
-<http://www.example.org/meddevice#deviceRegulatoryFramework> rdf:type owl:DatatypeProperty ;
-                                                             rdfs:domain <http://www.example.org/meddevice#Device> ;
-                                                             rdfs:range xsd:string .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceRegulatoryFramework
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceRegulatoryFramework> rdf:type owl:DatatypeProperty ;
+                                                                                     rdfs:domain <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Device> ;
+                                                                                     rdfs:range xsd:string .
 
 
-###  http://www.example.org/meddevice#deviceRiskClass
-<http://www.example.org/meddevice#deviceRiskClass> rdf:type owl:DatatypeProperty ;
-                                                   rdfs:domain <http://www.example.org/meddevice#Device> ;
-                                                   rdfs:range xsd:string .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceRiskClass
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceRiskClass> rdf:type owl:DatatypeProperty ;
+                                                                           rdfs:domain <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Device> ;
+                                                                           rdfs:range xsd:string .
 
 
-###  http://www.example.org/meddevice#deviceUdiDi
-<http://www.example.org/meddevice#deviceUdiDi> rdf:type owl:DatatypeProperty ;
-                                               rdfs:domain <http://www.example.org/meddevice#Device> ;
-                                               rdfs:range xsd:string .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceUdiDi
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceUdiDi> rdf:type owl:DatatypeProperty ;
+                                                                       rdfs:domain <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Device> ;
+                                                                       rdfs:range xsd:string .
 
 
-###  http://www.example.org/meddevice#identifier
-<http://www.example.org/meddevice#identifier> rdf:type owl:DatatypeProperty ;
-                                              rdfs:subPropertyOf <http://purl.org/dc/terms/Identifier> ;
-                                              rdfs:domain <http://www.example.org/meddevice#CorrectiveAction> ,
-                                                          <http://www.example.org/meddevice#Device> ,
-                                                          <http://www.example.org/meddevice#Incident> ,
-                                                          <http://www.example.org/meddevice#Manufacturer> ,
-                                                          <http://www.example.org/meddevice#Risk> ;
-                                              rdfs:range xsd:string .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#identifier
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#identifier> rdf:type owl:DatatypeProperty ;
+                                                                      rdfs:subPropertyOf <http://purl.org/dc/terms/Identifier> ;
+                                                                      rdfs:range xsd:string .
 
 
-###  http://www.example.org/meddevice#incidentCorrectiveActionTaken
-<http://www.example.org/meddevice#incidentCorrectiveActionTaken> rdf:type owl:DatatypeProperty ;
-                                                                 rdfs:domain <http://www.example.org/meddevice#Incident> ;
-                                                                 rdfs:range xsd:boolean .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentCorrectiveActionTaken
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentCorrectiveActionTaken> rdf:type owl:DatatypeProperty ;
+                                                                                         rdfs:domain <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Incident> ;
+                                                                                         rdfs:range xsd:boolean .
 
 
-###  http://www.example.org/meddevice#incidentDetectionDate
-<http://www.example.org/meddevice#incidentDetectionDate> rdf:type owl:DatatypeProperty ;
-                                                         rdfs:domain <http://www.example.org/meddevice#Incident> ;
-                                                         rdfs:range xsd:dateTime .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentDetectionDate
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentDetectionDate> rdf:type owl:DatatypeProperty ;
+                                                                                 rdfs:domain <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Incident> ;
+                                                                                 rdfs:range xsd:dateTime .
 
 
-###  http://www.example.org/meddevice#incidentEudamedRef
-<http://www.example.org/meddevice#incidentEudamedRef> rdf:type owl:DatatypeProperty ;
-                                                      rdfs:domain <http://www.example.org/meddevice#Incident> ;
-                                                      rdfs:range xsd:string .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentEudamedRef
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentEudamedRef> rdf:type owl:DatatypeProperty ;
+                                                                              rdfs:domain <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Incident> ;
+                                                                              rdfs:range xsd:string .
 
 
-###  http://www.example.org/meddevice#incidentEventDate
-<http://www.example.org/meddevice#incidentEventDate> rdf:type owl:DatatypeProperty ;
-                                                     rdfs:domain <http://www.example.org/meddevice#Incident> ;
-                                                     rdfs:range xsd:dateTime .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentEventDate
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentEventDate> rdf:type owl:DatatypeProperty ;
+                                                                             rdfs:domain <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Incident> ;
+                                                                             rdfs:range xsd:dateTime .
 
 
-###  http://www.example.org/meddevice#incidentOutcome
-<http://www.example.org/meddevice#incidentOutcome> rdf:type owl:DatatypeProperty ;
-                                                   rdfs:domain <http://www.example.org/meddevice#Incident> ;
-                                                   rdfs:range xsd:string .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentOutcome
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentOutcome> rdf:type owl:DatatypeProperty ;
+                                                                           rdfs:domain <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Incident> ;
+                                                                           rdfs:range rdfs:Literal .
 
 
-###  http://www.example.org/meddevice#incidentPatientAge
-<http://www.example.org/meddevice#incidentPatientAge> rdf:type owl:DatatypeProperty ;
-                                                      rdfs:domain <http://www.example.org/meddevice#Incident> ;
-                                                      rdfs:range xsd:integer .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentPatientAge
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentPatientAge> rdf:type owl:DatatypeProperty ;
+                                                                              rdfs:domain <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Incident> ;
+                                                                              rdfs:range xsd:integer .
 
 
-###  http://www.example.org/meddevice#incidentPatientSex
-<http://www.example.org/meddevice#incidentPatientSex> rdf:type owl:DatatypeProperty .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentPatientSex
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentPatientSex> rdf:type owl:DatatypeProperty ;
+                                                                              rdfs:domain <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Incident> ;
+                                                                              rdfs:range rdfs:Literal .
 
 
-###  http://www.example.org/meddevice#incidentReportDate
-<http://www.example.org/meddevice#incidentReportDate> rdf:type owl:DatatypeProperty ;
-                                                      rdfs:domain <http://www.example.org/meddevice#Incident> ;
-                                                      rdfs:range xsd:dateTime .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentReportDate
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentReportDate> rdf:type owl:DatatypeProperty ;
+                                                                              rdfs:domain <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Incident> ;
+                                                                              rdfs:range xsd:dateTime .
 
 
-###  http://www.example.org/meddevice#manufacturerAuthNum
-<http://www.example.org/meddevice#manufacturerAuthNum> rdf:type owl:DatatypeProperty ;
-                                                       rdfs:domain <http://www.example.org/meddevice#Manufacturer> ;
-                                                       rdfs:range xsd:string .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#manufacturerAuthNum
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#manufacturerAuthNum> rdf:type owl:DatatypeProperty ;
+                                                                               rdfs:domain <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Manufacturer> ;
+                                                                               rdfs:range xsd:string .
 
 
-###  http://www.example.org/meddevice#manufacturerCompetentAuth
-<http://www.example.org/meddevice#manufacturerCompetentAuth> rdf:type owl:DatatypeProperty ;
-                                                             rdfs:domain <http://www.example.org/meddevice#Manufacturer> ;
-                                                             rdfs:range xsd:string .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#manufacturerCompetentAuth
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#manufacturerCompetentAuth> rdf:type owl:DatatypeProperty ;
+                                                                                     rdfs:domain <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Manufacturer> ;
+                                                                                     rdfs:range rdfs:Literal .
 
 
-###  http://www.example.org/meddevice#manufacturerContactEmail
-<http://www.example.org/meddevice#manufacturerContactEmail> rdf:type owl:DatatypeProperty ;
-                                                            rdfs:domain <http://www.example.org/meddevice#Manufacturer> ;
-                                                            rdfs:range xsd:string .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#manufacturerContactEmail
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#manufacturerContactEmail> rdf:type owl:DatatypeProperty ;
+                                                                                    rdfs:domain <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Manufacturer> ;
+                                                                                    rdfs:range xsd:string .
 
 
-###  http://www.example.org/meddevice#manufacturerEudamedSm
-<http://www.example.org/meddevice#manufacturerEudamedSm> rdf:type owl:DatatypeProperty ;
-                                                         rdfs:domain <http://www.example.org/meddevice#Manufacturer> ;
-                                                         rdfs:range xsd:string .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#manufacturerEudamedSm
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#manufacturerEudamedSm> rdf:type owl:DatatypeProperty ;
+                                                                                 rdfs:domain <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Manufacturer> ;
+                                                                                 rdfs:range xsd:string .
 
 
-###  http://www.example.org/meddevice#name
-<http://www.example.org/meddevice#name> rdf:type owl:DatatypeProperty ;
-                                        rdfs:domain <http://www.example.org/meddevice#Device> ,
-                                                    <http://www.example.org/meddevice#Manufacturer> ,
-                                                    <http://www.example.org/meddevice#Risk> .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#name
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#name> rdf:type owl:DatatypeProperty ;
+                                                                rdfs:range rdfs:Literal .
 
 
-###  http://www.example.org/meddevice#riskCategory
-<http://www.example.org/meddevice#riskCategory> rdf:type owl:DatatypeProperty ;
-                                                rdfs:domain <http://www.example.org/meddevice#Risk> ;
-                                                rdfs:range xsd:string .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#riskCategory
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#riskCategory> rdf:type owl:DatatypeProperty ;
+                                                                        rdfs:domain <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Risk> ;
+                                                                        rdfs:range rdfs:Literal .
 
 
-###  http://www.example.org/meddevice#riskImdrfCode
-<http://www.example.org/meddevice#riskImdrfCode> rdf:type owl:DatatypeProperty ;
-                                                 rdfs:domain <http://www.example.org/meddevice#Risk> ;
-                                                 rdfs:range xsd:string .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#riskImdrfCode
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#riskImdrfCode> rdf:type owl:DatatypeProperty ;
+                                                                         rdfs:domain <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Risk> ;
+                                                                         rdfs:range xsd:string .
 
 
-###  http://www.example.org/meddevice#riskProbability
-<http://www.example.org/meddevice#riskProbability> rdf:type owl:DatatypeProperty ;
-                                                   rdfs:domain <http://www.example.org/meddevice#Risk> ;
-                                                   rdfs:range xsd:string .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#riskProbability
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#riskProbability> rdf:type owl:DatatypeProperty ;
+                                                                           rdfs:domain <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Risk> ;
+                                                                           rdfs:range rdfs:Literal .
 
 
-###  http://www.example.org/meddevice#riskSeverity
-<http://www.example.org/meddevice#riskSeverity> rdf:type owl:DatatypeProperty ;
-                                                rdfs:domain <http://www.example.org/meddevice#Risk> ;
-                                                rdfs:range xsd:string .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#riskSeverity
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#riskSeverity> rdf:type owl:DatatypeProperty ;
+                                                                        rdfs:domain <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Risk> ;
+                                                                        rdfs:range rdfs:Literal .
 
 
 #################################################################
@@ -333,145 +314,145 @@
 <http://dbpedia.org/ontology/Country> rdf:type owl:Class .
 
 
-###  http://www.example.org/meddevice#ContaminationRisk
-<http://www.example.org/meddevice#ContaminationRisk> rdf:type owl:Class ;
-                                                     rdfs:subClassOf <http://www.example.org/meddevice#Risk> .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#ContaminationRisk
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#ContaminationRisk> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Risk> .
 
 
-###  http://www.example.org/meddevice#CorrectiveAction
-<http://www.example.org/meddevice#CorrectiveAction> rdf:type owl:Class ;
-                                                    rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                                                      owl:onProperty <http://www.example.org/meddevice#appliesToIncident> ;
-                                                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                      owl:onClass <http://www.example.org/meddevice#Incident>
-                                                                    ] .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#CorrectiveAction
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#CorrectiveAction> rdf:type owl:Class ;
+                                                                            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                              owl:onProperty <http://www.example.org/highrisk-meddev-&-invitrodev-diag#appliesToIncident> ;
+                                                                                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                              owl:onClass <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Incident>
+                                                                                            ] .
 
 
-###  http://www.example.org/meddevice#Country
-<http://www.example.org/meddevice#Country> rdf:type owl:Class ;
-                                           rdfs:subClassOf <http://dbpedia.org/ontology/Country> .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#Country
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#Country> rdf:type owl:Class ;
+                                                                   rdfs:subClassOf <http://dbpedia.org/ontology/Country> .
 
 
-###  http://www.example.org/meddevice#CybersecurityRisk
-<http://www.example.org/meddevice#CybersecurityRisk> rdf:type owl:Class ;
-                                                     rdfs:subClassOf <http://www.example.org/meddevice#Risk> .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#CybersecurityRisk
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#CybersecurityRisk> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Risk> .
 
 
-###  http://www.example.org/meddevice#Device
-<http://www.example.org/meddevice#Device> rdf:type owl:Class ;
-                                          rdfs:subClassOf <https://w3id.org/seas/Device> ,
-                                                          [ rdf:type owl:Restriction ;
-                                                            owl:onProperty <http://www.example.org/meddevice#hasManufacturer> ;
-                                                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                            owl:onClass <http://www.example.org/meddevice#Manufacturer>
-                                                          ] ,
-                                                          [ rdf:type owl:Restriction ;
-                                                            owl:onProperty <http://www.example.org/meddevice#isOfType> ;
-                                                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                            owl:onClass <http://www.example.org/meddevice#DeviceType>
-                                                          ] .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#Device
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#Device> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <https://w3id.org/seas/Device> ,
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty <http://www.example.org/highrisk-meddev-&-invitrodev-diag#hasManufacturer> ;
+                                                                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                    owl:onClass <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Manufacturer>
+                                                                                  ] ,
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty <http://www.example.org/highrisk-meddev-&-invitrodev-diag#isOfType> ;
+                                                                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                    owl:onClass <http://www.example.org/highrisk-meddev-&-invitrodev-diag#DeviceType>
+                                                                                  ] .
 
 
-###  http://www.example.org/meddevice#DeviceType
-<http://www.example.org/meddevice#DeviceType> rdf:type owl:Class .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#DeviceType
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#DeviceType> rdf:type owl:Class .
 
 
-###  http://www.example.org/meddevice#DiagnosticRisk
-<http://www.example.org/meddevice#DiagnosticRisk> rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://www.example.org/meddevice#Risk> .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#DiagnosticRisk
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#DiagnosticRisk> rdf:type owl:Class ;
+                                                                          rdfs:subClassOf <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Risk> .
 
 
-###  http://www.example.org/meddevice#InSituCorrection
-<http://www.example.org/meddevice#InSituCorrection> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <http://www.example.org/meddevice#CorrectiveAction> .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#InSituCorrection
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#InSituCorrection> rdf:type owl:Class ;
+                                                                            rdfs:subClassOf <http://www.example.org/highrisk-meddev-&-invitrodev-diag#CorrectiveAction> .
 
 
-###  http://www.example.org/meddevice#Incident
-<http://www.example.org/meddevice#Incident> rdf:type owl:Class ;
-                                            rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                                              owl:onProperty <http://www.example.org/meddevice#relatesToDevice> ;
-                                                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                              owl:onClass <http://www.example.org/meddevice#Device>
-                                                            ] ,
-                                                            [ rdf:type owl:Restriction ;
-                                                              owl:onProperty <http://www.example.org/meddevice#reportedBy> ;
-                                                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                              owl:onClass <http://www.example.org/meddevice#Manufacturer>
-                                                            ] ,
-                                                            [ rdf:type owl:Restriction ;
-                                                              owl:onProperty <http://www.example.org/meddevice#reportedInCountry> ;
-                                                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                              owl:onClass <http://www.example.org/meddevice#Country>
-                                                            ] .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#Incident
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#Incident> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty <http://www.example.org/highrisk-meddev-&-invitrodev-diag#relatesToDevice> ;
+                                                                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                      owl:onClass <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Device>
+                                                                                    ] ,
+                                                                                    [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty <http://www.example.org/highrisk-meddev-&-invitrodev-diag#reportedBy> ;
+                                                                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                      owl:onClass <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Manufacturer>
+                                                                                    ] ,
+                                                                                    [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty <http://www.example.org/highrisk-meddev-&-invitrodev-diag#reportedInCountry> ;
+                                                                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                      owl:onClass <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Country>
+                                                                                    ] .
 
 
-###  http://www.example.org/meddevice#InfectionRisk
-<http://www.example.org/meddevice#InfectionRisk> rdf:type owl:Class ;
-                                                 rdfs:subClassOf <http://www.example.org/meddevice#Risk> .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#InfectionRisk
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#InfectionRisk> rdf:type owl:Class ;
+                                                                         rdfs:subClassOf <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Risk> .
 
 
-###  http://www.example.org/meddevice#InjuryRisk
-<http://www.example.org/meddevice#InjuryRisk> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://www.example.org/meddevice#Risk> .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#InjuryRisk
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#InjuryRisk> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Risk> .
 
 
-###  http://www.example.org/meddevice#InterferenceRisk
-<http://www.example.org/meddevice#InterferenceRisk> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <http://www.example.org/meddevice#Risk> .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#InterferenceRisk
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#InterferenceRisk> rdf:type owl:Class ;
+                                                                            rdfs:subClassOf <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Risk> .
 
 
-###  http://www.example.org/meddevice#MalfunctionRisk
-<http://www.example.org/meddevice#MalfunctionRisk> rdf:type owl:Class ;
-                                                   rdfs:subClassOf <http://www.example.org/meddevice#Risk> .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#MalfunctionRisk
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#MalfunctionRisk> rdf:type owl:Class ;
+                                                                           rdfs:subClassOf <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Risk> .
 
 
-###  http://www.example.org/meddevice#Manufacturer
-<http://www.example.org/meddevice#Manufacturer> rdf:type owl:Class ;
-                                                rdfs:subClassOf <http://xmlns.com/foaf/0.1/Organization> ,
-                                                                [ rdf:type owl:Restriction ;
-                                                                  owl:onProperty <http://www.example.org/meddevice#registeredInCountry> ;
-                                                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                  owl:onClass <http://www.example.org/meddevice#Country>
-                                                                ] .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#Manufacturer
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#Manufacturer> rdf:type owl:Class ;
+                                                                        rdfs:subClassOf <http://xmlns.com/foaf/0.1/Organization> ,
+                                                                                        [ rdf:type owl:Restriction ;
+                                                                                          owl:onProperty <http://www.example.org/highrisk-meddev-&-invitrodev-diag#registeredInCountry> ;
+                                                                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                          owl:onClass <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Country>
+                                                                                        ] .
 
 
-###  http://www.example.org/meddevice#MaterialRisk
-<http://www.example.org/meddevice#MaterialRisk> rdf:type owl:Class ;
-                                                rdfs:subClassOf <http://www.example.org/meddevice#Risk> .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#MaterialRisk
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#MaterialRisk> rdf:type owl:Class ;
+                                                                        rdfs:subClassOf <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Risk> .
 
 
-###  http://www.example.org/meddevice#NearMissIncident
-<http://www.example.org/meddevice#NearMissIncident> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <http://www.example.org/meddevice#Incident> .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#NearMissIncident
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#NearMissIncident> rdf:type owl:Class ;
+                                                                            rdfs:subClassOf <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Incident> .
 
 
-###  http://www.example.org/meddevice#Recall
-<http://www.example.org/meddevice#Recall> rdf:type owl:Class ;
-                                          rdfs:subClassOf <http://www.example.org/meddevice#CorrectiveAction> .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#Recall
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#Recall> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://www.example.org/highrisk-meddev-&-invitrodev-diag#CorrectiveAction> .
 
 
-###  http://www.example.org/meddevice#Risk
-<http://www.example.org/meddevice#Risk> rdf:type owl:Class .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#Risk
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#Risk> rdf:type owl:Class .
 
 
-###  http://www.example.org/meddevice#SafetyAlert
-<http://www.example.org/meddevice#SafetyAlert> rdf:type owl:Class ;
-                                               rdfs:subClassOf <http://www.example.org/meddevice#CorrectiveAction> .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#SafetyAlert
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#SafetyAlert> rdf:type owl:Class ;
+                                                                       rdfs:subClassOf <http://www.example.org/highrisk-meddev-&-invitrodev-diag#CorrectiveAction> .
 
 
-###  http://www.example.org/meddevice#SeriousIncident
-<http://www.example.org/meddevice#SeriousIncident> rdf:type owl:Class ;
-                                                   rdfs:subClassOf <http://www.example.org/meddevice#Incident> .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#SeriousIncident
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#SeriousIncident> rdf:type owl:Class ;
+                                                                           rdfs:subClassOf <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Incident> .
 
 
-###  http://www.example.org/meddevice#SoftwareRisk
-<http://www.example.org/meddevice#SoftwareRisk> rdf:type owl:Class ;
-                                                rdfs:subClassOf <http://www.example.org/meddevice#Risk> .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#SoftwareRisk
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#SoftwareRisk> rdf:type owl:Class ;
+                                                                        rdfs:subClassOf <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Risk> .
 
 
-###  http://www.example.org/meddevice#UserNotice
-<http://www.example.org/meddevice#UserNotice> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://www.example.org/meddevice#CorrectiveAction> .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#UserNotice
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#UserNotice> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <http://www.example.org/highrisk-meddev-&-invitrodev-diag#CorrectiveAction> .
 
 
 ###  http://xmlns.com/foaf/0.1/Organization
@@ -486,625 +467,642 @@
 #    Individuals
 #################################################################
 
-###  http://www.example.org/meddevice#ContaminationRisk
-<http://www.example.org/meddevice#ContaminationRisk> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#ContaminationRisk
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#ContaminationRisk> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#CorrectiveAction
-<http://www.example.org/meddevice#CorrectiveAction> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#CorrectiveAction
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#CorrectiveAction> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#Country
-<http://www.example.org/meddevice#Country> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#Country
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#Country> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#CybersecurityRisk
-<http://www.example.org/meddevice#CybersecurityRisk> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#CybersecurityRisk
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#CybersecurityRisk> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#DEV-001
-<http://www.example.org/meddevice#DEV-001> rdf:type owl:NamedIndividual ,
-                                                    <http://www.example.org/meddevice#Device> ;
-                                           <http://www.example.org/meddevice#hasManufacturer> <http://www.example.org/meddevice#MAN-001> ;
-                                           <http://www.example.org/meddevice#isOfType> <http://www.example.org/meddevice#ImplantableActiveDevice> ;
-                                           <http://www.example.org/meddevice#deviceIntendedPurpose> "Ventricular assist device for end-stage heart failure"@en ;
-                                           <http://www.example.org/meddevice#deviceIsActive> "true"^^xsd:boolean ;
-                                           <http://www.example.org/meddevice#deviceIsImplantable> "true"^^xsd:boolean ;
-                                           <http://www.example.org/meddevice#deviceIsIvd> "false"^^xsd:boolean ;
-                                           <http://www.example.org/meddevice#deviceIsReusable> "false"^^xsd:boolean ;
-                                           <http://www.example.org/meddevice#deviceRegulatoryFramework> "MDR"@en ;
-                                           <http://www.example.org/meddevice#deviceRiskClass> "ClassIII"@en ;
-                                           <http://www.example.org/meddevice#deviceUdiDi> "(01)00380740009095"@en ;
-                                           <http://www.example.org/meddevice#name> "HeartMate 3 LVAD"@en .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#DEV-001
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#DEV-001> rdf:type owl:NamedIndividual ,
+                                                                            <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Device> ;
+                                                                   <http://www.example.org/highrisk-meddev-&-invitrodev-diag#hasManufacturer> <http://www.example.org/highrisk-meddev-&-invitrodev-diag#MAN-001> ;
+                                                                   <http://www.example.org/highrisk-meddev-&-invitrodev-diag#isOfType> <http://www.example.org/highrisk-meddev-&-invitrodev-diag#ImplantableActiveDevice> ;
+                                                                   <http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceIntendedPurpose> "Ventricular assist device for end-stage heart failure"@en ;
+                                                                   <http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceIsActive> "true"^^xsd:boolean ;
+                                                                   <http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceIsImplantable> "true"^^xsd:boolean ;
+                                                                   <http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceIsIvd> "false"^^xsd:boolean ;
+                                                                   <http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceIsReusable> "false"^^xsd:boolean ;
+                                                                   <http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceRegulatoryFramework> "MDR" ;
+                                                                   <http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceRiskClass> "ClassIII" ;
+                                                                   <http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceUdiDi> "(01)00380740009095" ;
+                                                                   <http://www.example.org/highrisk-meddev-&-invitrodev-diag#identifier> "DEV-001" ;
+                                                                   <http://www.example.org/highrisk-meddev-&-invitrodev-diag#name> "HeartMate 3 LVAD"@en .
 
 
-###  http://www.example.org/meddevice#Device
-<http://www.example.org/meddevice#Device> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#Device
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#Device> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#DeviceType
-<http://www.example.org/meddevice#DeviceType> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#DeviceType
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#DeviceType> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#DiagnosticRisk
-<http://www.example.org/meddevice#DiagnosticRisk> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#DiagnosticRisk
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#DiagnosticRisk> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#FSCA-001
-<http://www.example.org/meddevice#FSCA-001> rdf:type owl:NamedIndividual ,
-                                                     <http://www.example.org/meddevice#SafetyAlert> ;
-                                            <http://www.example.org/meddevice#appliesToIncident> <http://www.example.org/meddevice#INC-001> ;
-                                            <http://www.example.org/meddevice#correctiveActionActDate> "2024-02-01T00:00:00"@en ;
-                                            <http://www.example.org/meddevice#correctiveActionCountriesAffected> "EU-wide"@en ;
-                                            <http://www.example.org/meddevice#correctiveActionDevicesAffected> 850 ;
-                                            <http://www.example.org/meddevice#correctiveActionEudamedFscaRef> "EU-FSCA-2024-000001"@en ;
-                                            <http://www.example.org/meddevice#correctiveActionScope> "All HeartMate 3 LVAD units implanted since 2020"@en ;
-                                            <http://www.example.org/meddevice#correctiveActionStatus> "Open"@en ;
-                                            <http://www.example.org/meddevice#description> "Safety alert issued to all implanting centres regarding anticoagulation protocol update for HeartMate 3 to reduce device thrombosis risk. INR target range revised to 2.0–3.0."@en .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#FSCA-001
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#FSCA-001> rdf:type owl:NamedIndividual ,
+                                                                             <http://www.example.org/highrisk-meddev-&-invitrodev-diag#SafetyAlert> ;
+                                                                    <http://www.example.org/highrisk-meddev-&-invitrodev-diag#appliesToIncident> <http://www.example.org/highrisk-meddev-&-invitrodev-diag#INC-001> ;
+                                                                    <http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionActDate> "2024-02-01T00:00:00"^^xsd:dateTime ;
+                                                                    <http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionCountriesAffected> "EU-wide" ;
+                                                                    <http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionDevicesAffected> 850 ;
+                                                                    <http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionEudamedFscaRef> "EU-FSCA-2024-000001" ;
+                                                                    <http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionScope> "All HeartMate 3 LVAD units implanted since 2020"@en ;
+                                                                    <http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionStatus> "Open"@en ;
+                                                                    <http://www.example.org/highrisk-meddev-&-invitrodev-diag#description> "Safety alert issued to all implanting centres regarding anticoagulation protocol update for HeartMate 3 to reduce device thrombosis risk. INR target range revised to 2.0–3.0."@en ;
+                                                                    <http://www.example.org/highrisk-meddev-&-invitrodev-diag#identifier> "FSCA-001" .
 
 
-###  http://www.example.org/meddevice#Germany
-<http://www.example.org/meddevice#Germany> rdf:type owl:NamedIndividual ,
-                                                    <http://www.example.org/meddevice#Country> .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#Germany
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#Germany> rdf:type owl:NamedIndividual ,
+                                                                            <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Country> ;
+                                                                   <http://www.example.org/highrisk-meddev-&-invitrodev-diag#identifier> "Germany" ;
+                                                                   <http://www.example.org/highrisk-meddev-&-invitrodev-diag#name> "Germany"@en .
 
 
-###  http://www.example.org/meddevice#INC-001
-<http://www.example.org/meddevice#INC-001> rdf:type owl:NamedIndividual ,
-                                                    <http://www.example.org/meddevice#SeriousIncident> ;
-                                           <http://www.example.org/meddevice#relatesToDevice> <http://www.example.org/meddevice#DEV-001> ;
-                                           <http://www.example.org/meddevice#relatesToRisk> <http://www.example.org/meddevice#RSK-003> ;
-                                           <http://www.example.org/meddevice#reportedBy> <http://www.example.org/meddevice#MAN-001> ;
-                                           <http://www.example.org/meddevice#reportedInCountry> <http://www.example.org/meddevice#Germany> ;
-                                           <http://www.example.org/meddevice#description> "Patient implanted with HeartMate 3 LVAD developed ischemic stroke 6 months post-implant. Device thrombus confirmed by echocardiography."@en ;
-                                           <http://www.example.org/meddevice#incidentCorrectiveActionTaken> "true"^^xsd:boolean ;
-                                           <http://www.example.org/meddevice#incidentDetectionDate> "2024-01-10T00:00:00"^^xsd:dateTime ;
-                                           <http://www.example.org/meddevice#incidentEudamedRef> "EU-INC-2024-000001"@en ;
-                                           <http://www.example.org/meddevice#incidentEventDate> "2024-01-08T00:00:00"^^xsd:dateTime ;
-                                           <http://www.example.org/meddevice#incidentOutcome> "Serious patient injury - embolic stroke"@en ;
-                                           <http://www.example.org/meddevice#incidentPatientAge> 58 ;
-                                           <http://www.example.org/meddevice#incidentPatientSex> "Male"@en ;
-                                           <http://www.example.org/meddevice#incidentReportDate> "2024-01-15T00:00:00"^^xsd:dateTime .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#INC-001
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#INC-001> rdf:type owl:NamedIndividual ,
+                                                                            <http://www.example.org/highrisk-meddev-&-invitrodev-diag#SeriousIncident> ;
+                                                                   <http://www.example.org/highrisk-meddev-&-invitrodev-diag#relatesToDevice> <http://www.example.org/highrisk-meddev-&-invitrodev-diag#DEV-001> ;
+                                                                   <http://www.example.org/highrisk-meddev-&-invitrodev-diag#relatesToRisk> <http://www.example.org/highrisk-meddev-&-invitrodev-diag#RSK-003> ;
+                                                                   <http://www.example.org/highrisk-meddev-&-invitrodev-diag#reportedBy> <http://www.example.org/highrisk-meddev-&-invitrodev-diag#MAN-001> ;
+                                                                   <http://www.example.org/highrisk-meddev-&-invitrodev-diag#reportedInCountry> <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Germany> ;
+                                                                   <http://www.example.org/highrisk-meddev-&-invitrodev-diag#description> "Patient implanted with HeartMate 3 LVAD developed ischemic stroke 6 months post-implant. Device thrombus confirmed by echocardiography."@en ;
+                                                                   <http://www.example.org/highrisk-meddev-&-invitrodev-diag#identifier> "INC-001" ;
+                                                                   <http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentCorrectiveActionTaken> "true"^^xsd:boolean ;
+                                                                   <http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentDetectionDate> "2024-01-10T00:00:00"^^xsd:dateTime ;
+                                                                   <http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentEudamedRef> "EU-INC-2024-000001" ;
+                                                                   <http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentEventDate> "2024-01-08T00:00:00"^^xsd:dateTime ;
+                                                                   <http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentOutcome> "Serious patient injury - embolic stroke"@en ;
+                                                                   <http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentPatientAge> 58 ;
+                                                                   <http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentPatientSex> "Male"@en ;
+                                                                   <http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentReportDate> "2024-01-15T00:00:00"^^xsd:dateTime .
 
 
-###  http://www.example.org/meddevice#ImplantableActiveDevice
-<http://www.example.org/meddevice#ImplantableActiveDevice> rdf:type owl:NamedIndividual ,
-                                                                    <http://www.example.org/meddevice#DeviceType> .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#ImplantableActiveDevice
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#ImplantableActiveDevice> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.example.org/highrisk-meddev-&-invitrodev-diag#DeviceType> ;
+                                                                                   <http://www.example.org/highrisk-meddev-&-invitrodev-diag#identifier> "ImplantableActiveDevice" .
 
 
-###  http://www.example.org/meddevice#InSituCorrection
-<http://www.example.org/meddevice#InSituCorrection> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#InSituCorrection
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#InSituCorrection> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#Incident
-<http://www.example.org/meddevice#Incident> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#Incident
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#Incident> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#InfectionRisk
-<http://www.example.org/meddevice#InfectionRisk> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#InfectionRisk
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#InfectionRisk> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#InjuryRisk
-<http://www.example.org/meddevice#InjuryRisk> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#InjuryRisk
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#InjuryRisk> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#InterferenceRisk
-<http://www.example.org/meddevice#InterferenceRisk> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#InterferenceRisk
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#InterferenceRisk> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#Ireland
-<http://www.example.org/meddevice#Ireland> rdf:type owl:NamedIndividual ,
-                                                    <http://www.example.org/meddevice#Country> .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#Ireland
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#Ireland> rdf:type owl:NamedIndividual ,
+                                                                            <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Country> ;
+                                                                   <http://www.example.org/highrisk-meddev-&-invitrodev-diag#identifier> "Ireland" ;
+                                                                   <http://www.example.org/highrisk-meddev-&-invitrodev-diag#name> "Ireland"@en .
 
 
-###  http://www.example.org/meddevice#MAN-001
-<http://www.example.org/meddevice#MAN-001> rdf:type owl:NamedIndividual ,
-                                                    <http://www.example.org/meddevice#Manufacturer> ;
-                                           <http://www.example.org/meddevice#registeredInCountry> <http://www.example.org/meddevice#Ireland> ;
-                                           <http://www.example.org/meddevice#manufacturerAuthNum> "IE/2017/001234" ;
-                                           <http://www.example.org/meddevice#manufacturerCompetentAuth> "Health Products Regulatory Authority (HPRA)"@en ;
-                                           <http://www.example.org/meddevice#manufacturerContactEmail> "regulatory@medtronic.com" ;
-                                           <http://www.example.org/meddevice#manufacturerEudamedSm> "SRN-IE-MED-0001" ;
-                                           <http://www.example.org/meddevice#name> "Medtronic plc"@en .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#MAN-001
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#MAN-001> rdf:type owl:NamedIndividual ,
+                                                                            <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Manufacturer> ;
+                                                                   <http://www.example.org/highrisk-meddev-&-invitrodev-diag#registeredInCountry> <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Ireland> ;
+                                                                   <http://www.example.org/highrisk-meddev-&-invitrodev-diag#identifier> "MAN-001" ;
+                                                                   <http://www.example.org/highrisk-meddev-&-invitrodev-diag#manufacturerAuthNum> "IE/2017/001234" ;
+                                                                   <http://www.example.org/highrisk-meddev-&-invitrodev-diag#manufacturerCompetentAuth> "Health Products Regulatory Authority (HPRA)"@en ;
+                                                                   <http://www.example.org/highrisk-meddev-&-invitrodev-diag#manufacturerContactEmail> "regulatory@medtronic.com" ;
+                                                                   <http://www.example.org/highrisk-meddev-&-invitrodev-diag#manufacturerEudamedSm> "SRN-IE-MED-0001" ;
+                                                                   <http://www.example.org/highrisk-meddev-&-invitrodev-diag#name> "Medtronic plc"@en .
 
 
-###  http://www.example.org/meddevice#MalfunctionRisk
-<http://www.example.org/meddevice#MalfunctionRisk> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#MalfunctionRisk
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#MalfunctionRisk> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#Manufacturer
-<http://www.example.org/meddevice#Manufacturer> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#Manufacturer
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#Manufacturer> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#MaterialRisk
-<http://www.example.org/meddevice#MaterialRisk> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#MaterialRisk
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#MaterialRisk> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#NearMissIncident
-<http://www.example.org/meddevice#NearMissIncident> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#NearMissIncident
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#NearMissIncident> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#RSK-003
-<http://www.example.org/meddevice#RSK-003> rdf:type owl:NamedIndividual ,
-                                                    <http://www.example.org/meddevice#InjuryRisk> ;
-                                           <http://www.example.org/meddevice#affectsDeviceType> <http://www.example.org/meddevice#ImplantableActiveDevice> ;
-                                           <http://www.example.org/meddevice#description> "Thrombus formation on device surface causing embolic events"@en ;
-                                           <http://www.example.org/meddevice#riskCategory> "Patient Harm"@en ;
-                                           <http://www.example.org/meddevice#riskImdrfCode> "A0201" ;
-                                           <http://www.example.org/meddevice#riskProbability> "Low"@en ;
-                                           <http://www.example.org/meddevice#riskSeverity> "Critical"@en ;
-                                           <http://www.example.org/meddevice#name> "Thrombosis - device-related"@en .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#RSK-003
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#RSK-003> rdf:type owl:NamedIndividual ,
+                                                                            <http://www.example.org/highrisk-meddev-&-invitrodev-diag#InjuryRisk> ;
+                                                                   <http://www.example.org/highrisk-meddev-&-invitrodev-diag#affectsDeviceType> <http://www.example.org/highrisk-meddev-&-invitrodev-diag#ImplantableActiveDevice> ;
+                                                                   <http://www.example.org/highrisk-meddev-&-invitrodev-diag#description> "Thrombus formation on device surface causing embolic events"@en ;
+                                                                   <http://www.example.org/highrisk-meddev-&-invitrodev-diag#identifier> "RSK-003" ;
+                                                                   <http://www.example.org/highrisk-meddev-&-invitrodev-diag#riskCategory> "Patient Harm"@en ;
+                                                                   <http://www.example.org/highrisk-meddev-&-invitrodev-diag#riskImdrfCode> "A0201" ;
+                                                                   <http://www.example.org/highrisk-meddev-&-invitrodev-diag#riskProbability> "Low"@en ;
+                                                                   <http://www.example.org/highrisk-meddev-&-invitrodev-diag#riskSeverity> "Critical"@en .
 
 
-###  http://www.example.org/meddevice#Recall
-<http://www.example.org/meddevice#Recall> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#Recall
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#Recall> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#Risk
-<http://www.example.org/meddevice#Risk> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#Risk
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#Risk> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#SafetyAlert
-<http://www.example.org/meddevice#SafetyAlert> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#SafetyAlert
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#SafetyAlert> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#SeriousIncident
-<http://www.example.org/meddevice#SeriousIncident> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#SeriousIncident
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#SeriousIncident> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#SoftwareRisk
-<http://www.example.org/meddevice#SoftwareRisk> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#SoftwareRisk
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#SoftwareRisk> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#UserNotice
-<http://www.example.org/meddevice#UserNotice> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#UserNotice
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#UserNotice> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#affectsDeviceType
-<http://www.example.org/meddevice#affectsDeviceType> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#affectsDeviceType
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#affectsDeviceType> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#appliesToIncident
-<http://www.example.org/meddevice#appliesToIncident> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#appliesToIncident
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#appliesToIncident> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#correctiveActionActDate
-<http://www.example.org/meddevice#correctiveActionActDate> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionActDate
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionActDate> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#correctiveActionClosureDate
-<http://www.example.org/meddevice#correctiveActionClosureDate> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionClosureDate
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionClosureDate> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#correctiveActionCountriesAffected
-<http://www.example.org/meddevice#correctiveActionCountriesAffected> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionCountriesAffected
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionCountriesAffected> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#correctiveActionDevicesAffected
-<http://www.example.org/meddevice#correctiveActionDevicesAffected> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionDevicesAffected
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionDevicesAffected> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#correctiveActionEudamedFscaRef
-<http://www.example.org/meddevice#correctiveActionEudamedFscaRef> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionEudamedFscaRef
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionEudamedFscaRef> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#correctiveActionScope
-<http://www.example.org/meddevice#correctiveActionScope> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionScope
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionScope> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#correctiveActionStatus
-<http://www.example.org/meddevice#correctiveActionStatus> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionStatus
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionStatus> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#description
-<http://www.example.org/meddevice#description> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#description
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#description> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#deviceIntendedPurpose
-<http://www.example.org/meddevice#deviceIntendedPurpose> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceIntendedPurpose
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceIntendedPurpose> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#deviceIsActive
-<http://www.example.org/meddevice#deviceIsActive> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceIsActive
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceIsActive> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#deviceIsImplantable
-<http://www.example.org/meddevice#deviceIsImplantable> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceIsImplantable
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceIsImplantable> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#deviceIsIvd
-<http://www.example.org/meddevice#deviceIsIvd> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceIsIvd
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceIsIvd> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#deviceIsReusable
-<http://www.example.org/meddevice#deviceIsReusable> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceIsReusable
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceIsReusable> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#deviceRegulatoryFramework
-<http://www.example.org/meddevice#deviceRegulatoryFramework> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceRegulatoryFramework
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceRegulatoryFramework> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#deviceRiskClass
-<http://www.example.org/meddevice#deviceRiskClass> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceRiskClass
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceRiskClass> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#deviceUdiDi
-<http://www.example.org/meddevice#deviceUdiDi> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceUdiDi
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceUdiDi> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#hasManufacturer
-<http://www.example.org/meddevice#hasManufacturer> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#hasManufacturer
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#hasManufacturer> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#identifier
-<http://www.example.org/meddevice#identifier> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#identifier
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#identifier> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#incidentCorrectiveActionTaken
-<http://www.example.org/meddevice#incidentCorrectiveActionTaken> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentCorrectiveActionTaken
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentCorrectiveActionTaken> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#incidentDetectionDate
-<http://www.example.org/meddevice#incidentDetectionDate> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentDetectionDate
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentDetectionDate> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#incidentEudamedRef
-<http://www.example.org/meddevice#incidentEudamedRef> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentEudamedRef
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentEudamedRef> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#incidentEventDate
-<http://www.example.org/meddevice#incidentEventDate> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentEventDate
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentEventDate> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#incidentOutcome
-<http://www.example.org/meddevice#incidentOutcome> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentOutcome
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentOutcome> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#incidentPatientAge
-<http://www.example.org/meddevice#incidentPatientAge> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentPatientAge
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentPatientAge> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#incidentPatientSex
-<http://www.example.org/meddevice#incidentPatientSex> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentPatientSex
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentPatientSex> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#incidentReportDate
-<http://www.example.org/meddevice#incidentReportDate> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentReportDate
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentReportDate> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#isOfType
-<http://www.example.org/meddevice#isOfType> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#isOfType
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#isOfType> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#isSubclassifiedUnder
-<http://www.example.org/meddevice#isSubclassifiedUnder> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#isSubclassifiedUnder
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#isSubclassifiedUnder> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#manufacturerAuthNum
-<http://www.example.org/meddevice#manufacturerAuthNum> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#manufacturerAuthNum
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#manufacturerAuthNum> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#manufacturerCompetentAuth
-<http://www.example.org/meddevice#manufacturerCompetentAuth> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#manufacturerCompetentAuth
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#manufacturerCompetentAuth> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#manufacturerContactEmail
-<http://www.example.org/meddevice#manufacturerContactEmail> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#manufacturerContactEmail
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#manufacturerContactEmail> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#manufacturerEudamedSm
-<http://www.example.org/meddevice#manufacturerEudamedSm> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#manufacturerEudamedSm
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#manufacturerEudamedSm> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#name
-<http://www.example.org/meddevice#name> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#name
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#name> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#registeredInCountry
-<http://www.example.org/meddevice#registeredInCountry> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#registeredInCountry
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#registeredInCountry> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#relatesToDevice
-<http://www.example.org/meddevice#relatesToDevice> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#relatesToDevice
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#relatesToDevice> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#relatesToRisk
-<http://www.example.org/meddevice#relatesToRisk> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#relatesToRisk
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#relatesToRisk> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#reportedBy
-<http://www.example.org/meddevice#reportedBy> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#reportedBy
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#reportedBy> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#reportedInCountry
-<http://www.example.org/meddevice#reportedInCountry> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#reportedInCountry
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#reportedInCountry> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#riskCategory
-<http://www.example.org/meddevice#riskCategory> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#riskCategory
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#riskCategory> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#riskImdrfCode
-<http://www.example.org/meddevice#riskImdrfCode> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#riskImdrfCode
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#riskImdrfCode> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#riskProbability
-<http://www.example.org/meddevice#riskProbability> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#riskProbability
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#riskProbability> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org/meddevice#riskSeverity
-<http://www.example.org/meddevice#riskSeverity> rdf:type owl:NamedIndividual .
+###  http://www.example.org/highrisk-meddev-&-invitrodev-diag#riskSeverity
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#riskSeverity> rdf:type owl:NamedIndividual .
 
 
 #################################################################
 #    Annotations
 #################################################################
 
-<http://www.example.org/meddevice#ContaminationRisk> rdfs:comment "Type of Risk affecting product quality"@en ;
-                                                     rdfs:label "Contamination Risk"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#ContaminationRisk> rdfs:comment "Type of Risk affecting product quality"@en ;
+                                                                             rdfs:label "Contamination Risk"@en .
 
 
-<http://www.example.org/meddevice#CorrectiveAction> rdfs:comment "Action taken to correct incident"@en ;
-                                                    rdfs:label "Corrective Action"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#CorrectiveAction> rdfs:comment "Action taken to correct incident"@en ;
+                                                                            rdfs:label "Corrective Action"@en .
 
 
-<http://www.example.org/meddevice#Country> rdfs:comment "Country identified by its english name"@en ;
-                                           rdfs:label "Country"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#Country> rdfs:comment "Country identified by its english name"@en ;
+                                                                   rdfs:label "Country"@en .
 
 
-<http://www.example.org/meddevice#CybersecurityRisk> rdfs:comment "Type of Risk affecting device safety"@en ;
-                                                     rdfs:label "CyberSecurity Risk"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#CybersecurityRisk> rdfs:comment "Type of Risk affecting device safety"@en ;
+                                                                             rdfs:label "CyberSecurity Risk"@en .
 
 
-<http://www.example.org/meddevice#Device> rdfs:comment "High Risk Medical Device or In-Vitro Diagnostics Device"@en ;
-                                          rdfs:label "Device"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#Device> rdfs:comment "High Risk Medical Device or In-Vitro Diagnostics Device"@en ;
+                                                                  rdfs:label "Device"@en .
 
 
-<http://www.example.org/meddevice#DeviceType> rdfs:comment "Type of device (ClassI, ClassIIa, ClassIIb and ClassIII for High Risk Medical Devices & ClassA, ClassB, ClassC and ClassD for In-Vitro Diagnostics Devices)"@en ;
-                                              rdfs:label "Device Type"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#DeviceType> rdfs:comment "Type of device (ClassI, ClassIIa, ClassIIb and ClassIII for High Risk Medical Devices & ClassA, ClassB, ClassC and ClassD for In-Vitro Diagnostics Devices)"@en ;
+                                                                      rdfs:label "Device Type"@en .
 
 
-<http://www.example.org/meddevice#DiagnosticRisk> rdfs:comment "Type of Risk affecting diagnostic results"@en ;
-                                                  rdfs:label "Diagnostic Risk"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#DiagnosticRisk> rdfs:comment "Type of Risk affecting diagnostic results"@en ;
+                                                                          rdfs:label "Diagnostic Risk"@en .
 
 
-<http://www.example.org/meddevice#InSituCorrection> rdfs:comment "Type of Corrective Action: performed on location"@en ;
-                                                    rdfs:label "In Situ Correction"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#InSituCorrection> rdfs:comment "Type of Corrective Action: performed on location"@en ;
+                                                                            rdfs:label "In Situ Correction"@en .
 
 
-<http://www.example.org/meddevice#Incident> rdfs:comment "Incident related to Medical Device"@en ;
-                                            rdfs:label "Incident"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#Incident> rdfs:comment "Incident related to Medical Device"@en ;
+                                                                    rdfs:label "Incident"@en .
 
 
-<http://www.example.org/meddevice#InfectionRisk> rdfs:comment "Type of Risk affecting patient's health"@en ;
-                                                 rdfs:label "Infection Risk"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#InfectionRisk> rdfs:comment "Type of Risk affecting patient's health"@en ;
+                                                                         rdfs:label "Infection Risk"@en .
 
 
-<http://www.example.org/meddevice#InjuryRisk> rdfs:comment "Type of Risk affecting patient's health"@en ;
-                                              rdfs:label "Injury Risk"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#InjuryRisk> rdfs:comment "Type of Risk affecting patient's health"@en ;
+                                                                      rdfs:label "Injury Risk"@en .
 
 
-<http://www.example.org/meddevice#InterferenceRisk> rdfs:comment "Type of Risk affecting device performance"@en ;
-                                                    rdfs:label "Interference Risk"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#InterferenceRisk> rdfs:comment "Type of Risk affecting device performance"@en ;
+                                                                            rdfs:label "Interference Risk"@en .
 
 
-<http://www.example.org/meddevice#MalfunctionRisk> rdfs:comment "Type of Risk affecting device performance"@en ;
-                                                   rdfs:label "Malfunction Risk"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#MalfunctionRisk> rdfs:comment "Type of Risk affecting device performance"@en ;
+                                                                           rdfs:label "Malfunction Risk"@en .
 
 
-<http://www.example.org/meddevice#Manufacturer> rdfs:comment "Manufacturing Organization of Medical Device"@en ;
-                                                rdfs:label "Manufacturer"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#Manufacturer> rdfs:comment "Manufacturing Organization of Medical Device"@en ;
+                                                                        rdfs:label "Manufacturer"@en .
 
 
-<http://www.example.org/meddevice#MaterialRisk> rdfs:comment "Type of Risk affecting patient's health"@en ;
-                                                rdfs:label "Material Risk"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#MaterialRisk> rdfs:comment "Type of Risk affecting patient's health"@en ;
+                                                                        rdfs:label "Material Risk"@en .
 
 
-<http://www.example.org/meddevice#NearMissIncident> rdfs:comment "Type of Incident by severity"@en ;
-                                                    rdfs:label "Near Miss Incident"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#NearMissIncident> rdfs:comment "Type of Incident by severity"@en ;
+                                                                            rdfs:label "Near Miss Incident"@en .
 
 
-<http://www.example.org/meddevice#Recall> rdfs:comment "Type of Corrective Action: product recall"@en ;
-                                          rdfs:label "Recall"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#Recall> rdfs:comment "Type of Corrective Action: product recall"@en ;
+                                                                  rdfs:label "Recall"@en .
 
 
-<http://www.example.org/meddevice#Risk> rdfs:comment "Medical Risks associated to Medical Devices"@en ;
-                                        rdfs:label "Risk"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#Risk> rdfs:comment "Medical Risks associated to Medical Devices"@en ;
+                                                                rdfs:label "Risk"@en .
 
 
-<http://www.example.org/meddevice#SafetyAlert> rdfs:comment "Type of Corrective Action: safety alert sent"@en ;
-                                               rdfs:label "Safety Alert"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#SafetyAlert> rdfs:comment "Type of Corrective Action: safety alert sent"@en ;
+                                                                       rdfs:label "Safety Alert"@en .
 
 
-<http://www.example.org/meddevice#SeriousIncident> rdfs:comment "Type of Incident by severity"@en ;
-                                                   rdfs:label "Serious Incident"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#SeriousIncident> rdfs:comment "Type of Incident by severity"@en ;
+                                                                           rdfs:label "Serious Incident"@en .
 
 
-<http://www.example.org/meddevice#SoftwareRisk> rdfs:comment "Type of Risk affecting device performance"@en ;
-                                                rdfs:label "Software Risk"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#SoftwareRisk> rdfs:comment "Type of Risk affecting device performance"@en ;
+                                                                        rdfs:label "Software Risk"@en .
 
 
-<http://www.example.org/meddevice#UserNotice> rdfs:comment "Type of Corrective Action: notice sent to user(s)"@en ;
-                                              rdfs:label "User Notice"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#UserNotice> rdfs:comment "Type of Corrective Action: notice sent to user(s)"@en ;
+                                                                      rdfs:label "User Notice"@en .
 
 
-<http://www.example.org/meddevice#affectsDeviceType> rdfs:comment "Device Types affected by Risk"@en ;
-                                                     rdfs:label "affects device type"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#affectsDeviceType> rdfs:comment "Device Types affected by Risk"@en ;
+                                                                             rdfs:label "affects device type"@en .
 
 
-<http://www.example.org/meddevice#appliesToIncident> rdfs:comment "Incident that a Corrective Action is responding to"@en ;
-                                                     rdfs:label "applies to incident"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#appliesToIncident> rdfs:comment "Incident that a Corrective Action is responding to"@en ;
+                                                                             rdfs:label "applies to incident"@en .
 
 
-<http://www.example.org/meddevice#correctiveActionActDate> rdfs:comment "Date in which the action was taken"@en ;
-                                                           rdfs:label "Corrective Action Action Date"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionActDate> rdfs:comment "Date in which the action was taken"@en ;
+                                                                                   rdfs:label "Corrective Action Action Date"@en .
 
 
-<http://www.example.org/meddevice#correctiveActionClosureDate> rdfs:comment "Date in which the action was closed"@en ;
-                                                               rdfs:label "Corrective Action Closure Date"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionClosureDate> rdfs:comment "Date in which the action was closed"@en ;
+                                                                                       rdfs:label "Corrective Action Closure Date"@en .
 
 
-<http://www.example.org/meddevice#correctiveActionCountriesAffected> rdfs:comment "Countries affected by the Corrective Action"@en ;
-                                                                     rdfs:label "Corrective Action Countries Affected"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionCountriesAffected> rdfs:comment "Countries affected by the Corrective Action"@en ;
+                                                                                             rdfs:label "Corrective Action Countries Affected"@en .
 
 
-<http://www.example.org/meddevice#correctiveActionDevicesAffected> rdfs:comment "Amount of Devices affected by the Corrective Action"@en ;
-                                                                   rdfs:label "Corrective Action Devices Affected"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionDevicesAffected> rdfs:comment "Amount of Devices affected by the Corrective Action"@en ;
+                                                                                           rdfs:label "Corrective Action Devices Affected"@en .
 
 
-<http://www.example.org/meddevice#correctiveActionEudamedFscaRef> rdfs:comment "Reference of the Corrective Action in the EUDAMED european database"@en ;
-                                                                  rdfs:label "Corrective Action Eudamed FSCA Reference"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionEudamedFscaRef> rdfs:comment "Reference of the Corrective Action in the EUDAMED european database"@en ;
+                                                                                          rdfs:label "Corrective Action Eudamed FSCA Reference"@en .
 
 
-<http://www.example.org/meddevice#correctiveActionScope> rdfs:comment "Scope of the Corrective Action in terms of What devices were affected"@en ;
-                                                         rdfs:label "Corrective Action Scope"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionScope> rdfs:comment "Scope of the Corrective Action in terms of What devices were affected"@en ;
+                                                                                 rdfs:label "Corrective Action Scope"@en .
 
 
-<http://www.example.org/meddevice#correctiveActionStatus> rdfs:comment "Status of the Corrective Action (Open/Closed)"@en ;
-                                                          rdfs:label "Corrective Action Status"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#correctiveActionStatus> rdfs:comment "Status of the Corrective Action (Open/Closed)"@en ;
+                                                                                  rdfs:label "Corrective Action Status"@en .
 
 
-<http://www.example.org/meddevice#description> rdfs:comment "Description of the term"@en ;
-                                               rdfs:label "Description"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#description> rdfs:comment "Description of the term"@en ;
+                                                                       rdfs:label "Description"@en .
 
 
-<http://www.example.org/meddevice#deviceIntendedPurpose> rdfs:comment "Intended purpose of the Device"@en ;
-                                                         rdfs:label "Device Intended Purpose"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceIntendedPurpose> rdfs:comment "Intended purpose of the Device"@en ;
+                                                                                 rdfs:label "Device Intended Purpose"@en .
 
 
-<http://www.example.org/meddevice#deviceIsActive> rdfs:comment "Is the Device currently active? (true/false)"@en ;
-                                                  rdfs:label "Device Is Active"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceIsActive> rdfs:comment "Is the Device currently active? (true/false)"@en ;
+                                                                          rdfs:label "Device Is Active"@en .
 
 
-<http://www.example.org/meddevice#deviceIsImplantable> rdfs:comment "Is the Device implantable? (true/false)"@en ;
-                                                       rdfs:label "Device Is Implantable"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceIsImplantable> rdfs:comment "Is the Device implantable? (true/false)"@en ;
+                                                                               rdfs:label "Device Is Implantable"@en .
 
 
-<http://www.example.org/meddevice#deviceIsIvd> rdfs:comment "Is the Device an In-Vitro Diagnostics Device? (true/false)"@en ;
-                                               rdfs:label "Device Is IVD"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceIsIvd> rdfs:comment "Is the Device an In-Vitro Diagnostics Device? (true/false)"@en ;
+                                                                       rdfs:label "Device Is IVD"@en .
 
 
-<http://www.example.org/meddevice#deviceIsReusable> rdfs:comment "Is the Device reusable? (true/false)"@en ;
-                                                    rdfs:label "Device Is Reusable"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceIsReusable> rdfs:comment "Is the Device reusable? (true/false)"@en ;
+                                                                            rdfs:label "Device Is Reusable"@en .
 
 
-<http://www.example.org/meddevice#deviceRegulatoryFramework> rdfs:comment "Regulatory Framework of the Device"@en ;
-                                                             rdfs:label "Device Regulatory Framework"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceRegulatoryFramework> rdfs:comment "Regulatory Framework of the Device"@en ;
+                                                                                     rdfs:label "Device Regulatory Framework"@en .
 
 
-<http://www.example.org/meddevice#deviceRiskClass> rdfs:comment "Risk Class of the Device (I, IIa, IIb, III)"@en ;
-                                                   rdfs:label "Device Risk Class"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceRiskClass> rdfs:comment "Risk Class of the Device (I, IIa, IIb, III)"@en ;
+                                                                           rdfs:label "Device Risk Class"@en .
 
 
-<http://www.example.org/meddevice#deviceUdiDi> rdfs:comment "UDI DI of the Device"@en ;
-                                               rdfs:label "Device UDI DI"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#deviceUdiDi> rdfs:comment "UDI DI of the Device"@en ;
+                                                                       rdfs:label "Device UDI DI"@en .
 
 
-<http://www.example.org/meddevice#hasManufacturer> rdfs:comment "Manufacturer of a Medical Device"@en ;
-                                                   rdfs:label "has manufacturer"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#hasManufacturer> rdfs:comment "Manufacturer of a Medical Device"@en ;
+                                                                           rdfs:label "has manufacturer"@en .
 
 
-<http://www.example.org/meddevice#identifier> rdfs:comment "Identifier string of the term"@en ;
-                                              rdfs:label "Identifier"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#identifier> rdfs:comment "Identifier string of the term"@en ;
+                                                                      rdfs:label "Identifier"@en .
 
 
-<http://www.example.org/meddevice#incidentCorrectiveActionTaken> rdfs:comment "Was a Corrective Action taken in regards to this Incident? (true/false)"@en ;
-                                                                 rdfs:label "Incident Corrective Action Taken"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentCorrectiveActionTaken> rdfs:comment "Was a Corrective Action taken in regards to this Incident? (true/false)"@en ;
+                                                                                         rdfs:label "Incident Corrective Action Taken"@en .
 
 
-<http://www.example.org/meddevice#incidentDetectionDate> rdfs:comment "Date in which the Incident was detected"@en ;
-                                                         rdfs:label "Incident Detection Date"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentDetectionDate> rdfs:comment "Date in which the Incident was detected"@en ;
+                                                                                 rdfs:label "Incident Detection Date"@en .
 
 
-<http://www.example.org/meddevice#incidentEudamedRef> rdfs:comment "Incident reference in the EUDAMED database"@en ;
-                                                      rdfs:label "Incident Eudamed Reference"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentEudamedRef> rdfs:comment "Incident reference in the EUDAMED database"@en ;
+                                                                              rdfs:label "Incident Eudamed Reference"@en .
 
 
-<http://www.example.org/meddevice#incidentEventDate> rdfs:comment "Date in which the event reported in the Incident took place"@en ;
-                                                     rdfs:label "Incident Event Date"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentEventDate> rdfs:comment "Date in which the event reported in the Incident took place"@en ;
+                                                                             rdfs:label "Incident Event Date"@en .
 
 
-<http://www.example.org/meddevice#incidentOutcome> rdfs:comment "Outcome of the incident"@en ;
-                                                   rdfs:label "Incident Outcome"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentOutcome> rdfs:comment "Outcome of the incident"@en ;
+                                                                           rdfs:label "Incident Outcome"@en .
 
 
-<http://www.example.org/meddevice#incidentPatientAge> rdfs:comment "Age of the patient involved in the incident"@en ;
-                                                      rdfs:label "Incident Patient Age"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentPatientAge> rdfs:comment "Age of the patient involved in the incident"@en ;
+                                                                              rdfs:label "Incident Patient Age"@en .
 
 
-<http://www.example.org/meddevice#incidentPatientSex> rdfs:comment "Sex of the patient involved in the Incident"@en ;
-                                                      rdfs:label "Incident Patient Sex"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentPatientSex> rdfs:comment "Sex of the patient involved in the Incident"@en ;
+                                                                              rdfs:label "Incident Patient Sex"@en .
 
 
-<http://www.example.org/meddevice#incidentReportDate> rdfs:comment "Date in which the Incident was reported"@en ;
-                                                      rdfs:label "Incident Report Date"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#incidentReportDate> rdfs:comment "Date in which the Incident was reported"@en ;
+                                                                              rdfs:label "Incident Report Date"@en .
 
 
-<http://www.example.org/meddevice#isOfType> rdfs:comment "Type of Medical Device"@en ;
-                                            rdfs:label "is of type"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#isOfType> rdfs:comment "Type of Medical Device"@en ;
+                                                                    rdfs:label "is of type"@en .
 
 
-<http://www.example.org/meddevice#isSubclassifiedUnder> rdfs:label "is subclassified under"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#isSubclassifiedUnder> rdfs:label "is subclassified under"@en .
 
 
-<http://www.example.org/meddevice#manufacturerAuthNum> rdfs:comment "Authorization number of the Manufacturer"@en ;
-                                                       rdfs:label "Manufacturer Authorization Number"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#manufacturerAuthNum> rdfs:comment "Authorization number of the Manufacturer"@en ;
+                                                                               rdfs:label "Manufacturer Authorization Number"@en .
 
 
-<http://www.example.org/meddevice#manufacturerCompetentAuth> rdfs:comment "Organisation responsible of enforcing regulations on the Manufacturer"@en ;
-                                                             rdfs:label "Manufacturer Competent Authority"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#manufacturerCompetentAuth> rdfs:comment "Organisation responsible of enforcing regulations on the Manufacturer"@en ;
+                                                                                     rdfs:label "Manufacturer Competent Authority"@en .
 
 
-<http://www.example.org/meddevice#manufacturerContactEmail> rdfs:comment "Contact email address of the Manufacturer"@en ;
-                                                            rdfs:label "Manufacturer Contact Email"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#manufacturerContactEmail> rdfs:comment "Contact email address of the Manufacturer"@en ;
+                                                                                    rdfs:label "Manufacturer Contact Email"@en .
 
 
-<http://www.example.org/meddevice#manufacturerEudamedSm> rdfs:comment "Manufacturer's SM in the EUDAMED database"@en ;
-                                                         rdfs:label "Manufacturer Eudamed SM"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#manufacturerEudamedSm> rdfs:comment "Manufacturer's SM in the EUDAMED database"@en ;
+                                                                                 rdfs:label "Manufacturer Eudamed SM"@en .
 
 
-<http://www.example.org/meddevice#name> rdfs:comment "Common name of the term"@en ;
-                                        rdfs:label "Name"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#name> rdfs:comment "Common name of the resource"@en ;
+                                                                rdfs:label "Name"@en .
 
 
-<http://www.example.org/meddevice#registeredInCountry> rdfs:comment "Country Manufacturer is registered in"@en ;
-                                                       rdfs:label "registered in country"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#registeredInCountry> rdfs:comment "Country Manufacturer is registered in"@en ;
+                                                                               rdfs:label "registered in country"@en .
 
 
-<http://www.example.org/meddevice#relatesToDevice> rdfs:comment "Device that an Incident is related to"@en ;
-                                                   rdfs:label "relates to device"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#relatesToDevice> rdfs:comment "Device that an Incident is related to"@en ;
+                                                                           rdfs:label "relates to device"@en .
 
 
-<http://www.example.org/meddevice#relatesToRisk> rdfs:comment "Risk that an Incident is related to"@en ;
-                                                 rdfs:label "relates to risk"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#relatesToRisk> rdfs:comment "Risk that an Incident is related to"@en ;
+                                                                         rdfs:label "relates to risk"@en .
 
 
-<http://www.example.org/meddevice#reportedBy> rdfs:comment "Manufacturer that reported the Incident"@en ;
-                                              rdfs:label "reported by"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#reportedBy> rdfs:comment "Manufacturer that reported the Incident"@en ;
+                                                                      rdfs:label "reported by"@en .
 
 
-<http://www.example.org/meddevice#reportedInCountry> rdfs:comment "Country that the Incident was reported In"@en ;
-                                                     rdfs:label "reported in country"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#reportedInCountry> rdfs:comment "Country that the Incident was reported In"@en ;
+                                                                             rdfs:label "reported in country"@en .
 
 
-<http://www.example.org/meddevice#riskCategory> rdfs:comment "Category of the Risk based on affected entity"@en ;
-                                                rdfs:label "Risk Category"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#riskCategory> rdfs:comment "Category of the Risk based on affected entity"@en ;
+                                                                        rdfs:label "Risk Category"@en .
 
 
-<http://www.example.org/meddevice#riskImdrfCode> rdfs:comment "IMDRF code of the Risk"@en ;
-                                                 rdfs:label "Risk IMDRF code"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#riskImdrfCode> rdfs:comment "IMDRF code of the Risk"@en ;
+                                                                         rdfs:label "Risk IMDRF code"@en .
 
 
-<http://www.example.org/meddevice#riskProbability> rdfs:comment "Probability of the Risk (Low/Medium/High)"@en ;
-                                                   rdfs:label "Risk Probability"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#riskProbability> rdfs:comment "Probability of the Risk (Low/Medium/High)"@en ;
+                                                                           rdfs:label "Risk Probability"@en .
 
 
-<http://www.example.org/meddevice#riskSeverity> rdfs:comment "Severity of the Risk (Moderate/Serious/Critical)"@en ;
-                                                rdfs:label "Risk Severity"@en .
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#riskSeverity> rdfs:comment "Severity of the Risk (Moderate/Serious/Critical)"@en ;
+                                                                        rdfs:label "Risk Severity"@en .
 
 
 #################################################################
 #    Rules
 #################################################################
+
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#i> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#r> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#d> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.example.org/highrisk-meddev-&-invitrodev-diag#t> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 
 <http://www.example.org/meddevice#i> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 
@@ -1112,49 +1110,40 @@
 
 <http://www.example.org/meddevice#m> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 
-<http://www.example.org/meddevice#c> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.example.org/meddevice#r> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 
 <http://www.example.org/meddevice#t> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 
-<http://www.example.org/meddevice#r> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
-
 [ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
    rdfs:comment "" ;
-   rdfs:label "S3" ;
+   rdfs:label "S1" ;
    rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.example.org/meddevice#Incident> ;
-                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.example.org/meddevice#i>
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.example.org/highrisk-meddev-&-invitrodev-diag#relatesToDevice> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.example.org/meddevice#i> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <http://www.example.org/meddevice#d>
                                                      ] ;
                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.example.org/meddevice#relatesToDevice> ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.example.org/meddevice#i> ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.example.org/meddevice#d>
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Incident> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.example.org/meddevice#i>
                                                                 ] ;
                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.example.org/meddevice#hasManufacturer> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.example.org/highrisk-meddev-&-invitrodev-diag#hasManufacturer> ;
                                                                              <http://www.w3.org/2003/11/swrl#argument1> <http://www.example.org/meddevice#d> ;
                                                                              <http://www.w3.org/2003/11/swrl#argument2> <http://www.example.org/meddevice#m>
                                                                            ] ;
-                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.example.org/meddevice#registeredInCountry> ;
-                                                                                        <http://www.w3.org/2003/11/swrl#argument1> <http://www.example.org/meddevice#m> ;
-                                                                                        <http://www.w3.org/2003/11/swrl#argument2> <http://www.example.org/meddevice#c>
-                                                                                      ] ;
-                                                                            rdf:rest rdf:nil
-                                                                          ]
+                                                                 rdf:rest rdf:nil
                                                                ]
                                                     ]
                                          ] ;
    <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.example.org/meddevice#reportedInCountry> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.example.org/highrisk-meddev-&-invitrodev-diag#reportedBy> ;
                                                        <http://www.w3.org/2003/11/swrl#argument1> <http://www.example.org/meddevice#i> ;
-                                                       <http://www.w3.org/2003/11/swrl#argument2> <http://www.example.org/meddevice#c>
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <http://www.example.org/meddevice#m>
                                                      ] ;
                                            rdf:rest rdf:nil
                                          ]
@@ -1165,26 +1154,26 @@
    rdfs:label "S2" ;
    rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.example.org/meddevice#Incident> ;
-                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.example.org/meddevice#i>
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.example.org/highrisk-meddev-&-invitrodev-diag#relatesToDevice> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.example.org/meddevice#i> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <http://www.example.org/meddevice#d>
                                                      ] ;
                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.example.org/meddevice#relatesToDevice> ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.example.org/meddevice#i> ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.example.org/meddevice#d>
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Incident> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.example.org/meddevice#i>
                                                                 ] ;
                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.example.org/meddevice#isOfType> ;
-                                                                             <http://www.w3.org/2003/11/swrl#argument1> <http://www.example.org/meddevice#d> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.example.org/highrisk-meddev-&-invitrodev-diag#affectsDeviceType> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <http://www.example.org/meddevice#r> ;
                                                                              <http://www.w3.org/2003/11/swrl#argument2> <http://www.example.org/meddevice#t>
                                                                            ] ;
                                                                  rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                             rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.example.org/meddevice#affectsDeviceType> ;
-                                                                                        <http://www.w3.org/2003/11/swrl#argument1> <http://www.example.org/meddevice#r> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.example.org/highrisk-meddev-&-invitrodev-diag#isOfType> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> <http://www.example.org/meddevice#d> ;
                                                                                         <http://www.w3.org/2003/11/swrl#argument2> <http://www.example.org/meddevice#t>
                                                                                       ] ;
                                                                             rdf:rest rdf:nil
@@ -1194,7 +1183,7 @@
                                          ] ;
    <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.example.org/meddevice#relatesToRisk> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.example.org/highrisk-meddev-&-invitrodev-diag#relatesToRisk> ;
                                                        <http://www.w3.org/2003/11/swrl#argument1> <http://www.example.org/meddevice#i> ;
                                                        <http://www.w3.org/2003/11/swrl#argument2> <http://www.example.org/meddevice#r>
                                                      ] ;
@@ -1204,34 +1193,41 @@
 
 [ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
    rdfs:comment "" ;
-   rdfs:label "S1" ;
+   rdfs:label "S3" ;
    rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.example.org/meddevice#Incident> ;
-                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.example.org/meddevice#i>
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.example.org/highrisk-meddev-&-invitrodev-diag#relatesToRisk> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.example.org/highrisk-meddev-&-invitrodev-diag#i> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <http://www.example.org/highrisk-meddev-&-invitrodev-diag#r>
                                                      ] ;
                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.example.org/meddevice#relatesToDevice> ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.example.org/meddevice#i> ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.example.org/meddevice#d>
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.example.org/highrisk-meddev-&-invitrodev-diag#relatesToDevice> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.example.org/highrisk-meddev-&-invitrodev-diag#i> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.example.org/highrisk-meddev-&-invitrodev-diag#d>
                                                                 ] ;
                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.example.org/meddevice#hasManufacturer> ;
-                                                                             <http://www.w3.org/2003/11/swrl#argument1> <http://www.example.org/meddevice#d> ;
-                                                                             <http://www.w3.org/2003/11/swrl#argument2> <http://www.example.org/meddevice#m>
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.example.org/highrisk-meddev-&-invitrodev-diag#Incident> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <http://www.example.org/highrisk-meddev-&-invitrodev-diag#i>
                                                                            ] ;
-                                                                 rdf:rest rdf:nil
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.example.org/highrisk-meddev-&-invitrodev-diag#isOfType> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> <http://www.example.org/highrisk-meddev-&-invitrodev-diag#d> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument2> <http://www.example.org/highrisk-meddev-&-invitrodev-diag#t>
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
                                                                ]
                                                     ]
                                          ] ;
    <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.example.org/meddevice#reportedBy> ;
-                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.example.org/meddevice#i> ;
-                                                       <http://www.w3.org/2003/11/swrl#argument2> <http://www.example.org/meddevice#m>
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.example.org/highrisk-meddev-&-invitrodev-diag#affectsDeviceType> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.example.org/highrisk-meddev-&-invitrodev-diag#r> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <http://www.example.org/highrisk-meddev-&-invitrodev-diag#t>
                                                      ] ;
                                            rdf:rest rdf:nil
                                          ]
