@@ -1618,6 +1618,7 @@
         <rdfs:label xml:lang="en">is of type</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#isSubclassifiedUnder">
+        <rdfs:comment>Defines the superclass of the class its related to</rdfs:comment>
         <rdfs:label xml:lang="en">is subclassified under</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.cgiraldolo.com/highrisk-meddev-&amp;-invitrodev-diag#manufacturerAuthNum">

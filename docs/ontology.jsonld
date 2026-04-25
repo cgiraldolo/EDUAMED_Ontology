@@ -1413,6 +1413,9 @@
 }, {
   "@id" : "http://www.cgiraldolo.com/highrisk-meddev-&-invitrodev-diag#isSubclassifiedUnder",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Defines the superclass of the class its related to"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "is subclassified under"

@@ -1038,7 +1038,8 @@
           rdfs:label "is of type"@en .
 
 
-:isSubclassifiedUnder rdfs:label "is subclassified under"@en .
+:isSubclassifiedUnder rdfs:comment "Defines the superclass of the class its related to" ;
+                      rdfs:label "is subclassified under"@en .
 
 
 :manufacturerAuthNum rdfs:comment "Authorization number of the Manufacturer"@en ;
